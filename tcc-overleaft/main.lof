@@ -1,31 +1,42 @@
 \babel@toc {brazil}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de Redes Neurais\relax }}{7}{figure.caption.10}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Diferença entre IA, ML e DL\relax }}{8}{figure.caption.11}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Rede Neural\relax }}{8}{figure.caption.12}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Rede Neural Convolucional\relax }}{10}{figure.caption.13}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Pixel em Visão Computacional\relax }}{10}{figure.caption.14}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Exemplo Simples de Treinamento de Rede Neural com Método de Trigêmeos\relax }}{13}{figure.caption.15}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de comparação de vetores 128-d\relax }}{14}{figure.caption.16}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Extração de um Vetor 128-d com Reconhecimento Facial\relax }}{15}{figure.caption.17}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Exemplo de deslocamento utilizando calculos \relax }}{16}{figure.caption.18}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de Funcionamento do SITL\relax }}{19}{figure.caption.19}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Fluxo de operação SITL, MAVProxy, Ardupilot e MAVLink\relax }}{20}{figure.caption.20}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Drone do Tipo Quadricóptero\relax }}{22}{figure.caption.21}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Frame de um Vant Quadricóptero\relax }}{23}{figure.caption.22}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Pixhawk 1\relax }}{23}{figure.caption.23}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama eletrônico dos conectores da Pixhawk 1\relax }}{24}{figure.caption.24}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Motor sem Escova\relax }}{25}{figure.caption.25}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Partes do Motor\relax }}{26}{figure.caption.26}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Controlador Eletrônico de Correte utilizado em Vants\relax }}{26}{figure.caption.27}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Diagrama Eletrônico de um Controlador Eletrônico de Correte\relax }}{27}{figure.caption.28}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Modulo de GPS\relax }}{27}{figure.caption.29}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Hélice\relax }}{28}{figure.caption.30}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Bateria de polímero de lítio\relax }}{28}{figure.caption.31}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Esquema de Montagem de um drone\relax }}{29}{figure.caption.32}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Teoria de sustentação de uma hélice\relax }}{30}{figure.caption.33}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Diagrama de Esforços cortantes na Estrutura do Quadricóptero\relax }}{31}{figure.caption.34}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Diagrama de Momento Fletor sobre a Estrutura do Quadricóptero\relax }}{32}{figure.caption.35}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Sentido de Movimento dos Motores e Inercias\relax }}{32}{figure.caption.36}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Movimentos de um Quadricóptero\relax }}{33}{figure.caption.37}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Movimento horizontal "\textit {roll}"\relax }}{34}{figure.caption.38}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Movimentos horizontais de um quadricópter \relax }}{35}{figure.caption.39}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Exemplo de Redes Neurais\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diferen\IeC {\c c}a entre IA, ML e DL\relax }}{9}{figure.caption.8}
+\contentsline {figure}{\numberline {3}{\ignorespaces Rede Neural\relax }}{10}{figure.caption.9}
+\contentsline {figure}{\numberline {4}{\ignorespaces Rede Neural Convolucional\relax }}{11}{figure.caption.10}
+\contentsline {figure}{\numberline {5}{\ignorespaces Pixel em Vis\IeC {\~a}o Computacional\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {6}{\ignorespaces Exemplo Simples de Treinamento de Rede Neural com M\IeC {\'e}todo de Trig\IeC {\^e}meos\relax }}{15}{figure.caption.12}
+\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de Compara\IeC {\c c}\IeC {\~a}o de Cetores 128-d\relax }}{16}{figure.caption.13}
+\contentsline {figure}{\numberline {8}{\ignorespaces Extra\IeC {\c c}\IeC {\~a}o de um Vetor 128-d com Reconhecimento Facial\relax }}{17}{figure.caption.14}
+\contentsline {figure}{\numberline {9}{\ignorespaces Exemplo de Deslocamento Dtilizando D\IeC {\'a}lculos\relax }}{19}{figure.caption.15}
+\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de Funcionamento do SITL\relax }}{22}{figure.caption.16}
+\contentsline {figure}{\numberline {11}{\ignorespaces Fluxo de Opera\IeC {\c c}\IeC {\~a}o SITL, MAVProxy, Ardupilot e MAVLink\relax }}{23}{figure.caption.17}
+\contentsline {figure}{\numberline {12}{\ignorespaces Vant do Tipo Quadric\IeC {\'o}ptero\relax }}{25}{figure.caption.18}
+\contentsline {figure}{\numberline {13}{\ignorespaces Frame de um Vant Quadric\IeC {\'o}ptero\relax }}{26}{figure.caption.19}
+\contentsline {figure}{\numberline {14}{\ignorespaces Pixhawk 1\relax }}{27}{figure.caption.20}
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama Eletr\IeC {\^o}nico dos Conectores da Pixhawk 1\relax }}{28}{figure.caption.21}
+\contentsline {figure}{\numberline {16}{\ignorespaces Motor sem Escova\relax }}{29}{figure.caption.22}
+\contentsline {figure}{\numberline {17}{\ignorespaces Partes do Motor\relax }}{30}{figure.caption.23}
+\contentsline {figure}{\numberline {18}{\ignorespaces Controlador Eletr\IeC {\^o}nico de Correte utilizado em Vants\relax }}{30}{figure.caption.24}
+\contentsline {figure}{\numberline {19}{\ignorespaces Diagrama Eletr\IeC {\^o}nico de um Controlador Eletr\IeC {\^o}nico de Correte\relax }}{31}{figure.caption.25}
+\contentsline {figure}{\numberline {20}{\ignorespaces Modulo de GPS\relax }}{31}{figure.caption.26}
+\contentsline {figure}{\numberline {21}{\ignorespaces H\IeC {\'e}lice\relax }}{32}{figure.caption.27}
+\contentsline {figure}{\numberline {22}{\ignorespaces Bateria de Pol\IeC {\'\i }mero de L\IeC {\'\i }tio\relax }}{33}{figure.caption.28}
+\contentsline {figure}{\numberline {23}{\ignorespaces Esquema B\IeC {\'a}sico de Montagem de um Vant do tipo Quadric\IeC {\'o}ptero\relax }}{34}{figure.caption.29}
+\contentsline {figure}{\numberline {24}{\ignorespaces Teoria de Sustenta\IeC {\c c}\IeC {\~a}o de uma H\IeC {\'e}lice\relax }}{35}{figure.caption.30}
+\contentsline {figure}{\numberline {25}{\ignorespaces Diagrama de Esfor\IeC {\c c}os cortantes na Estrutura do Quadric\IeC {\'o}ptero\relax }}{37}{figure.caption.31}
+\contentsline {figure}{\numberline {26}{\ignorespaces Diagrama de Momento Fletor sobre a Estrutura do Quadric\IeC {\'o}ptero\relax }}{38}{figure.caption.32}
+\contentsline {figure}{\numberline {27}{\ignorespaces Sentido de Movimento dos Motores e Inercias\relax }}{39}{figure.caption.33}
+\contentsline {figure}{\numberline {28}{\ignorespaces Movimentos de um Quadric\IeC {\'o}ptero\relax }}{40}{figure.caption.34}
+\contentsline {figure}{\numberline {29}{\ignorespaces Movimento Horizontal "\textit {Roll}"\relax }}{42}{figure.caption.35}
+\contentsline {figure}{\numberline {30}{\ignorespaces Movimentos Horizontais de um Huadric\IeC {\'o}ptero\relax }}{43}{figure.caption.36}
+\contentsline {figure}{\numberline {31}{\ignorespaces teste3\relax }}{44}{figure.caption.37}
+\contentsline {figure}{\numberline {32}{\ignorespaces teste2\relax }}{45}{figure.caption.38}
+\contentsline {figure}{\numberline {33}{\ignorespaces teste\relax }}{46}{figure.caption.39}
+\contentsline {figure}{\numberline {34}{\ignorespaces Conex\IeC {\~a}o MAVLink da Raspberry Pi com Pixhawk\relax }}{47}{figure.caption.40}
+\contentsline {figure}{\numberline {35}{\ignorespaces Processos do Sistema\relax }}{48}{figure.caption.41}
+\contentsline {figure}{\numberline {36}{\ignorespaces Simula\IeC {\c c}\IeC {\~a}o real para abstrata\relax }}{49}{figure.caption.42}
+\contentsline {figure}{\numberline {37}{\ignorespaces teste\relax }}{50}{figure.caption.43}
+\contentsline {figure}{\numberline {38}{\ignorespaces teste\relax }}{51}{figure.caption.44}
+\contentsline {figure}{\numberline {39}{\ignorespaces teste\relax }}{51}{figure.caption.45}
+\contentsline {figure}{\numberline {40}{\ignorespaces teste8\relax }}{52}{figure.caption.46}
+\contentsline {figure}{\numberline {41}{\ignorespaces teste9\relax }}{53}{figure.caption.47}

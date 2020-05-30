@@ -1,0 +1,16 @@
+tikz,border=5mm]{standalone}
+\usetikzlibrary{fadings}
+\pgfdeclareradialshading{myring}{\pgfpointorigin}
+{
+	color(0cm)=(transparent!0);
+	color(5mm)=(pgftransparent!50);
+	color(1cm)=(pgftransparent!100)
+}
+\pgfdeclarefading{ringo}{\pgfuseshading{myring}}
+
+
+\begin{tikzpicture}
+\filldraw[even odd rule,red ,path fading=ringo] (0,0) circle (16mm) (0,0) circle (2cm);
+\filldraw[even odd rule,blue,path fading=ringo] (0,0) circle (3mm) (0,0) circle (0.5cm);
+\end{tikzpicture}
+
