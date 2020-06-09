@@ -87,7 +87,7 @@ Uma rede neural nada mais é do que uma maneira de imitar o que ocorre no céreb
 
 \subsection{Visão Computacional}
 %-
-Visão computacional é um campo da inteligência artificial que treina computadores para interpretar e entender o mundo visual. Através do uso de imagens digitais de câmeras e vídeos, junto a modelos de Deep Learning, as máquinas podem identificar e classificar objetos corretamente — e, então, reagir ao que elas “veem.” [10].
+Visão computacional é um campo da inteligência artificial que treina computadores para interpretar e entender o mundo visual. Através do uso de imagens digitais, câmeras e vídeos junto a modelos de Deep Learning, as máquinas podem identificar e classificar objetos corretamente, e então, reagir ao que elas veem. [10].
 Os estudos com visão computacional beiram a época do início da internet, sim isso e verdade já naquela época se estudava este campo, porem tudo era mais difícil, devido à falta de tecnologias para suportar o processamento de grande volume de dados, faltava o volume de dados hoje conhecido como (Big Data) e algoritmos de processamento paralelo [9]. Nessa década vários fatores impulsionam o uso e estudo de visão computacional, tecnologias moveis saturam o mundo com vídeos e fotos o (Big data), o poder computacional cresceu abruptamente e tornou-se mais barato, e novos algoritmos com redes neurais convulsionais aproveitam melhor a capacidade do hardware e do software [10].
  Existem muitos tipos de visão computacional. Hoje no mercado é comum a utilização de algumas tecnologias distintas, tais como:
 
@@ -140,7 +140,7 @@ Em visão computacional as entradas são matrizes tridimensionais contendo altur
 	\label{fig:pixel}
 \end{figure}
 
-A primeira coisa que precisamos para treinar um algoritmo de Deep Learning ée de uma grande quantidade de imagens (Big data), e através de uma abordagem supervisionada com imagens devidamente marcadas como sendo o rosto que buscamos assim realizamos o treinamento. Então teremos um modelo que recebera imagens não marcadas e ele deverá ser capaz de classificá-las.
+A primeira coisa que precisamos para treinar um algoritmo de Deep Learning é de uma grande quantidade de imagens (Big data), e através de uma abordagem supervisionada com imagens devidamente marcadas como sendo o rosto que buscamos assim realizamos o treinamento. Então teremos um modelo que recebera imagens não marcadas e ele deverá ser capaz de classificá-las.
 %-
 \section{Tecnologias Open Source para Tratamento de Imagens}
 %\addcontentsline{toc}{section}{Trabalhos Relacionados a Isto}
@@ -153,17 +153,17 @@ O OpenCV possui uma estrutura modular, o que significa que o pacote inclui vári
 %-
 \subsection{Biblioteca Dlib}
 %-
-O Dlib é um kit de ferramentas de linguagem de programação iniciado em 2002 construído em C++ mas extensível para outras linguagens como Python, ela é utilizada largamente na indústria e academicamente para desenvolver sistemas complexos e que envolvam computação de alto desempenho. Hoje em dia ela é desenvolvida para lidar com tráfico de redes, threads, interface gráficas, estrutura de dados, e principalmente em aprendizado de máquina, processamento de imagens, mineração de dados, otimização numérica entre outros [27].
+O Dlib é um kit de ferramentas de linguagem de programação com licença \textit{Boost Software License} iniciado em 2002 construído em C++ mas extensível para outras linguagens como Python, ela é utilizada largamente na indústria e academicamente para desenvolver sistemas complexos e que envolvam computação de alto desempenho. Hoje em dia ela é desenvolvida para lidar com tráfico de redes, threads, interface gráficas, estrutura de dados, e principalmente em aprendizado de máquina, processamento de imagens, mineração de dados, otimização numérica entre outros [27].
 %-
 \subsection{Biblioteca Face Recognition}
 %-
-É a ferramenta de reconhecimento facial mais simples que existe, construída utilizando a biblioteca de aprendizado profundo de última geração Dlib, ela chega a uma precisão de detecções de até 99,38\% segundo o site Labeled Faces in the Wild. É uma ferramenta muito simples de usar por ser baseada em chamadas de funções simples de identificar em sua documentação, porém é uma das melhores ou talvez a melhor ferramenta de detecção facial hoje no mundo.
+É uma ferramenta de reconhecimento facial que possui simples utilização sobre a licença \textit{MIT}, construída utilizando a biblioteca de aprendizado profundo de última geração Dlib, ela chega a uma precisão de detecções de até 99,38\% segundo o site \textit{Labeled Faces in the Wild}. É uma ferramenta muito simples de usar por ser baseada em chamadas de funções simples de identificar em sua documentação, porém é uma das melhores ou talvez a melhor ferramenta de detecção facial hoje no mundo.
 Com ela é possível não só detectar rostos, mas identificar partes do face como por exemplo; o nariz, boca, olhos, e com algumas outras integrações pode-se até detectar expressões faciais [28].
 
 %-
 \subsection{Nvidia Cuda}
 %-
-No início da computação os computadores sempre operaram com apenas um núcleo programável com códigos executados sequencialmente, porem a demanda por mais desempenho fez com que empresas empregassem esforços para criar tecnologias para melhorar o desempenho, e isso exigiu ainda mais do limite físico do silício. Para contornar isso foram criados os mecanismos de pipeline, threads e outros, uma alternativa foi adicionar processadores em paralelo e mais atualmente criaram processadores e gpus multicores com vários núcleos em um único chip. Porem foi necessário alterar as técnicas dos códigos que rodavam unicamente em paralelo para aproveitar esses novos recursos.
+No início da computação os computadores sempre operaram com apenas um núcleo programável com códigos executados sequencialmente, porem a demanda por mais desempenho fez com que empresas empregassem esforços para criar tecnologias para melhorar o desempenho, e isso exigiu ainda mais do limite físico do silício. Para contornar isso foram criados os mecanismos de \textit{pipeline}, \textit{threads} e outros, uma alternativa foi adicionar processadores em paralelo e mais atualmente criaram processadores e gpus multicores com vários núcleos em um único chip. Porem foi necessário alterar as técnicas dos códigos que rodavam unicamente em paralelo para aproveitar esses novos recursos.
 Em 1999 a empresa americana NVIDIA ao perceber essa demanda por aumento no desempenho e um tipo de processamento específico, lançou sua primeira GPU a GeForce 256, e logo em 2000 criou as GPUs de uso geral (GPGPU).
 Inicialmente as GPUs tinham um processamento fixo focada em processamento de gráficos em três dimensões, mas nos últimos anos elas tem melhorado seu hardware focando no aspecto programável, e o resultado disso e uma grande capacidade de processamento focado em aritmética e não só em gráficos.
 Hoje as GPUs têm seu processamento focado em gráficos da classe SIMD, são desenvolvidas especificamente para cálculos de pontos flutuantes, usados em renderização de imagens, suas principais características são, massiva capacidade de processamento paralelo, total programabilidade e grande desempenho em cálculos que possua grande volume de dados. Para dominar esse conteúdo programático era necessário um grande conhecimento do desenvolvedor de várias APIs e da arquitetura das placas gráficas além da representação através de coordenadas de vértices, texturas e shaders, aumentando drasticamente o conteúdo programado.
@@ -287,6 +287,33 @@ A ideia é através das ferramentas de cálculo das bibliotecas conseguir os val
 
 \section{Tecnologias Open Source de Desenvolvimento, para Veículos Aéreos não Tripulados}
 
+\subsection{Firmwares para VANT}
+
+\subsubsection{Ardupilot}
+%-
+Segundo a site do desenvolvedor, o Ardupilot é o software de piloto automático de código aberto mais avançado, completo e com mais recursos disponíveis. Foi desenvolvido ao longo de mais de 5 anos por uma equipe de diversos engenheiros profissionais e cientistas da computação. É o único software de piloto automático capaz de controlar qualquer sistema de veículo imaginável, de aviões convencionais, multirotores e helicópteros, barcos e até submarinos. E agora sendo expandido para oferecer suporte a novos tipos de veículos emergentes, como quadriciclos e helicópteros compostos [14].
+Instalado em mais de um milhão de veículos em todo o mundo e com suas ferramentas avançadas de registro de dados, análise e simulação, o Ardupilot é o software de piloto automático mais testado e comprovado. A base de código-fonte aberto significa que está evoluindo rapidamente, sempre na vanguarda do desenvolvimento da tecnologia. Com muitos fornecedores periféricos criando interfaces, os usuários se beneficiam de um amplo ecossistema de sensores, computadores complementares e sistemas de comunicação. Por fim, como o código-fonte é aberto, ele pode ser auditado para garantir a conformidade com os requisitos de segurança e sigilo [14].
+O pacote de software é instalado em aeronaves de muitas empresas como; 3DR, jDrones, PrecisionHawk, AgEagle e Kespry. Também é usado para testes e desenvolvimento por várias grandes instituições e corporações, como NASA, Intel, Boeing, além de inúmeras faculdades e universidades em todo o mundo [14].
+
+\subsubsection{PX4}
+\comments{adicionar o firmware px4}
+
+\subsection{Ferramentas de Desenvolvimento para VANT}
+%-
+
+\subsubsection{API de Desenvolvimento Dronekit para Ardupilot}
+O Dronekit é uma API feita para desenvolvedores criarem aplicativos que se comunicam com veículos (drone) por meio do MAVLink. É uma implementação em linguagem python para o controle de drones através de linguagem de programação, fornece acesso programático as informações de telemetria, estado e parâmetros a veículos conectados, permite o gerenciamento de missões e também o controle direto dos movimentos e operações do veículo.
+O uso e direcionado diretamente a mini computadores como Raspberry Pi, Intel Edson, Nvidia TX1 para implementar funções adicionais que a controladora do drone não suporta, entre elas podemos citar a visão computacional e a modelagem 3D. Ele suporta Linux, Mac e Windows e é disponibilizado sobre a licença de código aberto Apache 2.0.
+
+\subsubsection{API de Desenvolvimento MAVSDK para PX4}
+%-
+
+\comments{adicionar o mavsdk}
+
+\subsection{Dronekit versus MAVSDK}
+
+\comments{Adicionar uma tabela de comparação entre o dronekit e o mavsdk}
+
 \subsection{Protocolo de Comunicação MAVLink}
 %-
 E possível criar uma ponte de comunicação entre o computador (Raspberry Pi) e a controladora de voo (Pixhawk), e com ele pode-se capturar pacotes da controladora de voo como por exemplo; registro de telemetria, altitude, velocidade do veículo.
@@ -304,9 +331,9 @@ Permite até 255 conexões simultâneas na rede (veículos, estações terrestre
 Permite comunicações externas e internas (por exemplo, entre um GCS e um drone, e entre o piloto automático do drone e a câmera do drone habilitada para MAVLink). A figura 6 demonstra o processo de comunicação juntamente com os processos de software, até gerar os dados de saída que são enviados para o drone por protocolo MAVLink.
 
 %-
-\subsection{Proxy de Protocolo MAVLink para Vant MAVProxy}
+\subsection{Proxy de Protocolo MAVLink para VANT (MAVProxy)}
 %-
-O mavproxy e denominado de software para estação terrestre ou (GCS) ground station software, ele é totalmente funcional para o controle de (UAV) unmanned aerial vehicle ou veículo aéreo não tripulado, mas conhecido com drone. Ele foi desenvolvido pela CanberraUAV, é minimalista, portátil e extensível para qualquer UAV que suporte o protocolo MAVlink, visto no índice 1.3.1, um exemplo é o firmware ArduPilot que será abordado mais à frente. Ele foi desenvolvido para suportar computação complementar e vários datalinks, é hoje a ferramenta mais versátil para o controle e desenvolvimento de software baseados em drones, principalmente aqueles direcionados ao Ardupilot. Muitos recursos existentes em outras ferramentas GCS tem sua origem no MAVProxy [25]. O MAVProxy e liberado sobre a licença GNU (general public license) v3 ou superior.
+O mavproxy e denominado de software para estação terrestre ou (GCS) ground station software, ele é totalmente funcional para o controle de (UAV) unmanned aerial vehicle ou veículo aéreo não tripulado, mas conhecido com drone. Ele foi desenvolvido pela CanberraUAV, é minimalista, portátil e extensível para qualquer UAV que suporte o protocolo MAVlink, visto no índice 2.4.4, um exemplo é o firmware ArduPilot que será abordado mais à frente. Ele foi desenvolvido para suportar computação complementar e vários datalinks, é hoje a ferramenta mais versátil para o controle e desenvolvimento de software baseados em drones, principalmente aqueles direcionados ao Ardupilot. Muitos recursos existentes em outras ferramentas GCS tem sua origem no MAVProxy [25]. O MAVProxy e liberado sobre a licença GNU (general public license) v3 ou superior.
 Recursos:
 \begin{itemize}
     \item É baseado em linha de comando muito focada em Linux. Existem plugins que fornecem uma GUI (graphical user interface).
@@ -317,13 +344,8 @@ Recursos:
     \item Possui módulos carregáveis para várias tarefas como mapas, console, joysticks.
 \end{itemize}
 %-
-\subsection{Ferramenta de Desenvolvimento para Vant Dronekit}
-%-
-O Dronekit é uma API feita para desenvolvedores criarem aplicativos que se comunicam com veículos (drone) por meio do MAVLink. É uma implementação em linguagem python para o controle de drones através de linguagem de programação, fornece acesso programático as informações de telemetria, estado e parâmetros a veículos conectados, permite o gerenciamento de missões e também o controle direto dos movimentos e operações do veículo.
-O uso e direcionado diretamente a mini computadores como Raspberry Pi, Intel Edson, Nvidia TX1 para implementar funções adicionais que a controladora do drone não suporta, entre elas podemos citar a visão computacional e a modelagem 3D. Ele suporta Linux, Mac e Windows e é disponibilizado sobre a licença de código aberto Apache 2.0.
 
-%-
-\subsection{Simulador de Vant SITL}
+\subsection{Simulador de VANT SITL}
 %-
 O simulador SITL (software in the loop) é uma ferramenta gráfica, no caso ele possui uma GUI (graphical user interface) que implementa a simulação de funcionamento total de um drone, ele permite utilizar um plane (avião), copter (drone) ou um rover (veículo terrestre), e isso sem a necessidade de nenhum hardware, resumindo ele permite testar o comportamento do código desenvolvido com o Dronekit em um simulador de drone assim evitando possíveis imprevistos que poderiam causar algum dano material ao seu equipamento real, seu drone físico. A figura \ref{fig:sitl} mostra um exemplo do simulador rodando em um ambiente Linux, ele demonstra um drone executando um script em python que se chama simple\_goto ou seja o script manda para o console do drone duas coordenadas para a qual ele deve viajar e logo em seguida retornar para a home (ponto de partida).
 
@@ -378,14 +400,6 @@ Com eles se torna mais fácil o desenvolvimento de aplicativos para drone, isso 
 	\label{fig:ardupilot}
 \end{figure}
 
-\subsection{Firmware para Vants}
-
-\subsubsection{Ardupilot}
-%-
-Segundo a site do desenvolvedor, o Ardupilot é o software de piloto automático de código aberto mais avançado, completo e com mais recursos disponíveis. Foi desenvolvido ao longo de mais de 5 anos por uma equipe de diversos engenheiros profissionais e cientistas da computação. É o único software de piloto automático capaz de controlar qualquer sistema de veículo imaginável, de aviões convencionais, multirotores e helicópteros, barcos e até submarinos. E agora sendo expandido para oferecer suporte a novos tipos de veículos emergentes, como quadriciclos e helicópteros compostos [14].
-Instalado em mais de um milhão de veículos em todo o mundo e com suas ferramentas avançadas de registro de dados, análise e simulação, o Ardupilot é o software de piloto automático mais testado e comprovado. A base de código-fonte aberto significa que está evoluindo rapidamente, sempre na vanguarda do desenvolvimento da tecnologia. Com muitos fornecedores periféricos criando interfaces, os usuários se beneficiam de um amplo ecossistema de sensores, computadores complementares e sistemas de comunicação. Por fim, como o código-fonte é aberto, ele pode ser auditado para garantir a conformidade com os requisitos de segurança e sigilo [14].
-O pacote de software é instalado em aeronaves de muitas empresas como; 3DR, jDrones, PrecisionHawk, AgEagle e Kespry. Também é usado para testes e desenvolvimento por várias grandes instituições e corporações, como NASA, Intel, Boeing, além de inúmeras faculdades e universidades em todo o mundo [14].
-
 %-
 \subsection{Simulador de Robótica Gazebo}
 %-
@@ -410,7 +424,7 @@ Os multicoptero são aerodinamicamente instáveis e exigem absolutamente um comp
 %
 \begin{figure}[H]
 	\centering
-	\caption{Vant do Tipo Quadricóptero}
+	\caption{VANT do Tipo Quadricóptero}
 	\fontsize{9pt}{12pt}\selectfont
 	%\color{white}
 	\def\svgwidth{15cm}
@@ -429,7 +443,7 @@ O frame é basicamente uma armação que pode ser de plástico, fibra de carbono
 
 %\begin{figure}[H]
 %  \centering
-%  \caption{Frame de um Vant Quadricóptero}
+%  \caption{Frame de um VANT Quadricóptero}
 %  \includegraphics[scale=.5]{figs/frame2.JPG}
 %  \legend{Fonte: o autor}
 %  \label{fig:frame}
@@ -437,7 +451,7 @@ O frame é basicamente uma armação que pode ser de plástico, fibra de carbono
 %-
 \begin{figure}[H]
 	\centering
-	\caption{Frame de um Vant Quadricóptero}
+	\caption{Frame de um VANT Quadricóptero}
 	\fontsize{9pt}{12pt}\selectfont
 	%\color{white}
 	\def\svgwidth{13cm}
@@ -448,7 +462,7 @@ O frame é basicamente uma armação que pode ser de plástico, fibra de carbono
 
 \subsection{Controladora de Voo}
 %-
-Uma controladora de voo é um hardware, é basicamente um equipamento físico composto por um circuito integrado o qual possui sensores como barômetro, gps, giroscópio, acelerômetros. Sensores que captam as atividades externas como a pressão do ar, posição geográfica, posição de equilíbrio em relação a gravidade (nivelamento), convertem essas atividades em sinais digitais e dessa forma a controladora juntamente com o firmware (Ardupilot/PX4) que possuem embarcado, conseguem interpretar esses sinais e utilizá-los para que consiga manter o equipamento em equilíbrio no ar, tornando ele um equipamento capaz de voar   e manter sua estabilidade [7].     
+Uma controladora de voo é um hardware, é basicamente um equipamento físico composto por um circuito integrado o qual possui sensores como barômetro, gps, giroscópio, acelerômetros. Sensores que captam as atividades externas como a pressão do ar, posição geográfica, posição de equilíbrio em relação a gravidade (nivelamento), convertem essas atividades em sinais digitais e dessa forma a controladora juntamente com o firmware (Ardupilot/PX4) que possuem embarcado, conseguem interpretar esses sinais e utilizá-los para que consiga manter o equipamento em equilíbrio no ar, tornando ele um equipamento capaz de voar   e manter sua estabilidade \cite{sete}[7].     
 As controladoras de voo ou piloto automático são utilizadas para desenvolver equipamentos de controle remoto como drones, veículos terrestres, aviões e submersíveis aquáticos. Originalmente foram fabricadas e vendido pela 3DR, hoje é possível adquirir copias chinesas com custos bem mais em conta, devido ao projeto ser open source [3].
 As figuras \ref{fig:pixhawk} e \ref{fig:pixhawkCirc} mostram a Pixhawk 1 uma das controladoras mais utilizadas.
 
@@ -584,7 +598,7 @@ Circuito eletrônico que controla a velocidade de rotação dos motores. A figur
 
 %\begin{figure}[H]
 %  \centering
-%  \caption{Controlador Eletrônico de Correte utilizado em Vants}
+%  \caption{Controlador Eletrônico de Correte utilizado em VANTs}
 %  \includegraphics[scale=.18]{figs/drivemotorpng.png}
 %  \legend{Fonte: Ardupilot Documents, \cite{ardupilot}}
 %  \label{fig:esc}
@@ -592,7 +606,7 @@ Circuito eletrônico que controla a velocidade de rotação dos motores. A figur
 -
 \begin{figure}[H]
 	\centering
-	\caption{Controlador Eletrônico de Correte utilizado em Vants}
+	\caption{Controlador Eletrônico de Correte utilizado em VANTs}
 	\fontsize{9pt}{12pt}\selectfont
 	%\color{white}
 	\def\svgwidth{13cm}
@@ -680,7 +694,7 @@ As baterias de polímero de lítio, são baterias que contêm sais de lítio num
 %-
 \begin{figure}[H]
   \centering
-  \caption{Esquema Básico de Montagem de um Vant do tipo Quadricóptero}
+  \caption{Esquema Básico de Montagem de um VANT do tipo Quadricóptero}
   \fontsize{9pt}{12pt}\selectfont
   \def\svgwidth{15cm}
   \input{figs/svg/esquema-de-ligacao-de-um-drone.pdf_tex}
@@ -690,9 +704,9 @@ As baterias de polímero de lítio, são baterias que contêm sais de lítio num
 %-
 \section{Teoria de funcionamento e dinâmica de voo de um quadricóptero}
 
-Para iniciar a explicação deste tópico poderíamos começar falando sobre alguma das leis de Newton ou demonstrar através de cálculos que toda a ação possui uma reação de mesma intensidade e diferente direções, porem a ideia é dar uma breve introdução das reações físicas que fazem com que um Vant do tipo quadricóptero voe. 
+Para iniciar a explicação deste tópico poderíamos começar falando sobre alguma das leis de Newton ou demonstrar através de cálculos que toda a ação possui uma reação de mesma intensidade e diferente direções, porem a ideia é dar uma breve introdução das reações físicas que fazem com que um VANT do tipo quadricóptero voe. 
 
-E para iniciar e preciso entender como uma estrutura do tipo hélice age para que consiga elevar e sustentar o Vant, e para isso será ilustrada a figura \ref{fig:asa} que mostra uma representação gráfica dessas reações. 
+E para iniciar e preciso entender como uma estrutura do tipo hélice age para que consiga elevar e sustentar o VANT, e para isso será ilustrada a figura \ref{fig:asa} que mostra uma representação gráfica dessas reações. 
 
 %-
 %\begin{figure}[htpb]
@@ -826,7 +840,7 @@ A figura \ref{fig:yamrollpitch} mostra todos os movimentos e seus respectivos no
 	\label{fig:yamrollpitch}
 \end{figure}
 
-O Vant de quatro hélices possui basicamente dois movimentos que estimulam deslocamento, um deles é a guinada que faz com que ele se desloque horizontalmente dentro do plano cartesiano, já o movimento de giro ele rotaciona mudando a sua posição frontal e traseira respectivamente, muda o sentido de orientação da frente do equipamento como por exemplo de norte para leste e o sensor que rege esse movimento é a bussola do modulo de GPS. O movimento de giro acontece alterando a rotação dos motores, dois ao mesmo tempo no caso, um exemplo é como rotacionar ele no sentido horário. Perceba que na figura \ref{fig:rotationmot} $\alpha_{D}$ e $\alpha_{B}$ são negativos e $\alpha_{A}$ e $\alpha_{C}$ positivos, logo se atribuirmos a $\alpha_{D}$ e $\alpha_{A}$ um valor numérico 2 e a $\alpha_{C}$ e $\alpha_{B}$ o valor 2 igualmente chegaremos a um resultado zero o que indica que o Vant esta pairando sem girar.  
+O VANT de quatro hélices possui basicamente dois movimentos que estimulam deslocamento, um deles é a guinada que faz com que ele se desloque horizontalmente dentro do plano cartesiano, já o movimento de giro ele rotaciona mudando a sua posição frontal e traseira respectivamente, muda o sentido de orientação da frente do equipamento como por exemplo de norte para leste e o sensor que rege esse movimento é a bussola do modulo de GPS. O movimento de giro acontece alterando a rotação dos motores, dois ao mesmo tempo no caso, um exemplo é como rotacionar ele no sentido horário. Perceba que na figura \ref{fig:rotationmot} $\alpha_{D}$ e $\alpha_{B}$ são negativos e $\alpha_{A}$ e $\alpha_{C}$ positivos, logo se atribuirmos a $\alpha_{D}$ e $\alpha_{A}$ um valor numérico 2 e a $\alpha_{C}$ e $\alpha_{B}$ o valor 2 igualmente chegaremos a um resultado zero o que indica que o VANT esta pairando sem girar.  
 
 A soma dos torques dos motores gera a equação \ref{yam} que rege o movimento de Yam. 
 
@@ -835,7 +849,7 @@ A soma dos torques dos motores gera a equação \ref{yam} que rege o movimento d
     \left(k\right)\left(\alpha_{D}+\alpha_{A}-\alpha_{C}-\alpha_{B}\right)=Yd^2\left(\frac{\theta Y}{dt^2}\right)
 \end{equation}
 
-Vamos realizar outro exemplo de movimento, vamos supor que por exemplo queira girar para esquerda, segundo a figura \ref{fig:rotationmot} e a equação \ref{yam} atribuiremos para $\alpha_{C}$ e $\alpha_{A}$ o valor 3 e a $\alpha_{D}$ e $\alpha_{B}$ o valor 1, então chegaremos novamente a zero o que indica que o Vant esta estabilizado, porem a maior propulsão nos motores $\alpha_{B}$ e $\alpha_{D}$ faz com que ele gire no sentido anti-horário ou seu Y sera negativo como a ilustração \ref{fig:rotationmot} mostra \cite{momesf}.
+Vamos realizar outro exemplo de movimento, vamos supor que por exemplo queira girar para esquerda, segundo a figura \ref{fig:rotationmot} e a equação \ref{yam} atribuiremos para $\alpha_{C}$ e $\alpha_{A}$ o valor 3 e a $\alpha_{D}$ e $\alpha_{B}$ o valor 1, então chegaremos novamente a zero o que indica que o VANT esta estabilizado, porem a maior propulsão nos motores $\alpha_{B}$ e $\alpha_{D}$ faz com que ele gire no sentido anti-horário ou seu Y sera negativo como a ilustração \ref{fig:rotationmot} mostra \cite{momesf}.
 
 A mesma equação apenas com uma pequena alteração pode ser aplicada para criar o movimento horizontal conhecido com "\textit{roll}". 
 
@@ -866,7 +880,7 @@ A soma dos momentos no centro de massa gera a equação \ que rege "\textit{roll
 	\label{fig:roll}
 \end{figure}
 
-A figura \ref{fig:roll} ilustra uma vista lateral do movimento horizontal "\textit{roll}" e forças que o regem, perceba que o Vant esta inclinado mas como se consegue coloca-lo nesta posição? O aumento do impulso nos motores $\alpha_{C}$ e $\alpha_{B}$ e diminuição nos motores $\alpha_{D}$ e $\alpha_{A}$. O impulso total continua igual zero ou seu momento angular resulta em zero, porem a inclinação faz com que ele vá na direção em que esta inclinado, e a equação \ref{roll} e quem define esse movimento horizontal.
+A figura \ref{fig:roll} ilustra uma vista lateral do movimento horizontal "\textit{roll}" e forças que o regem, perceba que o VANT esta inclinado mas como se consegue coloca-lo nesta posição? O aumento do impulso nos motores $\alpha_{C}$ e $\alpha_{B}$ e diminuição nos motores $\alpha_{D}$ e $\alpha_{A}$. O impulso total continua igual zero ou seu momento angular resulta em zero, porem a inclinação faz com que ele vá na direção em que esta inclinado, e a equação \ref{roll} e quem define esse movimento horizontal.
 E para concluir a ilustração \ref{fig:dirdrone} denomina todos os movimentos horizontais de um quadricóptero \cite{calcmov}.  
 
 %-
@@ -888,3 +902,57 @@ E para concluir a ilustração \ref{fig:dirdrone} denomina todos os movimentos h
 	\legend{Fonte: do autor}
 	\label{fig:dirdrone}
 \end{figure}
+
+Para orientar-se e se deslocar na superfície terrestre o VANT se orienta pelo sistema NED (North, East ,Down) que se baseia nos "cálculos de coordenadas do plano tangencial", o qual equaciona como um plano se desloca por uma superfície esférica, sendo regido e se parecendo com a equação \ref{tang}. Isso é um conteúdo de geometria analítica e não é de difícil entendimento sendo encontrado em qualquer material de álgebra básica e para melhor entendimento a ilustração \ref{fig:planacart} foi adicionada.  
+
+\begin{equation}
+	\label{tang}
+	PT=a\left(x-x0\right)+b\left(y-y0\right)+c\left(z-z0\right)
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\caption{Plano Cartesiano na Superfície Esférica}
+	\fontsize{9pt}{12pt}\selectfont
+	\color{black}
+	\def\svgwidth{15cm}
+	\input{figs/svg/planocart.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:planacart}
+\end{figure}
+
+Como foi abordado o VANT se orientar usando o sistema de coordenadas NED aonde N é o eixo Norte e Leste D é um eixo que aponta para baixo do VANT chegando próximo ao centroide da terra, são vetores de orientação usados na aviação aérea e cibernética marinha. Ele é usado comumente em sistemas GPS para movimentar-se ao redor do globo e são tangentes as linhas das coordenadas geográficas. A ilustração \ref{fig:ned} mostra graficamente todas as referencias entre o frame de um VANT com o sistema de coordenadas:
+
+\begin{itemize}
+	\item A tangente Leste-Oeste em paralelo com os paralelos;
+	\item A tangente Norte-Sul em paralelo com os meridianos;
+\end{itemize}
+
+Também é possível observar na ilustração \ref{fig:ned} como funciona o sistema de orientação do Dronekit e do firmware:
+
+ \begin{itemize}
+ 	\item O movimento pitch esta relacionado com o angulo de inclinação $\phi$ aonde uma rotação ante-horário o movimenta para frente tendo X negativo e uma rotação horário movimenta para traz tendo X positivo;
+ 	\item O movimento roll esta relacionado com o angulo de inclinação $\lambda$ aonde uma rotação ante-horário o movimenta para esquerda tendo Y negativo e uma rotação horário movimenta para direita tendo Y positivo;
+ 	\item O movimento de rotação yam esta relacionado com $\psi$, também pode ser chamado de azimute porque o giro do VANT em yam ocorre ao longo do azimute da terra;
+  \end{itemize}	
+
+ Existe uma relação entre o sistema NED e ECEF, aonde ECEF é o sistema padrão de coordenadas geodésicas e a relação de n(X,Y,Z) com e(X,Y,Z) é uma matriz de rotação do tipo \ref{mrot}.
+ 
+ \begin{equation}
+	R=\begin{pmatrix}-\sin \left(\phi \right)\cos \left(\lambda \right)&-\sin \left(\lambda \right)&-\cos \left(\phi \right)\cos \left(\lambda \right)\\ \:-\sin \left(\phi \right)\sin \left(\lambda \right)&\cos \left(\lambda \right)&-\cos \left(\phi \right)\sin \left(\lambda \right)\\ \:\cos \left(\phi \right)&0&-\sin \left(\phi \right)\end{pmatrix}
+ 	\label{mrot}
+ \end{equation}
+E a equação \ref{eqrot} relaciona ECEF com NED, aonde P é o ponto de intersecção do plano com a superfície da terra ou o centro do frame do VANT.
+ \begin{equation}
+ 	\label{eqrot}
+	NED=R\left(ECEF-P\right)
+ \end{equation}
+\begin{figure}[H]
+	\centering
+	\caption{NED}
+	\input{figs/mathcha/ned.tex}
+	\legend{Fonte: o autor com base em \cite{article2}, \cite{article1}, \cite{jsbsim}.}
+	\label{fig:ned}
+\end{figure}
+
+Em NED "N" equivale ao eixo X (Norte ou Sul) direção frontal do VANT, "E" equivale ao eixo Y (Leste ou Oeste) direção lateral do VANT e "D" equivale ao eixo Z ou para baixo (aponta para o centro da terra), isso porque para uma aeronave o que interessa esta abaixo dela, e tem seu termino bem próximo ao centro da terra, h é a altura do VANT em relação ao solo \cite{article1}. 

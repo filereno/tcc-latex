@@ -1,325 +1,23 @@
 \chapter{Metodologia}\label{cap:metodologia}
+Segundo \cite{metodologia} metodologia vem do grego (\textit{methodos + logia}) ou "estudo do método", e método do grego (\textit{methodos}) (\textit{methà + odon}) quer dizer "o caminho para chegar", logo metodologia é o estudo de um conjunto de etapas dispostas em ordem para o estudo de uma determinada ciência e para alcançar um objetivo cientifico.
 
+Neste capitulo e etapa do estudo serão explanadas as simulações que foram realizadas para chegar a uma conclusão sobre o funcionamento do protótipo.
 
+Foi escolhido que os testes e simulação para validar o protótipo seria feito em módulos delimitados em funções especificas do protótipo, isso porque devido a algumas especificações como; tempo, custo verificou-se que não seria possível realizar um teste total do protótipo. Porem é devidamente valido e viável realizar testes modulares provando que a maior parte dos resultados esperados funciona. 
 
-\section{Componentes Físicos}
+O funcionamento total seria por exemplo um teste de campo utilizando um vant real em um ambiente real enfrentando condições reais de temperatura, pressão, vento, luminosidade entre várias outras condições adversas que poderiam afetar o funcionamento. Porem depois de toda a pesquisa descobriu-se que testes de funcionamento que envolvam robótica ou mais especificamente um vant, são realizados primeiramente com simulações utilizando softwares e ferramentas desenvolvidos para esse fim, logo optou-se por validar o protótipo utilizando-se estas ferramentas. Devido a alguns objetivos que especificam a utilização de um computador complementar (Raspberry Pi) que sera acoplado ao vant e sera responsável pela parte de visão computacional devido ao seu baixo peso e pequeno tamanho, foi feito um \textit{benchmark} da execução do software de visão computacional comparando os resultados com o do computador utilizado para rodar os simuladores. 
 
+De maneira a auxiliar na compreensão de como funcionara o sistema a ilustração \ref{fig:simul} representa a maneira como uma simulação real é projetada para o sistema de simulação abstrato, perceba que existe uma divisão entre cada ferramenta. Iniciando de cima para baixo nos temos:
 
+\begin{itemize}
+	\item O computador complementar (Raspberry Pi) que comportou a ferramenta de programação para VANTs Drokit é abstraída pelo próprio Dronekit API que funcionara juntamente com o software de visão computacional.
+	\item O ambiente físico, gravidade, vento, terreno e luminosidade no caso o local aonde o VANT seria pilotado, e abstraído pelo software Gazebo. 
+	\item O equipamento de voo quadricóptero é simulado pelo simulador de VANTs SITL que vem embutido no firmware Ardupilot.
+	\item A controladora de voo Pixhawk que executa o firmware Ardupilot é simulado pelo próprio, que ja possui embutido um sistema que possibilita testes e simulações através de software.  
+\end{itemize} 
 
-\subsection{Computador Complementar}
-
-
-
-\subsection{Dispositivo de Captura}
-
-
-
-\section{Métodos}
-
-\subsection{Simulações com Software}
 
 \begin{figure}[H]
-	\caption{teste3}
-	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-	
-	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-	%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
-	
-	%Shape: Axis 2D [id:dp745366717574464] 
-	\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=1.5]  (9,12) -- (9,497)(547,12) -- (9,12) -- cycle (14,490) -- (9,497) -- (4,490) (540,7) -- (547,12) -- (540,17)  ;
-	%Shape: Rectangle [id:dp835814910936395] 
-	\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (206,261) -- (206,132) -- (323,132) -- (323,261) -- cycle ;
-	%Shape: Smiley Face [id:dp00370584545415098] 
-	\draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (208,196) .. controls (208,161.21) and (234.19,133) .. (266.5,133) .. controls (298.81,133) and (325,161.21) .. (325,196) .. controls (325,230.79) and (298.81,259) .. (266.5,259) .. controls (234.19,259) and (208,230.79) .. (208,196) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (240.76,174.58) .. controls (240.76,171.1) and (243.38,168.28) .. (246.61,168.28) .. controls (249.84,168.28) and (252.46,171.1) .. (252.46,174.58) .. controls (252.46,178.06) and (249.84,180.88) .. (246.61,180.88) .. controls (243.38,180.88) and (240.76,178.06) .. (240.76,174.58) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (280.54,174.58) .. controls (280.54,171.1) and (283.16,168.28) .. (286.39,168.28) .. controls (289.62,168.28) and (292.24,171.1) .. (292.24,174.58) .. controls (292.24,178.06) and (289.62,180.88) .. (286.39,180.88) .. controls (283.16,180.88) and (280.54,178.06) .. (280.54,174.58) -- cycle ; \draw   (237.25,221.2) .. controls (256.75,238) and (276.25,238) .. (295.75,221.2) ;
-	%Straight Lines [id:da45515329684866135] 
-	\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (549,12) -- (547,515.5) ;
-	%Straight Lines [id:da24415373962833065] 
-	\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (560,500.5) -- (11,499) ;
-	%Straight Lines [id:da05844057070503972] 
-	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,132.5) -- (206,132) ;
-	%Straight Lines [id:da6205263233417599] 
-	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,261.5) -- (206,261) ;
-	%Straight Lines [id:da2467412144940746] 
-	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (322,16.5) -- (323,132) ;
-	%Straight Lines [id:da024944543960211396] 
-	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (205,16.5) -- (206,132) ;
-	%Straight Lines [id:da1673625184104215] 
-	\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ]   (323,261) -- (340,279.5) ;
-	%Straight Lines [id:da6134065902094752] 
-	\draw    (161,116.5) -- (203.16,131.02) ;
-	\draw [shift={(206,132)}, rotate = 199.01] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
-	%Straight Lines [id:da5046358312088244] 
-	\draw    (394,310.5) -- (325.46,262.72) ;
-	\draw [shift={(323,261)}, rotate = 394.88] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
-	%Shape: Circle [id:dp6195483350711979] 
-	\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (261,196.5) .. controls (261,194.57) and (262.57,193) .. (264.5,193) .. controls (266.43,193) and (268,194.57) .. (268,196.5) .. controls (268,198.43) and (266.43,200) .. (264.5,200) .. controls (262.57,200) and (261,198.43) .. (261,196.5) -- cycle ;
-	%Straight Lines [id:da3852329060686428] 
-	\draw    (341.5,154.5) -- (267.13,195.06) ;
-	\draw [shift={(264.5,196.5)}, rotate = 331.39] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
-	%Shape: Bevel [id:dp7146352541642116] 
-	\draw   (-1,1) -- (558,1) -- (558,513.5) -- (-1,513.5) -- cycle ; \draw   (4.32,6.32) -- (552.68,6.32) -- (552.68,508.18) -- (4.32,508.18) -- cycle ; \draw   (-1,1) -- (4.32,6.32) ; \draw   (558,1) -- (552.68,6.32) ; \draw   (558,513.5) -- (552.68,508.18) ; \draw   (-1,513.5) -- (4.32,508.18) ;
-	%Straight Lines [id:da13060616481285248] 
-	\draw    (512,483.5) -- (543.27,497.76) ;
-	\draw [shift={(546,499)}, rotate = 204.51] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
-	%Straight Lines [id:da7942156802276659] 
-	\draw    (51,37.5) -- (11.56,13.56) ;
-	\draw [shift={(9,12)}, rotate = 391.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
-	
-	% Text Node
-	\draw (434,19) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em X}}}}};
-	% Text Node
-	\draw (24,469) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em Y}}}}};
-	% Text Node
-	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (119.32, 110.5) circle [x radius= 38.89, y radius= 14.85]   ;
-	\draw (119.32,110.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
-	% Text Node
-	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (436.32, 316.5) circle [x radius= 38.89, y radius= 14.85]   ;
-	\draw (436.32,316.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
-	% Text Node
-	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (415.14, 146) circle [x radius= 73.54, y radius= 29.7]   ;
-	\draw (415.14,146) node   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{coordenada central}}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{ do retângulo}}}}};
-	% Text Node
-	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (474.32, 473.5) circle [x radius= 38.89, y radius= 14.85]   ;
-	\draw (474.32,473.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
-	% Text Node
-	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (92.32, 40.5) circle [x radius= 38.89, y radius= 14.85]   ;
-	\draw (92.32,40.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
-	
-	\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
-	\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
-	\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
-	\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
-	\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
-	\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
-	\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
-	\end{tikzpicture}
-	\legend{Fonte: do autor}
-	\label{fig:teste3}
-\end{figure}
-%-------------------------------------------------------
-\begin{figure}
-	\caption{teste2}
-	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-	
-	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-	%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
-	
-	%Shape: Axis 2D [id:dp745366717574464] 
-	\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=1.5]  (281.5,12) -- (281.5,497)(547,242) -- (9,242) (286.5,490) -- (281.5,497) -- (276.5,490) (540,237) -- (547,242) -- (540,247)  ;
-	%Shape: Rectangle [id:dp835814910936395] 
-	\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (97,187) -- (97,57.8) -- (216,57.8) -- (216,187) -- cycle ;
-	%Shape: Smiley Face [id:dp00370584545415098] 
-	\draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (98,122) .. controls (98,87.21) and (124.19,59) .. (156.5,59) .. controls (188.81,59) and (215,87.21) .. (215,122) .. controls (215,156.79) and (188.81,185) .. (156.5,185) .. controls (124.19,185) and (98,156.79) .. (98,122) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (130.76,100.58) .. controls (130.76,97.1) and (133.38,94.28) .. (136.61,94.28) .. controls (139.84,94.28) and (142.46,97.1) .. (142.46,100.58) .. controls (142.46,104.06) and (139.84,106.88) .. (136.61,106.88) .. controls (133.38,106.88) and (130.76,104.06) .. (130.76,100.58) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (170.54,100.58) .. controls (170.54,97.1) and (173.16,94.28) .. (176.39,94.28) .. controls (179.62,94.28) and (182.24,97.1) .. (182.24,100.58) .. controls (182.24,104.06) and (179.62,106.88) .. (176.39,106.88) .. controls (173.16,106.88) and (170.54,104.06) .. (170.54,100.58) -- cycle ; \draw   (127.25,147.2) .. controls (146.75,164) and (166.25,164) .. (185.75,147.2) ;
-	%Straight Lines [id:da45515329684866135] 
-	\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (550,11) -- (551,500.33) ;
-	%Straight Lines [id:da24415373962833065] 
-	\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (551,500.33) -- (11,499) ;
-	%Straight Lines [id:da6205263233417599] 
-	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (157.5,122.5) -- (282,123.5) ;
-	%Straight Lines [id:da2467412144940746] 
-	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (157.5,122.5) -- (158,241.5) ;
-	%Shape: Circle [id:dp6195483350711979] 
-	\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (154,122.5) .. controls (154,120.57) and (155.57,119) .. (157.5,119) .. controls (159.43,119) and (161,120.57) .. (161,122.5) .. controls (161,124.43) and (159.43,126) .. (157.5,126) .. controls (155.57,126) and (154,124.43) .. (154,122.5) -- cycle ;
-	%Straight Lines [id:da3852329060686428] 
-	\draw    (302,188.5) -- (159.23,123.64) ;
-	\draw [shift={(156.5,122.4)}, rotate = 384.43] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
-	%Straight Lines [id:da7942156802276659] 
-	\draw    (323.5,267.5) -- (284.06,243.56) ;
-	\draw [shift={(281.5,242)}, rotate = 391.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
-	%Straight Lines [id:da8593503836199177] 
-	\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (10,9.67) -- (11,499) ;
-	%Straight Lines [id:da5989886602637362] 
-	\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (550,11) -- (10,9.67) ;
-	
-	% Text Node
-	\draw (434,219) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em +X}}}}};
-	% Text Node
-	\draw (284,467) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em -Y}}}}};
-	% Text Node
-	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (363.32, 275.5) circle [x radius= 38.89, y radius= 14.85]   ;
-	\draw (363.32,275.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
-	% Text Node
-	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (381.14, 193) circle [x radius= 94.75, y radius= 29.7]   ;
-	\draw (381.14,193) node   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{coordenadas x,y centrais}}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{ do retângulo}}}}};
-	% Text Node
-	\draw (288,19) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em +Y}}}}};
-	% Text Node
-	\draw (19,219) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em -X}}}}};
-	
-	
-	\end{tikzpicture}
-	\legend{Fonte: do autor}
-	\label{fig:teste2}
-\end{figure}
-%-------------------------------------------------------------------
-\begin{figure}
-	\caption{teste}
-	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-	
-	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-	%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
-	
-	%Shape: Axis 2D [id:dp745366717574464] 
-	\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=1.5]  (305.5,41) -- (305.5,526)(571,271) -- (33,271) (310.5,519) -- (305.5,526) -- (300.5,519) (564,266) -- (571,271) -- (564,276)  ;
-	%Shape: Rectangle [id:dp835814910936395] 
-	\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (390.5,482) -- (390.5,378.9) -- (479.5,378.9) -- (479.5,482) -- cycle ;
-	%Shape: Circle [id:dp6195483350711979] 
-	\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (431.5,433.95) .. controls (431.5,432.02) and (433.07,430.45) .. (435,430.45) .. controls (436.93,430.45) and (438.5,432.02) .. (438.5,433.95) .. controls (438.5,435.88) and (436.93,437.45) .. (435,437.45) .. controls (433.07,437.45) and (431.5,435.88) .. (431.5,433.95) -- cycle ;
-	%Shape: Axis 2D [id:dp10273922885069342] 
-	\draw [color={rgb, 255:red, 144; green, 19; blue, 254 }  ,draw opacity=1 ][line width=1.5]  (30,38) -- (30,523.5)(574,38) -- (30,38) -- cycle (35,516.5) -- (30,523.5) -- (25,516.5) (567,33) -- (574,38) -- (567,43)  ;
-	%Straight Lines [id:da39018414566648474] 
-	\draw    (370.5,348) -- (433.2,431.55) ;
-	\draw [shift={(435,433.95)}, rotate = 233.11] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (10.72,-5.15) -- (0,0) -- (10.72,5.15) -- (7.12,0) -- cycle    ;
-	%Straight Lines [id:da811434966043961] 
-	\draw    (474.5,353) -- (454.7,393.58) -- (436.32,431.25) ;
-	\draw [shift={(435,433.95)}, rotate = 296.01] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (10.72,-5.15) -- (0,0) -- (10.72,5.15) -- (7.12,0) -- cycle    ;
-	%Straight Lines [id:da7444934143033615] 
-	\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ]   (306,24) -- (305.4,38.2) ;
-	%Straight Lines [id:da5396729355438599] 
-	\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ]   (20.2,271.4) -- (30.2,270.6) ;
-	%Straight Lines [id:da7044410949948923] 
-	\draw    (357,75.5) -- (307.02,39.37) ;
-	\draw [shift={(305.4,38.2)}, rotate = 395.86] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-	%Straight Lines [id:da8627654662164674] 
-	\draw    (66.33,306.33) -- (31.62,272.01) ;
-	\draw [shift={(30.2,270.6)}, rotate = 404.68] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-	
-	% Text Node
-	\draw (539,251) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textbf{\textcolor[rgb]{0.55,0.34,0.16}{'X}}}}};
-	% Text Node
-	\draw (309,498) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textbf{\textcolor[rgb]{0.55,0.34,0.16}{'Y}}}}};
-	% Text Node
-	\draw (549,42) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textbf{\textcolor[rgb]{0.56,0.07,1}{X}}}}};
-	% Text Node
-	\draw (33,495) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textbf{\textcolor[rgb]{0.56,0.07,1}{Y}}}}};
-	% Text Node
-	\draw (364.91,339.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\small \textcolor[rgb]{0.56,0.07,1}{B=x,y}}}};
-	% Text Node
-	\draw (31.47,39.36) node [anchor=west] [inner sep=0.75pt]  [rotate=-42.7] [align=left] {\begin{minipage}[lt]{41.469392000000006pt}\setlength\topsep{0pt}
-		\begin{center}
-		{\fontfamily{pcr}\selectfont {\small \textcolor[rgb]{0.56,0.07,1}{x=0, y=0}}}
-		\end{center}
-		
-		\end{minipage}};
-	% Text Node
-	\draw (304.09,269.59) node [anchor=east] [inner sep=0.75pt]  [rotate=-45] [align=left] {\begin{minipage}[lt]{46.569392pt}\setlength\topsep{0pt}
-		\begin{center}
-		{\fontfamily{pcr}\selectfont {\small \textcolor[rgb]{0.55,0.34,0.16}{x'=0, y'=0}}}
-		\end{center}
-		
-		\end{minipage}};
-	% Text Node
-	\draw (159.54,145.82) node  [rotate=-43.61] [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize x para x}}'\\{\footnotesize {\fontfamily{pcr}\selectfont y para y'}}};
-	% Text Node
-	\draw (478.27,150.17) node [anchor=west] [inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textcolor[rgb]{0.55,0.34,0.16}{posição calaculada}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textcolor[rgb]{0.55,0.34,0.16}{ para fx' }}}};
-	% Text Node
-	\draw (160.1,505.33) node [anchor=south] [inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textcolor[rgb]{0.55,0.34,0.16}{posição calaculada}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textcolor[rgb]{0.55,0.34,0.16}{ para fy'}}}};
-	% Text Node
-	\draw (482.91,338.5) node   [align=left] {\textbf{{\fontfamily{pcr}\selectfont {\small \textcolor[rgb]{0.55,0.34,0.16}{B'=fx',fy'}}}}};
-	% Text Node
-	\draw (370.81,147) node  [font=\footnotesize]  {${\displaystyle \mathrm{fx'=} fx-Bx}$};
-	% Text Node
-	\draw  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ]  (94.58, 312.33) circle [x radius= 41.72, y radius= 11.31]   ;
-	\draw (94.58,312.33) node  [font=\footnotesize]  {${\displaystyle \mathrm{\textcolor[rgb]{0.56,0.07,1}{fy=Y/2}}}$};
-	% Text Node
-	\draw  [color={rgb, 255:red, 245; green, 166; blue, 35 }  ,draw opacity=1 ]  (393.91, 76.33) circle [x radius= 41.01, y radius= 11.31]   ;
-	\draw (393.91,76.33) node  [font=\footnotesize]  {${\displaystyle \mathrm{\textcolor[rgb]{0.56,0.07,1}{fx=X/2}}}$};
-	% Text Node
-	\draw (160.14,364.33) node  [font=\footnotesize,rotate=-271.05]  {$\mathrm{{\displaystyle fy'=fy-By}}$};
-	% Connection
-	\draw  [dash pattern={on 0.84pt off 2.51pt}]  (85.64,84.1) -- (136.33,125.72)(182.7,163.8) -- (242.83,213.17)(83.73,86.42) -- (134.42,128.04)(180.79,166.12) -- (240.92,215.49) ;
-	\draw [shift={(247.29,218.77)}, rotate = 219.39] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (13.12,-5.88) .. controls (8.34,-2.76) and (3.97,-0.8) .. (0,0) .. controls (3.97,0.8) and (8.34,2.76) .. (13.12,5.88)   ;
-	% Connection
-	\draw  [dash pattern={on 0.84pt off 2.51pt}]  (194.49,146.24) -- (329.7,147.86)(421.69,148.97) -- (473.27,149.58) ;
-	\draw [shift={(475.27,149.61)}, rotate = 180.69] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-4.9) .. controls (6.95,-2.3) and (3.31,-0.67) .. (0,0) .. controls (3.31,0.67) and (6.95,2.3) .. (10.93,4.9)   ;
-	% Connection
-	\draw  [dash pattern={on 0.84pt off 2.51pt}]  (159.6,180.61) -- (159.82,316.39)(159.99,415.39) -- (160.06,461.33) ;
-	\draw [shift={(160.07,463.33)}, rotate = 269.90999999999997] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
-	\draw   (30, 270.62) circle [x radius= 5, y radius= 5]   ;
-	\draw   (30.2, 270.6) circle [x radius= 5, y radius= 5]   ;
-	\draw   (305.41, 38) circle [x radius= 5, y radius= 5]   ;
-	\draw   (305.4, 38.2) circle [x radius= 5, y radius= 5]   ;
-	\end{tikzpicture}	
-
-  	\legend{Fonte: do autor}
-	\label{fig:teste}
-\end{figure}
-
-%\begin{figure}
-%	\caption{teste4}
-%	
-%	
-%	
-%	\legend{Fonte: do autor}
-%	\label{fig:test4}
-%\end{figure}
-
-\lstnewenvironment{cplusplus_1}{
-	\lstset{
-		literate={{á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
-			{Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
-			{à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
-			{À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
-			{ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
-			{Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
-			{â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
-			{Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
-			{Ã}{{\~A}}1 {ã}{{\~a}}1 {Õ}{{\~O}}1 {õ}{{\~o}}1
-			{œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
-			{ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
-			{ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
-			{€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
-			{»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1},
-		style=styleplusplus,
-		%caption={teste},
-		%title={teste},	
-		%label={lst:label},
-	}
-}{}
-
-\begin{cplusplus_1}
-A00: Estado do motor
-A01: Fim de curso da direita
-A02: Fim de curso da esquerda
-A03: Botao abre
-A04: Botao fecha
-á
-Q00: Estado do motor
-Q01: Sentido do motor
-
-Entradas (A14 .. A0)         Saidas (Q7 .. Q0)
-
-0000 0000 0000 0000          0000 0000  
-0000 0000 0000 0001 	     0000 0001	
-0000 0000 0000 1010          0000 0000
-0000 0000 0001 0100          0000 0000
-0000 0000 0000 1001          0000 0001
-0000 0000 0011 0001          0000 0011
-\end{cplusplus_1}
-
-\begin{figure}[htpb]
-	\centering
-	\caption{Conexão MAVLink da Raspberry Pi com Pixhawk}
-	\fontsize{9pt}{12pt}\selectfont
-	%\color{white}
-	\def\svgwidth{15cm}
-	\input{figs/svg/pixhawk-raspberry.pdf_tex}
-	\legend{Fonte: Ardupilot Documents}
-	\label{fig:mavlink}
-\end{figure}
-
-\begin{figure}[htpb]
-	\centering
-	\caption{Processos do Sistema}
-	\fontsize{9pt}{12pt}\selectfont
-	%\color{white}
-	\def\svgwidth{15cm}
-	\input{figs/svg/visao-controle.pdf_tex}
-	\legend{Fonte: a autor.}
-	\label{fig:pross}
-\end{figure}
-
-\begin{figure}[htpb]
 	\centering
 	\caption{Simulação real para abstrata}
 	\fontsize{9pt}{12pt}\selectfont
@@ -329,59 +27,245 @@ Entradas (A14 .. A0)         Saidas (Q7 .. Q0)
 	\legend{Fonte: a autor.}
 	\label{fig:simul}
 \end{figure}
-%-----------------------------------------------------------------------
-\begin{figure}
-	\caption{teste}
-	\input{figs/mathcha/dir_drone.tex}
-  	\legend{Fonte: do autor}
-\label{fig:teste5}
+
+
+
+\section{Métodos}
+
+Para uma melhor compreensão do funcionamento do sistema foram desenvolvidos diagramas, fluxogramas e gráficos que explicam modularmente cada processo. Simulações com software demonstraram o funcionamento integrado de alguns desses módulos. 
+
+Uma bechmark de hardware também sera realizado como comparação e validação do protótipo.
+
+\comments{Os módulos foram subdivididos, um deles sera o de visão computacional que validara o reconhecimento facial, esse modulo vai validar as funções de distinção entre um humano inserido no banco de busca e outros que não foram, numero de falsos positivos detectados.}
+
+\section{Componentes Físicos}
+
+Os componentes físicos são o computador utilizado nas simulações, computador complementar (Raspberry Pi)e os dispositivos de captura de imagem utilizado nos testes.
+
+\subsection{Computador Utilizado nas Simulações}
+Devido ser necessário executar simultaneamente varias ferramentas de simulação que na sua maioria se utilizam de interfaces gráficas que necessitam de renderização em tempo real, e com um sistema de visão computacional que necessita de uma GPU e boa quantidade de memoria RAM para conseguir executar sua tarefa de reconhecimento facial, foi preciso um computador com hardware de tecnologia de vanguarda.
+
+\begin{itemize}
+	\item Especificações do Computador:
+	\begin{itemize}
+		\item Processador:
+		\begin{itemize}
+			\item Intel Core i7 8700
+			\item 6 núcleos de processamento
+			\item 12 threads
+			\item 3.20GHz de frequência base
+			\item 4.60GHz de frequência máxima
+			\item 12MB de memória cache
+			\begin{itemize}
+				\item L1 (Data) cache 6x32 KBytes
+				\item L1 (Instruction) cache 6x32 KBytes
+				\item L2 cache 6x256 KBytes
+				\item L3 cache 12 MBytes 
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+
+	\begin{itemize}
+		\item Placa de Video:
+		\begin{itemize}
+			\item NVIDIA GFORCE RTX2070
+			\item 2304 NVIDIA CUDA Cores 
+			\item 1620 MHz de clock máximo
+			\item 1410 MHz de clock base
+			\item 8GB de memoria GDDR6
+			\item Interface de memoria de 256bit
+			\item Taxa de transferencial 448GB/s 
+		\end{itemize}
+	\end{itemize}
+
+	\begin{itemize}
+		\item Memória RAM:
+		\begin{itemize}
+			\item 16GB de capacidade
+			\item Taxa de transferência 3200Mb/s 
+			\item Tecnologia DDR4
+		\end{itemize}
+	\end{itemize}
+
+	\begin{itemize}
+		\item Armazenamento:
+		\begin{itemize}
+			\item 1TB SSD
+			\item Taxa de leitura gravação 500MB/s e 450MB/s
+			\item Interface SATA 3
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\subsection{Computador Complementar}
+
+Devido ao fato da pesquisa propor um vant que acople um computador que comportaria o software de visão computacional, foi estipulado que este seria um Raspberry Pi, pelo seu reduzido tamanho e peso, Foi feita uma implementação do sistema de reconhecimento facial que foi utilizado na simulação, com o Raspberry Pi para provar seu funcionamento em uma possível simulação real. 
+
+\begin{figure}[H]
+	\centering	
+	\caption{Raspberry Pi 3 B}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/pingpioraspberry.pdf_tex}
+	\legend{Fonte: o autor com base em \cite{raspdoc}.}
+	\label{fig:gpiorasp}
 \end{figure}
 
-\begin{figure}
-	\caption{teste}
-	\input{figs/mathcha/dir_drone2.tex}
-	\legend{Fonte: do autor}
-	\label{fig:teste6}
-\end{figure}
+\begin{itemize}
+	\item CPU Broadcom BCM2837 de 64 bits Quad Core de 1.2GHz
+	\item 1GB RAM
+	\item LAN sem fio BCM43438 e Bluetooth Low Energy (BLE)
+	\item 100 Base Ethernet
+	\item Extensão GPIO de 40 pinos
+	\item 4 portas USB 2
+	\item Saída estéreo de 4 polos e porta de vídeo composto
+	\item HDMI em tamanho real
+	\item Porta de conexão para câmera CSI Raspberry Pi
+	\item Porta de conexão para display DSI Raspberry Pi sensível ao toque
+	\item Porta Micro SD para carregar seu sistema operacional e armazenar dados
+	\item Fonte de alimentação Micro USB comutada atualizada até 2.5ª
+\end{itemize}
 
-\begin{figure}[htpb]
-	\centering
-	\caption{teste5}
+\subsection{Dispositivo de Captura}
+
+\section{Sistemas Operacionais}
+
+Para implementar as simulações no computador foi utilizado o sistema operacional linux Mint 19, baseado no linux Ubuntu Bionic. Para implementar o sistema de reconhecimento facial no computador complementar foi utilizado o sistema operacional linux Raspbian sem interface gráfica, que também é baseado no Ubuntu Bionic.
+A maioria das ferramentas são desenvolvidas para sistemas UNIX e que se baseiam no Linux Debian e Ubuntu por isso se chegou nessa escolha.
+
+\section{Fluxogramas dos Protótipos e Funcionamento do Sistema}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Diagrama de Funcionamento do Sistema}
 	\fontsize{9pt}{12pt}\selectfont
 	%\color{white}
-	\def\svgwidth{18cm}
-	\input{figs/svg/Drone2.pdf_tex}
+	\def\svgwidth{15cm}
+	\input{figs/svg/diagrama1.pdf_tex}
 	\legend{Fonte: a autor.}
-	\label{fig:teste57}
+	\label{fig:pross}
 \end{figure}
-%-------------------------------------------------------------------------
-\begin{figure}
-	\caption{teste}
-	\input{figs/mathcha/teste.tex}
+
+%---------------------------------
+\subsection{Transformação do Sistema de Coordenadas do OpenCV}
+
+Essa etapa foi fundamental para a implementação e funcionamento do protótipo, a ideia é simples foram delimitadas regiões de interesse na utilizando o OpenCV, a ilustração \ref{fig:regint} mostra todas as cinco áreas. No centro da tela se situa a região de não interesse e como o sugere o nome dentro desse retângulo não existe reação do sistema de estreamento, porem caso a pessoa se mova e saia de dentro o sistema detecta para qual direção esta se dirigindo. A simplicidade vem do fato de o objetivo ou a lógica principal ser sempre manter o alvo (retângulo verde criado pelo OpenCV em torno da face humana) sempre dentro da região de não interesse.  
+
+\begin{figure}[H]
+	\centering
+	\caption{Regiões de Interesse}
+	\input{figs/mathcha/regiaoint.tex}
 	\legend{Fonte: do autor}
-	\label{fig:teste7}
-\end{figure}% Gradient Info
+	\label{fig:regint}
+\end{figure}
 
+Porem a ideia das regiões de intersere não trata todas as possibilidades, como uma movimentação na diagonal, e dessa forma foi necessário desenvolver outras etapas. Uma das primeiras etapas da implementação foi modificar o sistema de coordenadas de pixels no qual o OpenCV se baseia, para tornar conveniente sua utilização no sistema que detecta em qual direção o VANT tem que se movimentar. A ilustração \ref{fig:quad1} representa como o OpenCV trabalha com coordenadas de pixels, perceba que o ponto de origem das coordenadas verticais e Horizontais se situam na parte superior esquerda, logo não é possível identificar o sentido direcional em que o ponto na cor vermelha no centro da face esta se movendo. Para fins de orientação se estipulou que as linhas de pixels na horizontal pertencem a X e os na vertical a Y, e como é possível identificar com uma ferramenta do OpenCV o centro do retângulo desenhado em torno da face através de Axy e Bxy, então se encontrou as coordenadas X e Y do ponto vermelho central.
 
+\begin{figure}[H]
+	\centering
+	\caption{teste3}
+	\input{figs/mathcha/quadrado1.tex}
+	\legend{Fonte: do autor}
+	\label{fig:quad1}
+\end{figure}
 
+Para que o sistema funciona-se as coordenadas X=0 e Y=0 foram transportadas para um ponto central da tela, portanto foram realizados cálculos para determinar dois eixos um na horizontal e outro na vertical e sua intersecção ou ponto médio é o epicentro do novo sistema de coordenadas. Na ilustração \ref{fig:quad2} as duas retas na cor marrom representam o novo sistema, assim foi possível equacionar um novo ponto central para o retângulo que é  desenhado em torno da face, esse novo ponto é dado como B' e ele recebe os valores calculados para fx' e fy'.   
 
-\begin{figure}
+\begin{figure}[H]
+	\centering
+	\caption{teste2}
+	\input{figs/mathcha/quadrado3.tex}
+	\legend{Fonte: do autor}
+	\label{fig:quad2}
+\end{figure}
+
+O objetivo de obter um sistema de coordenadas que pudesse ser utilizado para orientar o direcionamento do VANT foi alcançado e ele pode ser observado na ilustração \ref{fig:teste}, esse sistema de coordenadas é denominado de cartesiano e possui quatro quadrantes distintos e bem definidos, é o mesmo utilizado para localização geográfica na superfície terrestre. Da mesmo forma que aeronaves consegue se orientar na superfície terrestre usando coordenadas cartesianas, também é possível guiar um VANT para chegar ao objetivo do protótipo.
+
+Os dados obtidos com o novo sistema de coordenadas são; o quadrante em que o VANT se localiza, sabendo o quadrante foi possível cruzar as retas de X e Y do ponto central do retângulo verde, assim sobestasse o vetor direcional de deslocamento. 
+
+\begin{figure}[H]
+	\centering
+	\caption{teste}
+	\input{figs/mathcha/quadrado2.tex}
+	\legend{Fonte: do autor}
+	\label{fig:teste}
+\end{figure}
+
+Para concluir essa parte a ilustração \ref{fig:conv} representa a projeção em 3D do sistema de coordenadas original que o OpenCV utiliza e como fica apos a transformação. O OpenCV possui o eixo Z (profundidade), ele é utilizado para calcular a posição em um sistema 3D ou adquirir a velocidade de deslocamento, porem essa etapa não sera abordada mas pode ser um bom tema para trabalhos futuros ou aperfeiçoamento do sistema.
+
+\begin{figure}[H]
+	\centering
+	\caption{teste2}
+	\input{figs/mathcha/conv.tex}
+	\legend{Fonte: do autor}
+	\label{fig:conv}
+\end{figure}
+
+Para demonstrar como o VANT interage e interpreta os dados que recebe do sistemas de visão computacional e atua para se orientar, foram criados dois modelos de gráfico do tipo vetor gradiente, aonde o tom de cor mais forte representa o valor máximo e consequentemente o tom mais claro o mínimo valor. Foi estipulado que o valor máximo seria de $\displaystyle \eqsim 5/ms$, observando que segundo o site Ardupilot.org-docs\footnote{\url{https://ardupilot.org/copter/docs/auto-mode.html}} um VANT do tipo quadricóptero atinge de 10m/s $\displaystyle \eqsim13m/s$ no máximo, antes de se tornar incapaz de manter a altitude e a velocidade horizontal. 
+
+O primeiro gráfico ilustrado pela figura \ref{fig:teste8} tem como objetivo interpretar como o sistema de visão computacional atua junto com o Dronekit. Se o gráfico \ref{fig;teste8} for sobreposto pela tela do OpenCV a parte aonde o gradiente é mais fraco fica no centro, ou seja, local aonde o software de visão computacional definiu como região de não interesse (não existe velocidade ou é insignificante), ja nas bordas a coloração é mais forte, isso significa que quando a pessoa que esta sendo monitorada pelo software estiver se aproximando  das bordas da interface de captura da câmera, a velocidade aumenta gradualmente, tendo como objetivo sempre manter o alvo no centro da tela, logo conforme o alvo estiver se aproximando do centro a velocidade gradualmente vai diminuindo até parar assim que chegar ao centro e estiver na região de não interesse.
+
+As escalas nos eixos X e Y contem os possíveis valores de velocidade em m/s que podem ser enviados para o VANT, como ja foi abordada no referencial teórico é utilizado o sistema de orientação por coordenadas NED e por regra nesse sistema de coordenadas o X fica no eixo das ordenadas e Y no eixo das abcissas.
+ 
+
+\begin{figure}[H]
+	\centering
 	\caption{teste8}
 	\input{figs/mathcha/com-amarelo.tex}
 	\legend{Fonte: do autor}
 	\label{fig:teste8}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
+	\centering
 	\caption{teste9}
-	\input{figs/mathcha/com-amarelo-verde.tex}
+	\input{figs/mathcha/com-vermelho-verde.tex}
 	\legend{Fonte: do autor}
 	\label{fig:teste9}
 \end{figure}
-%-----------------------------------------------------------------------
-\subsection{Simulações com Hardware}
+
+\begin{python_}
+def send_local_ned_velocity(vehicle, vx, vy, vz):
+	"""
+	Move vehicle in direction based on specified velocity vectors.
+	"""
+	msg = vehicle.message_factory.set_position_target_local_ned_encode(
+		0,       # time_boot_ms (not used)
+		0, 0,    # target system, target component
+		mavutil.mavlink.MAV_FRAME_BODY_OFFSET_NED, # frame
+		0b0000111111000111, # type_mask (only speeds enabled)
+		0, 0, 0, # x, y, z positions (not used)
+		vx, vy, vz, # x, y, z velocity in m/s
+		0, 0, 0, # x, y, z acceleration (not supported yet, ignored in GCS_Mavlink)
+		0, 0)    # yaw, yaw_rate (not supported yet, ignored in GCS_Mavlink)
+	
+	# send command to vehicle on 1 Hz cycle
+	vehicle.send_mavlink(msg)
+	vehicle.flush()
+\end{python_}
+
+\begin{figure}[htpb]
+	\centering
+	\caption{Conexão MAVLink da Raspberry Pi com Pixhawk}
+	\fontsize{9pt}{12pt}\selectfont
+	\color{black}
+	\def\svgwidth{15cm}
+	\input{figs/svg/pixhawk-raspberry.pdf_tex}
+	\legend{Fonte: Ardupilot Documents}
+	\label{fig:mavlink}
+\end{figure}
 
 
 
-\subsection{Fluxogramas dos Protótipos}
+\section{Simulações com Software}
 
+\section{Simulações com Hardware}
+
+
+
+
+
+%\draw (467.32,239.58) node [xslant=-0.33] {
+%	\def\svgwidth{0.8cm}
+%	\input{{figs/svg/drone3.pdf_tex}}};

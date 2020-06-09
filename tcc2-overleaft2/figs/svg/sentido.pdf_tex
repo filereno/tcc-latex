@@ -54,9 +54,9 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{figs/svg/sentido.pdf}}%
-    \put(0.01,0.5){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Pitch left\end{tabular}}}}%
-    \put(0.52,1.05){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Roll forward\end{tabular}}}}%
-    \put(0.88,0.5){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Pitch right\end{tabular}}}}%
-    \put(0.52,0.05){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Roll backward\end{tabular}}}}%
+    \put(0.01,0.5){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Roll left\end{tabular}}}}%
+    \put(0.52,1.05){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Pitch forward\end{tabular}}}}%
+    \put(0.88,0.5){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Roll right\end{tabular}}}}%
+    \put(0.52,0.05){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Pitch backward\end{tabular}}}}%
   \end{picture}%
 \endgroup%

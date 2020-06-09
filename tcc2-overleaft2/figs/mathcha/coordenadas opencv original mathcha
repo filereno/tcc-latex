@@ -1,0 +1,506 @@
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
+
+%Shape: Axis 2D [id:dp745366717574464] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=1.5]  (56.8,3) -- (56.8,488)(541,51.5) -- (3,51.5) (61.8,481) -- (56.8,488) -- (51.8,481) (534,46.5) -- (541,51.5) -- (534,56.5)  ;
+%Shape: Rectangle [id:dp835814910936395] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (253,296) -- (253,167) -- (370,167) -- (370,296) -- cycle ;
+%Shape: Smiley Face [id:dp00370584545415098] 
+\draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (253,233) .. controls (253,198.21) and (279.19,170) .. (311.5,170) .. controls (343.81,170) and (370,198.21) .. (370,233) .. controls (370,267.79) and (343.81,296) .. (311.5,296) .. controls (279.19,296) and (253,267.79) .. (253,233) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (285.76,211.58) .. controls (285.76,208.1) and (288.38,205.28) .. (291.61,205.28) .. controls (294.84,205.28) and (297.46,208.1) .. (297.46,211.58) .. controls (297.46,215.06) and (294.84,217.88) .. (291.61,217.88) .. controls (288.38,217.88) and (285.76,215.06) .. (285.76,211.58) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (325.54,211.58) .. controls (325.54,208.1) and (328.16,205.28) .. (331.39,205.28) .. controls (334.62,205.28) and (337.24,208.1) .. (337.24,211.58) .. controls (337.24,215.06) and (334.62,217.88) .. (331.39,217.88) .. controls (328.16,217.88) and (325.54,215.06) .. (325.54,211.58) -- cycle ; \draw   (282.25,258.2) .. controls (301.75,275) and (321.25,275) .. (340.75,258.2) ;
+%Straight Lines [id:da45515329684866135] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (543,3) -- (541,506.5) ;
+%Straight Lines [id:da24415373962833065] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (554,491.5) -- (5,490) ;
+%Straight Lines [id:da05844057070503972] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (56,167.5) -- (253,167) ;
+%Straight Lines [id:da6205263233417599] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (56,296.5) -- (253,296) ;
+%Straight Lines [id:da2467412144940746] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (369,51.5) -- (370,167) ;
+%Straight Lines [id:da024944543960211396] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (252,51.5) -- (253,167) ;
+%Straight Lines [id:da1673625184104215] 
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ]   (370,296) -- (387,314.5) ;
+%Straight Lines [id:da6134065902094752] 
+\draw    (193,121.5) -- (250.61,165.19) ;
+\draw [shift={(253,167)}, rotate = 217.17000000000002] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Straight Lines [id:da5046358312088244] 
+\draw    (441,345.5) -- (372.46,297.72) ;
+\draw [shift={(370,296)}, rotate = 394.88] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Shape: Circle [id:dp6195483350711979] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (308,231.5) .. controls (308,229.57) and (309.57,228) .. (311.5,228) .. controls (313.43,228) and (315,229.57) .. (315,231.5) .. controls (315,233.43) and (313.43,235) .. (311.5,235) .. controls (309.57,235) and (308,233.43) .. (308,231.5) -- cycle ;
+%Straight Lines [id:da3852329060686428] 
+\draw    (392,189.5) -- (317.63,230.06) ;
+\draw [shift={(315,231.5)}, rotate = 331.39] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+
+% Text Node
+\draw (439,30) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em X}}}}};
+% Text Node
+\draw (60,460) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em Y}}}}};
+% Text Node
+\draw (70,55) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize x=0, y=0}}};
+% Text Node
+\draw (430,470) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize x=640, y=420}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (162.32, 107.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (162.32,107.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (481.32, 355.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (481.32,355.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (453.14, 166) circle [x radius= 73.54, y radius= 29.7]   ;
+\draw (453.14,166) node   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{coordenada central}}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{ do retângulo}}}}};
+
+\draw   (253, 167) circle [x radius= 5, y radius= 5]   ;
+\draw   (253, 167) circle [x radius= 5, y radius= 5]   ;
+\draw   (253, 167) circle [x radius= 5, y radius= 5]   ;
+\draw   (253, 167) circle [x radius= 5, y radius= 5]   ;
+\draw   (370, 296) circle [x radius= 5, y radius= 5]   ;
+\draw   (370, 296) circle [x radius= 5, y radius= 5]   ;
+\draw   (370, 296) circle [x radius= 5, y radius= 5]   ;
+\end{tikzpicture}
+
+%----------------------------------------------------------------------------------------------------------------------------
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
+
+%Shape: Axis 2D [id:dp745366717574464] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=1.5]  (9,12) -- (9,497)(547,12) -- (9,12) -- cycle (14,490) -- (9,497) -- (4,490) (540,7) -- (547,12) -- (540,17)  ;
+%Shape: Rectangle [id:dp835814910936395] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (206,261) -- (206,132) -- (323,132) -- (323,261) -- cycle ;
+%Shape: Smiley Face [id:dp00370584545415098] 
+\draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (208,196) .. controls (208,161.21) and (234.19,133) .. (266.5,133) .. controls (298.81,133) and (325,161.21) .. (325,196) .. controls (325,230.79) and (298.81,259) .. (266.5,259) .. controls (234.19,259) and (208,230.79) .. (208,196) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (240.76,174.58) .. controls (240.76,171.1) and (243.38,168.28) .. (246.61,168.28) .. controls (249.84,168.28) and (252.46,171.1) .. (252.46,174.58) .. controls (252.46,178.06) and (249.84,180.88) .. (246.61,180.88) .. controls (243.38,180.88) and (240.76,178.06) .. (240.76,174.58) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (280.54,174.58) .. controls (280.54,171.1) and (283.16,168.28) .. (286.39,168.28) .. controls (289.62,168.28) and (292.24,171.1) .. (292.24,174.58) .. controls (292.24,178.06) and (289.62,180.88) .. (286.39,180.88) .. controls (283.16,180.88) and (280.54,178.06) .. (280.54,174.58) -- cycle ; \draw   (237.25,221.2) .. controls (256.75,238) and (276.25,238) .. (295.75,221.2) ;
+%Straight Lines [id:da45515329684866135] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (549,12) -- (547,515.5) ;
+%Straight Lines [id:da24415373962833065] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (560,500.5) -- (11,499) ;
+%Straight Lines [id:da05844057070503972] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,132.5) -- (206,132) ;
+%Straight Lines [id:da6205263233417599] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,261.5) -- (206,261) ;
+%Straight Lines [id:da2467412144940746] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (322,16.5) -- (323,132) ;
+%Straight Lines [id:da024944543960211396] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (205,16.5) -- (206,132) ;
+%Straight Lines [id:da1673625184104215] 
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ]   (323,261) -- (340,279.5) ;
+%Straight Lines [id:da6134065902094752] 
+\draw    (161,116.5) -- (203.16,131.02) ;
+\draw [shift={(206,132)}, rotate = 199.01] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da5046358312088244] 
+\draw    (394,310.5) -- (325.46,262.72) ;
+\draw [shift={(323,261)}, rotate = 394.88] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Shape: Circle [id:dp6195483350711979] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (261,196.5) .. controls (261,194.57) and (262.57,193) .. (264.5,193) .. controls (266.43,193) and (268,194.57) .. (268,196.5) .. controls (268,198.43) and (266.43,200) .. (264.5,200) .. controls (262.57,200) and (261,198.43) .. (261,196.5) -- cycle ;
+%Straight Lines [id:da3852329060686428] 
+\draw    (341.5,154.5) -- (267.13,195.06) ;
+\draw [shift={(264.5,196.5)}, rotate = 331.39] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Straight Lines [id:da13060616481285248] 
+\draw    (512,483.5) -- (543.27,497.76) ;
+\draw [shift={(546,499)}, rotate = 204.51] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da7942156802276659] 
+\draw    (51,37.5) -- (11.56,13.56) ;
+\draw [shift={(9,12)}, rotate = 391.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+
+% Text Node
+\draw (446,19) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em X}}}}};
+% Text Node
+\draw (24,469) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em Y}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (119.32, 110.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (119.32,110.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (436.32, 316.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (436.32,316.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (415.14, 146) circle [x radius= 73.54, y radius= 29.7]   ;
+\draw (415.14,146) node   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{coordenada central}}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{ do retângulo}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (474.32, 473.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (474.32,473.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (92.32, 40.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (92.32,40.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\end{tikzpicture}
+
+%--------------------------------------------------------------------------------------------------------------------
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
+
+%Shape: Axis 2D [id:dp745366717574464] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=1.5]  (9,12) -- (9,497)(547,12) -- (9,12) -- cycle (14,490) -- (9,497) -- (4,490) (540,7) -- (547,12) -- (540,17)  ;
+%Shape: Rectangle [id:dp835814910936395] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (206,261) -- (206,132) -- (323,132) -- (323,261) -- cycle ;
+%Shape: Smiley Face [id:dp00370584545415098] 
+\draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (208,196) .. controls (208,161.21) and (234.19,133) .. (266.5,133) .. controls (298.81,133) and (325,161.21) .. (325,196) .. controls (325,230.79) and (298.81,259) .. (266.5,259) .. controls (234.19,259) and (208,230.79) .. (208,196) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (240.76,174.58) .. controls (240.76,171.1) and (243.38,168.28) .. (246.61,168.28) .. controls (249.84,168.28) and (252.46,171.1) .. (252.46,174.58) .. controls (252.46,178.06) and (249.84,180.88) .. (246.61,180.88) .. controls (243.38,180.88) and (240.76,178.06) .. (240.76,174.58) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (280.54,174.58) .. controls (280.54,171.1) and (283.16,168.28) .. (286.39,168.28) .. controls (289.62,168.28) and (292.24,171.1) .. (292.24,174.58) .. controls (292.24,178.06) and (289.62,180.88) .. (286.39,180.88) .. controls (283.16,180.88) and (280.54,178.06) .. (280.54,174.58) -- cycle ; \draw   (237.25,221.2) .. controls (256.75,238) and (276.25,238) .. (295.75,221.2) ;
+%Straight Lines [id:da45515329684866135] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (549,12) -- (547,515.5) ;
+%Straight Lines [id:da24415373962833065] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (560,500.5) -- (11,499) ;
+%Straight Lines [id:da05844057070503972] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,132.5) -- (206,132) ;
+%Straight Lines [id:da6205263233417599] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,261.5) -- (206,261) ;
+%Straight Lines [id:da2467412144940746] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (322,16.5) -- (323,132) ;
+%Straight Lines [id:da024944543960211396] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (205,16.5) -- (206,132) ;
+%Straight Lines [id:da1673625184104215] 
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ]   (323,261) -- (340,279.5) ;
+%Straight Lines [id:da6134065902094752] 
+\draw    (161,116.5) -- (203.16,131.02) ;
+\draw [shift={(206,132)}, rotate = 199.01] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da5046358312088244] 
+\draw    (394,310.5) -- (325.46,262.72) ;
+\draw [shift={(323,261)}, rotate = 394.88] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Shape: Circle [id:dp6195483350711979] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (261,196.5) .. controls (261,194.57) and (262.57,193) .. (264.5,193) .. controls (266.43,193) and (268,194.57) .. (268,196.5) .. controls (268,198.43) and (266.43,200) .. (264.5,200) .. controls (262.57,200) and (261,198.43) .. (261,196.5) -- cycle ;
+%Straight Lines [id:da3852329060686428] 
+\draw    (341.5,154.5) -- (267.13,195.06) ;
+\draw [shift={(264.5,196.5)}, rotate = 331.39] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Straight Lines [id:da13060616481285248] 
+\draw    (512,483.5) -- (543.27,497.76) ;
+\draw [shift={(546,499)}, rotate = 204.51] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da7942156802276659] 
+\draw    (51,37.5) -- (11.56,13.56) ;
+\draw [shift={(9,12)}, rotate = 391.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Shape: Rectangle [id:dp08170488909513773] 
+\draw   (1.5,4) -- (556.5,4) -- (556.5,509) -- (1.5,509) -- cycle ;
+
+% Text Node
+\draw (444,19) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em X}}}}};
+% Text Node
+\draw (24,469) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em Y}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (119.32, 110.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (119.32,110.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (436.32, 316.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (436.32,316.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (415.14, 146) circle [x radius= 73.54, y radius= 29.7]   ;
+\draw (415.14,146) node   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{coordenada central}}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{ do retângulo}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (474.32, 473.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (474.32,473.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (92.32, 40.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (92.32,40.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\end{tikzpicture}
+
+%---------------------------------------------------------------------------------------------------------------
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
+
+%Shape: Rectangle [id:dp835814910936395] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (202,249) -- (202,120) -- (319,120) -- (319,249) -- cycle ;
+%Shape: Smiley Face [id:dp00370584545415098] 
+\draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (202,184) .. controls (202,149.21) and (228.19,121) .. (260.5,121) .. controls (292.81,121) and (319,149.21) .. (319,184) .. controls (319,218.79) and (292.81,247) .. (260.5,247) .. controls (228.19,247) and (202,218.79) .. (202,184) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (234.76,162.58) .. controls (234.76,159.1) and (237.38,156.28) .. (240.61,156.28) .. controls (243.84,156.28) and (246.46,159.1) .. (246.46,162.58) .. controls (246.46,166.06) and (243.84,168.88) .. (240.61,168.88) .. controls (237.38,168.88) and (234.76,166.06) .. (234.76,162.58) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (274.54,162.58) .. controls (274.54,159.1) and (277.16,156.28) .. (280.39,156.28) .. controls (283.62,156.28) and (286.24,159.1) .. (286.24,162.58) .. controls (286.24,166.06) and (283.62,168.88) .. (280.39,168.88) .. controls (277.16,168.88) and (274.54,166.06) .. (274.54,162.58) -- cycle ; \draw   (231.25,209.2) .. controls (250.75,226) and (270.25,226) .. (289.75,209.2) ;
+%Straight Lines [id:da05844057070503972] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (5,120.5) -- (202,120) ;
+%Straight Lines [id:da6205263233417599] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (5,249.5) -- (202,249) ;
+%Straight Lines [id:da2467412144940746] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (318,4.5) -- (319,120) ;
+%Straight Lines [id:da024944543960211396] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (206,5.5) -- (207,121) ;
+%Straight Lines [id:da1673625184104215] 
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ]   (319,249) -- (336,267.5) ;
+%Straight Lines [id:da6134065902094752] 
+\draw    (162,105.5) -- (204.16,120.02) ;
+\draw [shift={(207,121)}, rotate = 199.01] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da5046358312088244] 
+\draw    (390,298.5) -- (321.46,250.72) ;
+\draw [shift={(319,249)}, rotate = 394.88] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Shape: Circle [id:dp6195483350711979] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (257,188) .. controls (257,186.07) and (258.57,184.5) .. (260.5,184.5) .. controls (262.43,184.5) and (264,186.07) .. (264,188) .. controls (264,189.93) and (262.43,191.5) .. (260.5,191.5) .. controls (258.57,191.5) and (257,189.93) .. (257,188) -- cycle ;
+%Straight Lines [id:da3852329060686428] 
+\draw    (337.5,146) -- (263.13,186.56) ;
+\draw [shift={(260.5,188)}, rotate = 331.39] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Straight Lines [id:da13060616481285248] 
+\draw    (522.5,493.5) -- (553.77,507.76) ;
+\draw [shift={(556.5,509)}, rotate = 204.51] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da7942156802276659] 
+\draw    (43.5,29.5) -- (4.06,5.56) ;
+\draw [shift={(1.5,4)}, rotate = 391.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Shape: Rectangle [id:dp08170488909513773] 
+\draw   (1.5,4) -- (556.5,4) -- (556.5,509) -- (1.5,509) -- cycle ;
+
+% Text Node
+\draw (463,14) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em X}}}}};
+% Text Node
+\draw (9,484) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em Y}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (119.32, 102.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (119.32,102.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (430.32, 305.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (430.32,305.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (412.14, 139) circle [x radius= 73.54, y radius= 29.7]   ;
+\draw (412.14,139) node   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{coordenada central}}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{ do retângulo}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (481.32, 484.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (481.32,484.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (84.32, 36.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (84.32,36.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+
+\draw   (206.99, 120) circle [x radius= 5, y radius= 5]   ;
+\draw   (207, 121) circle [x radius= 5, y radius= 5]   ;
+\draw   (319, 249) circle [x radius= 5, y radius= 5]   ;
+\draw   (319, 249) circle [x radius= 5, y radius= 5]   ;
+\draw   (319, 249) circle [x radius= 5, y radius= 5]   ;
+\end{tikzpicture}
+
+%--------------------------------------------------------------------------------------------------------
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
+
+%Shape: Axis 2D [id:dp745366717574464] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=1.5]  (9,12) -- (9,497)(547,12) -- (9,12) -- cycle (14,490) -- (9,497) -- (4,490) (540,7) -- (547,12) -- (540,17)  ;
+%Shape: Rectangle [id:dp835814910936395] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (206,261) -- (206,132) -- (323,132) -- (323,261) -- cycle ;
+%Shape: Smiley Face [id:dp00370584545415098] 
+\draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (208,196) .. controls (208,161.21) and (234.19,133) .. (266.5,133) .. controls (298.81,133) and (325,161.21) .. (325,196) .. controls (325,230.79) and (298.81,259) .. (266.5,259) .. controls (234.19,259) and (208,230.79) .. (208,196) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (240.76,174.58) .. controls (240.76,171.1) and (243.38,168.28) .. (246.61,168.28) .. controls (249.84,168.28) and (252.46,171.1) .. (252.46,174.58) .. controls (252.46,178.06) and (249.84,180.88) .. (246.61,180.88) .. controls (243.38,180.88) and (240.76,178.06) .. (240.76,174.58) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (280.54,174.58) .. controls (280.54,171.1) and (283.16,168.28) .. (286.39,168.28) .. controls (289.62,168.28) and (292.24,171.1) .. (292.24,174.58) .. controls (292.24,178.06) and (289.62,180.88) .. (286.39,180.88) .. controls (283.16,180.88) and (280.54,178.06) .. (280.54,174.58) -- cycle ; \draw   (237.25,221.2) .. controls (256.75,238) and (276.25,238) .. (295.75,221.2) ;
+%Straight Lines [id:da45515329684866135] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (550,11) -- (551,500.33) ;
+%Straight Lines [id:da24415373962833065] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (551,500.33) -- (11,499) ;
+%Straight Lines [id:da05844057070503972] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,132.5) -- (206,132) ;
+%Straight Lines [id:da6205263233417599] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,261.5) -- (206,261) ;
+%Straight Lines [id:da2467412144940746] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (322,16.5) -- (323,132) ;
+%Straight Lines [id:da024944543960211396] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (205,16.5) -- (206,132) ;
+%Straight Lines [id:da1673625184104215] 
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ]   (323,261) -- (340,279.5) ;
+%Straight Lines [id:da6134065902094752] 
+\draw    (161,116.5) -- (203.16,131.02) ;
+\draw [shift={(206,132)}, rotate = 199.01] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da5046358312088244] 
+\draw    (394,310.5) -- (325.46,262.72) ;
+\draw [shift={(323,261)}, rotate = 394.88] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Shape: Circle [id:dp6195483350711979] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (261,196.5) .. controls (261,194.57) and (262.57,193) .. (264.5,193) .. controls (266.43,193) and (268,194.57) .. (268,196.5) .. controls (268,198.43) and (266.43,200) .. (264.5,200) .. controls (262.57,200) and (261,198.43) .. (261,196.5) -- cycle ;
+%Straight Lines [id:da3852329060686428] 
+\draw    (341.5,154.5) -- (267.13,195.06) ;
+\draw [shift={(264.5,196.5)}, rotate = 331.39] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Straight Lines [id:da13060616481285248] 
+\draw    (522.33,482.33) -- (548.46,498.74) ;
+\draw [shift={(551,500.33)}, rotate = 212.12] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da7942156802276659] 
+\draw    (51,37.5) -- (11.56,13.56) ;
+\draw [shift={(9,12)}, rotate = 391.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+
+% Text Node
+\draw (444,19) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em X}}}}};
+% Text Node
+\draw (24,469) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em Y}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (119.32, 110.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (119.32,110.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (436.32, 316.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (436.32,316.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (415.14, 146) circle [x radius= 73.54, y radius= 29.7]   ;
+\draw (415.14,146) node   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{coordenada central}}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{ do retângulo}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (484.32, 475.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (484.32,475.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (92.32, 40.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (92.32,40.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\end{tikzpicture}
+
+---------------------------------------------------------------------------------------------------------
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
+
+%Shape: Axis 2D [id:dp745366717574464] 
+\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=1.5]  (9,12) -- (9,497)(547,12) -- (9,12) -- cycle (14,490) -- (9,497) -- (4,490) (540,7) -- (547,12) -- (540,17)  ;
+%Shape: Rectangle [id:dp835814910936395] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (206,261) -- (206,132) -- (323,132) -- (323,261) -- cycle ;
+%Shape: Smiley Face [id:dp00370584545415098] 
+\draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (208,196) .. controls (208,161.21) and (234.19,133) .. (266.5,133) .. controls (298.81,133) and (325,161.21) .. (325,196) .. controls (325,230.79) and (298.81,259) .. (266.5,259) .. controls (234.19,259) and (208,230.79) .. (208,196) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (240.76,174.58) .. controls (240.76,171.1) and (243.38,168.28) .. (246.61,168.28) .. controls (249.84,168.28) and (252.46,171.1) .. (252.46,174.58) .. controls (252.46,178.06) and (249.84,180.88) .. (246.61,180.88) .. controls (243.38,180.88) and (240.76,178.06) .. (240.76,174.58) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (280.54,174.58) .. controls (280.54,171.1) and (283.16,168.28) .. (286.39,168.28) .. controls (289.62,168.28) and (292.24,171.1) .. (292.24,174.58) .. controls (292.24,178.06) and (289.62,180.88) .. (286.39,180.88) .. controls (283.16,180.88) and (280.54,178.06) .. (280.54,174.58) -- cycle ; \draw   (237.25,221.2) .. controls (256.75,238) and (276.25,238) .. (295.75,221.2) ;
+%Straight Lines [id:da45515329684866135] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (549,12) -- (547,515.5) ;
+%Straight Lines [id:da24415373962833065] 
+\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (560,500.5) -- (11,499) ;
+%Straight Lines [id:da05844057070503972] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,132.5) -- (206,132) ;
+%Straight Lines [id:da6205263233417599] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,261.5) -- (206,261) ;
+%Straight Lines [id:da2467412144940746] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (322,16.5) -- (323,132) ;
+%Straight Lines [id:da024944543960211396] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (205,16.5) -- (206,132) ;
+%Straight Lines [id:da1673625184104215] 
+\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ]   (323,261) -- (340,279.5) ;
+%Straight Lines [id:da6134065902094752] 
+\draw    (161,116.5) -- (203.16,131.02) ;
+\draw [shift={(206,132)}, rotate = 199.01] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da5046358312088244] 
+\draw    (394,310.5) -- (325.46,262.72) ;
+\draw [shift={(323,261)}, rotate = 394.88] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Shape: Circle [id:dp6195483350711979] 
+\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (261,196.5) .. controls (261,194.57) and (262.57,193) .. (264.5,193) .. controls (266.43,193) and (268,194.57) .. (268,196.5) .. controls (268,198.43) and (266.43,200) .. (264.5,200) .. controls (262.57,200) and (261,198.43) .. (261,196.5) -- cycle ;
+%Straight Lines [id:da3852329060686428] 
+\draw    (341.5,154.5) -- (267.13,195.06) ;
+\draw [shift={(264.5,196.5)}, rotate = 331.39] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+%Shape: Bevel [id:dp7146352541642116] 
+\draw   (-1,1) -- (558,1) -- (558,513.5) -- (-1,513.5) -- cycle ; \draw   (4.32,6.32) -- (552.68,6.32) -- (552.68,508.18) -- (4.32,508.18) -- cycle ; \draw   (-1,1) -- (4.32,6.32) ; \draw   (558,1) -- (552.68,6.32) ; \draw   (558,513.5) -- (552.68,508.18) ; \draw   (-1,513.5) -- (4.32,508.18) ;
+%Straight Lines [id:da13060616481285248] 
+\draw    (512,483.5) -- (543.27,497.76) ;
+\draw [shift={(546,499)}, rotate = 204.51] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+%Straight Lines [id:da7942156802276659] 
+\draw    (51,37.5) -- (11.56,13.56) ;
+\draw [shift={(9,12)}, rotate = 391.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+
+% Text Node
+\draw (434,19) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em X}}}}};
+% Text Node
+\draw (24,469) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em Y}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (119.32, 110.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (119.32,110.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (436.32, 316.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (436.32,316.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (415.14, 146) circle [x radius= 73.54, y radius= 29.7]   ;
+\draw (415.14,146) node   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{coordenada central}}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{ do retângulo}}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (474.32, 473.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (474.32,473.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+% Text Node
+\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (92.32, 40.5) circle [x radius= 38.89, y radius= 14.85]   ;
+\draw (92.32,40.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+\end{tikzpicture}
+
+---------------------------------------------------------------------------------
+	\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+	
+	\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+	%uncomment if require: \path (0,578); %set diagram left start at 0, and has height of 578
+	
+	%Shape: Axis 2D [id:dp745366717574464] 
+	\draw [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ][line width=1.5]  (9,12) -- (9,497)(547,12) -- (9,12) -- cycle (14,490) -- (9,497) -- (4,490) (540,7) -- (547,12) -- (540,17)  ;
+	%Shape: Rectangle [id:dp835814910936395] 
+	\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][line width=1.5]  (206,261) -- (206,132) -- (323,132) -- (323,261) -- cycle ;
+	%Shape: Smiley Face [id:dp00370584545415098] 
+	\draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (208,196) .. controls (208,161.21) and (234.19,133) .. (266.5,133) .. controls (298.81,133) and (325,161.21) .. (325,196) .. controls (325,230.79) and (298.81,259) .. (266.5,259) .. controls (234.19,259) and (208,230.79) .. (208,196) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (240.76,174.58) .. controls (240.76,171.1) and (243.38,168.28) .. (246.61,168.28) .. controls (249.84,168.28) and (252.46,171.1) .. (252.46,174.58) .. controls (252.46,178.06) and (249.84,180.88) .. (246.61,180.88) .. controls (243.38,180.88) and (240.76,178.06) .. (240.76,174.58) -- cycle ; \draw  [fill={rgb, 255:red, 139; green, 87; blue, 42 }  ,fill opacity=1 ] (280.54,174.58) .. controls (280.54,171.1) and (283.16,168.28) .. (286.39,168.28) .. controls (289.62,168.28) and (292.24,171.1) .. (292.24,174.58) .. controls (292.24,178.06) and (289.62,180.88) .. (286.39,180.88) .. controls (283.16,180.88) and (280.54,178.06) .. (280.54,174.58) -- cycle ; \draw   (237.25,221.2) .. controls (256.75,238) and (276.25,238) .. (295.75,221.2) ;
+	%Straight Lines [id:da45515329684866135] 
+	\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (549,12) -- (547,515.5) ;
+	%Straight Lines [id:da24415373962833065] 
+	\draw [color={rgb, 255:red, 0; green, 0; blue, 0 }  ,draw opacity=1 ] [dash pattern={on 0.84pt off 2.51pt}]  (560,500.5) -- (11,499) ;
+	%Straight Lines [id:da05844057070503972] 
+	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,132.5) -- (206,132) ;
+	%Straight Lines [id:da6205263233417599] 
+	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (9,261.5) -- (206,261) ;
+	%Straight Lines [id:da2467412144940746] 
+	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (322,16.5) -- (323,132) ;
+	%Straight Lines [id:da024944543960211396] 
+	\draw  [dash pattern={on 4.5pt off 4.5pt}]  (205,16.5) -- (206,132) ;
+	%Straight Lines [id:da1673625184104215] 
+	\draw [color={rgb, 255:red, 255; green, 255; blue, 255 }  ,draw opacity=1 ][fill={rgb, 255:red, 255; green, 255; blue, 255 }  ,fill opacity=1 ]   (323,261) -- (340,279.5) ;
+	%Straight Lines [id:da6134065902094752] 
+	\draw    (161,116.5) -- (203.16,131.02) ;
+	\draw [shift={(206,132)}, rotate = 199.01] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+	%Straight Lines [id:da5046358312088244] 
+	\draw    (394,310.5) -- (325.46,262.72) ;
+	\draw [shift={(323,261)}, rotate = 394.88] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+	%Shape: Circle [id:dp6195483350711979] 
+	\draw  [color={rgb, 255:red, 126; green, 211; blue, 33 }  ,draw opacity=1 ][fill={rgb, 255:red, 126; green, 211; blue, 33 }  ,fill opacity=1 ] (261,196.5) .. controls (261,194.57) and (262.57,193) .. (264.5,193) .. controls (266.43,193) and (268,194.57) .. (268,196.5) .. controls (268,198.43) and (266.43,200) .. (264.5,200) .. controls (262.57,200) and (261,198.43) .. (261,196.5) -- cycle ;
+	%Straight Lines [id:da3852329060686428] 
+	\draw    (341.5,154.5) -- (267.13,195.06) ;
+	\draw [shift={(264.5,196.5)}, rotate = 331.39] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (16.07,-7.72) -- (0,0) -- (16.07,7.72) -- (10.67,0) -- cycle    ;
+	%Shape: Bevel [id:dp7146352541642116] 
+	\draw   (-1,1) -- (558,1) -- (558,513.5) -- (-1,513.5) -- cycle ; \draw   (4.32,6.32) -- (552.68,6.32) -- (552.68,508.18) -- (4.32,508.18) -- cycle ; \draw   (-1,1) -- (4.32,6.32) ; \draw   (558,1) -- (552.68,6.32) ; \draw   (558,513.5) -- (552.68,508.18) ; \draw   (-1,513.5) -- (4.32,508.18) ;
+	%Straight Lines [id:da13060616481285248] 
+	\draw    (512,483.5) -- (543.27,497.76) ;
+	\draw [shift={(546,499)}, rotate = 204.51] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+	%Straight Lines [id:da7942156802276659] 
+	\draw    (51,37.5) -- (11.56,13.56) ;
+	\draw [shift={(9,12)}, rotate = 391.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (12.5,-6.01) -- (0,0) -- (12.5,6.01) -- (8.3,0) -- cycle    ;
+	
+	% Text Node
+	\draw (434,19) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em X}}}}};
+	% Text Node
+	\draw (24,469) node [anchor=north west][inner sep=0.75pt]   [align=left] {{\fontfamily{pcr}\selectfont {\small \textbf{\textcolor[rgb]{0.25,0.46,0.02}{pixels em Y}}}}};
+	% Text Node
+	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (119.32, 110.5) circle [x radius= 38.89, y radius= 14.85]   ;
+	\draw (119.32,110.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+	% Text Node
+	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (436.32, 316.5) circle [x radius= 38.89, y radius= 14.85]   ;
+	\draw (436.32,316.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+	% Text Node
+	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (415.14, 146) circle [x radius= 73.54, y radius= 29.7]   ;
+	\draw (415.14,146) node   [align=left] {{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{coordenada central}}}}\\{\fontfamily{pcr}\selectfont {\scriptsize \textbf{\textcolor[rgb]{0.25,0.46,0.02}{ do retângulo}}}}};
+	% Text Node
+	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (474.32, 473.5) circle [x radius= 38.89, y radius= 14.85]   ;
+	\draw (474.32,473.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+	% Text Node
+	\draw  [color={rgb, 255:red, 139; green, 87; blue, 42 }  ,draw opacity=1 ]  (92.32, 40.5) circle [x radius= 38.89, y radius= 14.85]   ;
+	\draw (92.32,40.5) node   [align=left] {{\fontfamily{pcr}\selectfont {\footnotesize \textcolor[rgb]{0.25,0.46,0.02}{x=0, y=0}}}};
+	
+	\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+	\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+	\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+	\draw   (206, 132) circle [x radius= 5, y radius= 5]   ;
+	\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+	\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+	\draw   (323, 261) circle [x radius= 5, y radius= 5]   ;
+	\end{tikzpicture}

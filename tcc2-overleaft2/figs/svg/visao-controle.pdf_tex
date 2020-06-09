@@ -58,9 +58,9 @@
     \put(0.1,0.67){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Visão Computacional}\end{tabular}}}}%
     \put(0.66,0.67){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{Controle e automação}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{figs/svg/visao-controle.pdf}}%
-    \put(0.66,0.57){\color[rgb]{0.98431373,0.98431373,0.98431373}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Detector de altitude de inicio \\de funcionamento do sistema\end{tabular}}}}%
+    \put(0.64,0.57){\color[rgb]{0.98431373,0.98431373,0.98431373}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Detector de altitude para iniciar \\o funcionamento do sistema\end{tabular}}}}%
     \put(0.66,0.11){\color[rgb]{0.98431373,0.98431373,0.98431373}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Modulo de deslocamento e\\direcionamento do vant\end{tabular}}}}%
-    \put(0.1,0.27){\color[rgb]{0.98431373,0.98431373,0.98431373}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Detector de movimentação\\do ser humano\end{tabular}}}}%
+    \put(0.1,0.27){\color[rgb]{0.98431373,0.98431373,0.98431373}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Detector de movimento\\do ser humano\end{tabular}}}}%
     \put(0.66,0.26){\color[rgb]{0.98431373,0.98431373,0.98431373}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Calculo de direção e velocidade\end{tabular}}}}%
     \put(0.1,0.42){\color[rgb]{0.98431373,0.98431373,0.98431373}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Modulo de reconhecimento \\facial\end{tabular}}}}%
     \put(0.1,0.57){\color[rgb]{0.98431373,0.98431373,0.98431373}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Inicia o sistema de visão\\computacional\end{tabular}}}}%
