@@ -164,7 +164,7 @@ Porem a ideia das regiões de intersere não trata todas as possibilidades, como
 
 \begin{figure}[H]
 	\centering
-	\caption{teste3}
+	\caption{Sistema de Coordenadas do OpenCV}
 	\input{figs/mathcha/quadrado1.tex}
 	\legend{Fonte: do autor}
 	\label{fig:quad1}
@@ -174,19 +174,29 @@ Para que o sistema funciona-se as coordenadas X=0 e Y=0 foram transportadas para
 
 \begin{figure}[H]
 	\centering
-	\caption{teste2}
+	\caption{Conversão do Sistema de Coordenadas OpenCV para Coordenadas Cartesianas}
 	\input{figs/mathcha/quadrado3.tex}
 	\legend{Fonte: do autor}
 	\label{fig:quad2}
 \end{figure}
 
-O objetivo de obter um sistema de coordenadas que pudesse ser utilizado para orientar o direcionamento do VANT foi alcançado e ele pode ser observado na ilustração \ref{fig:teste}, esse sistema de coordenadas é denominado de cartesiano e possui quatro quadrantes distintos e bem definidos, é o mesmo utilizado para localização geográfica na superfície terrestre. Da mesmo forma que aeronaves consegue se orientar na superfície terrestre usando coordenadas cartesianas, também é possível guiar um VANT para chegar ao objetivo do protótipo.
+O objetivo de obter um sistema de coordenadas que pudesse ser utilizado para orientar o direcionamento do VANT foi alcançado e ele pode ser observado na ilustração \ref{fig:teste}, esse sistema de coordenadas é denominado de cartesiano e possui quatro quadrantes distintos e bem definidos, é o mesmo utilizado para localização geográfica na superfície terrestre. Da mesmo forma que aeronaves conseguem se orientar na superfície terrestre usando coordenadas cartesianas, também é possível guiar um VANT para chegar ao objetivo do protótipo.
 
-Os dados obtidos com o novo sistema de coordenadas são; o quadrante em que o VANT se localiza, sabendo o quadrante foi possível cruzar as retas de X e Y do ponto central do retângulo verde, assim sobestasse o vetor direcional de deslocamento. 
+Com o novo sistema de coordenadas foi possivel obter valores para X e Y com uma maior precisão (0.005m/s a 5m/s), assim como os quatro quadrantes conseguem indicar para qual direção a aeronave tem que se deslocar. Esses valores de velocidade posteriormente serão enviados para a controladora de voo do VANT. 
+
+A interpretação das informações da ilustração \ref{fig:quad2} pode ser feita através das seguintes sintaxes matemáticas; 
+
+\begin{itemize}
+	\item Sintaxe do quadrante I:\begin{equation}\label{q1} B'\in (Quadrante\ I) \mid \left(\frac{W}{2} -Bx >0\right) \land \left(\frac{H}{2} -By >0\right)\end{equation} 
+	\item Sintaxe do quadrante II:\begin{equation}\label{q2} B'\in (Quadrante\ II) \mid \left(\frac{W}{2} -Bx <0\right) \land \left(\frac{H}{2} -By >0\right)\end{equation} 
+	\item Sintaxe do quadrante III:\begin{equation}\label{q3} B'\in (Quadrante\ III) \mid \left(\frac{W}{2} -Bx <0\right) \land \left(\frac{H}{2} -By <0\right)\end{equation} 
+	\item Sintaxe do quadrante IV:\begin{equation}\label{q4} B'\in (Quadrante\ IV) \mid \left(\frac{W}{2} -Bx >0\right) \land \left(\frac{H}{2} -By <0\right)\end{equation} 
+	\item Sintaxe quando não pertence a nenhum quadrante:\begin{equation}\label{nq} B'\notin ( Quadrante\ I\lor II\lor III\lor IV) \mid \left(\frac{W}{2} -Bx=0\right) \lor \left(\frac{H}{2} -By=0\right)\end{equation}
+\end{itemize} 
 
 \begin{figure}[H]
 	\centering
-	\caption{teste}
+	\caption{Sistema de Coordenadas Cartesianas em Visão Computacional}
 	\input{figs/mathcha/quadrado2.tex}
 	\legend{Fonte: do autor}
 	\label{fig:teste}
@@ -194,9 +204,9 @@ Os dados obtidos com o novo sistema de coordenadas são; o quadrante em que o VA
 
 Para concluir essa parte a ilustração \ref{fig:conv} representa a projeção em 3D do sistema de coordenadas original que o OpenCV utiliza e como fica apos a transformação. O OpenCV possui o eixo Z (profundidade), ele é utilizado para calcular a posição em um sistema 3D ou adquirir a velocidade de deslocamento, porem essa etapa não sera abordada mas pode ser um bom tema para trabalhos futuros ou aperfeiçoamento do sistema.
 
-\begin{figure}[H]
+\begin{figure}[htpb]
 	\centering
-	\caption{teste2}
+	\caption{Projeção do Sistema de Coordenadas OpenCV para Cartesianas}
 	\input{figs/mathcha/conv.tex}
 	\legend{Fonte: do autor}
 	\label{fig:conv}
@@ -204,14 +214,26 @@ Para concluir essa parte a ilustração \ref{fig:conv} representa a projeção e
 
 Para demonstrar como o VANT interage e interpreta os dados que recebe do sistemas de visão computacional e atua para se orientar, foram criados dois modelos de gráfico do tipo vetor gradiente, aonde o tom de cor mais forte representa o valor máximo e consequentemente o tom mais claro o mínimo valor. Foi estipulado que o valor máximo seria de $\displaystyle \eqsim 5/ms$, observando que segundo o site Ardupilot.org-docs\footnote{\url{https://ardupilot.org/copter/docs/auto-mode.html}} um VANT do tipo quadricóptero atinge de 10m/s $\displaystyle \eqsim13m/s$ no máximo, antes de se tornar incapaz de manter a altitude e a velocidade horizontal. 
 
-O primeiro gráfico ilustrado pela figura \ref{fig:teste8} tem como objetivo interpretar como o sistema de visão computacional atua junto com o Dronekit. Se o gráfico \ref{fig;teste8} for sobreposto pela tela do OpenCV a parte aonde o gradiente é mais fraco fica no centro, ou seja, local aonde o software de visão computacional definiu como região de não interesse (não existe velocidade ou é insignificante), ja nas bordas a coloração é mais forte, isso significa que quando a pessoa que esta sendo monitorada pelo software estiver se aproximando  das bordas da interface de captura da câmera, a velocidade aumenta gradualmente, tendo como objetivo sempre manter o alvo no centro da tela, logo conforme o alvo estiver se aproximando do centro a velocidade gradualmente vai diminuindo até parar assim que chegar ao centro e estiver na região de não interesse.
+O primeiro gráfico ilustrado pela figura \ref{fig:teste8} tem como objetivo interpretar como o sistema de visão computacional atua junto com o Dronekit. Se o gráfico \ref{fig:teste8} for sobreposto pela tela do OpenCV a parte aonde o gradiente é mais fraco fica no centro, ou seja, local aonde o software de visão computacional definiu como região de não interesse (não existe velocidade ou é insignificante), ja nas bordas a coloração é mais forte, isso significa que quando a pessoa que esta sendo monitorada pelo software estiver se aproximando  das bordas da interface de captura da câmera, a velocidade aumenta gradualmente, tendo como objetivo sempre manter o alvo no centro da tela, logo conforme o alvo estiver se aproximando do centro a velocidade gradualmente vai diminuindo até parar assim que chegar ao centro e estiver na região de não interesse.
 
 As escalas nos eixos X e Y contem os possíveis valores de velocidade em m/s que podem ser enviados para o VANT, como ja foi abordada no referencial teórico é utilizado o sistema de orientação por coordenadas NED e por regra nesse sistema de coordenadas o X fica no eixo das ordenadas e Y no eixo das abcissas.
+
+No gráfico \ref{fig:teste9} foram adicionadas duas cores para distinguir as velocidades em X e Y, os VANTs representam graficamente algumas posições dentro do sistema de coordenas com seus respectivos valores de velocidade nos vetores X e Y assim como qual direção eles toram ao receber os valores de velocidade. A cor verde representa o gradiente de velocidade no eixo X e a cor vermelha no eixo Y e igualmente como no gráfico \ref{fig:teste8} nas bordas tem sua maior intensidade de velocidade e no centro não existe ou é insignificante as forças de velocidade. Nos eixos diagonais a X e Y pontos (A,B,C,D) as cores se sobrepõem, isso significa que os valores de velocidade serão iguais ou próximos para X e Y nesse ponto.
+
+Analisando todos os pontos no gráfico \ref{fig:teste9} aonde estão os VANTs:
+
+\begin{itemize}
+	\item VANT 1: Nesse ponto x=-0.9ms e y=1.9m/s, e de acordo com a regra \ref{q2} pertence ao quadrante II, tem direção Noroeste tendendo a se aproximar mais do eixo X por ter uma mair velocidade na componente X.
+	\item VANT 2: Nesse ponto x=5ms e y=0m/s, e de acordo com a regra \ref{nq} não pertence a nenhum quadrante por ter uma das componentes de velocidade com valor nulo, porem podemos dizer que tem direção Norte de acordo com a componente x.
+	\item VANT 3: Nesse ponto x=-3.95ms e y=-6.5m/s, e de acordo com a regra \ref{q3} pertence ao quadrante III, tem direção Sudoeste e tendendo a se aproximar mais do eixo Y por ter uma mair velocidade na componente Y.
+	\item VANT 4: Nesse ponto x=1.5ms e y=3.8m/s, e de acordo com a regra \ref{q1} pertence ao quadrante I, tem direção Nordeste tendendo a se aproximar mais do eixo Y por ter uma mair velocidade na componente Y.
+	\item VANT 5: Nesse ponto x=-3.6ms e y=3.75m/s, e de acordo com a regra \ref{q4} pertence ao quadrante IV, tem direção Sudeste e nesse caso tem diferença de valores nas componentes X e Y insignificante não tendendo a se direcionar a nenhum dos eixos.
+\end{itemize}
  
 
-\begin{figure}[H]
+\begin{figure}[htpb]
 	\centering
-	\caption{teste8}
+	\caption{Gráfico que Representa o Gradiente de Velocidade}
 	\input{figs/mathcha/com-amarelo.tex}
 	\legend{Fonte: do autor}
 	\label{fig:teste8}
@@ -219,31 +241,31 @@ As escalas nos eixos X e Y contem os possíveis valores de velocidade em m/s que
 
 \begin{figure}[H]
 	\centering
-	\caption{teste9}
+	\caption{Gráfico que Representa o Gradiente de Velocidade para X e Y}
 	\input{figs/mathcha/com-vermelho-verde.tex}
 	\legend{Fonte: do autor}
 	\label{fig:teste9}
 \end{figure}
 
-\begin{python_}
-def send_local_ned_velocity(vehicle, vx, vy, vz):
-	"""
-	Move vehicle in direction based on specified velocity vectors.
-	"""
-	msg = vehicle.message_factory.set_position_target_local_ned_encode(
-		0,       # time_boot_ms (not used)
-		0, 0,    # target system, target component
-		mavutil.mavlink.MAV_FRAME_BODY_OFFSET_NED, # frame
-		0b0000111111000111, # type_mask (only speeds enabled)
-		0, 0, 0, # x, y, z positions (not used)
-		vx, vy, vz, # x, y, z velocity in m/s
-		0, 0, 0, # x, y, z acceleration (not supported yet, ignored in GCS_Mavlink)
-		0, 0)    # yaw, yaw_rate (not supported yet, ignored in GCS_Mavlink)
-	
-	# send command to vehicle on 1 Hz cycle
-	vehicle.send_mavlink(msg)
-	vehicle.flush()
-\end{python_}
+%\begin{python_}
+%def send_local_ned_velocity(vehicle, vx, vy, vz):
+%	"""
+%	Move vehicle in direction based on specified velocity vectors.
+%	"""
+%	msg = vehicle.message_factory.set_position_target_local_ned_encode(
+%		0,       # time_boot_ms (not used)
+%		0, 0,    # target system, target component
+%		mavutil.mavlink.MAV_FRAME_BODY_OFFSET_NED, # frame
+%		0b0000111111000111, # type_mask (only speeds enabled)
+%		0, 0, 0, # x, y, z positions (not used)
+%		vx, vy, vz, # x, y, z velocity in m/s
+%		0, 0, 0, # x, y, z acceleration (not supported yet, ignored in GCS_Mavlink)
+%		0, 0)    # yaw, yaw_rate (not supported yet, ignored in GCS_Mavlink)
+%	
+%	# send command to vehicle on 1 Hz cycle
+%	vehicle.send_mavlink(msg)
+%	vehicle.flush()
+%\end{python_}
 
 \begin{figure}[htpb]
 	\centering

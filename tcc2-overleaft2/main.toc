@@ -63,24 +63,24 @@
 \contentsline {section}{\numberline {3.3}Sistemas Operacionais}{52}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Fluxogramas dos Protótipos e Funcionamento do Sistema}{53}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Transformação do Sistema de Coordenadas do OpenCV}{53}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Simulações com Software}{63}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Simulações com Hardware}{63}{section.3.6}%
+\contentsline {section}{\numberline {3.5}Simulações com Software}{61}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Simulações com Hardware}{61}{section.3.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Analise dos Resultados e Considerações Finais}}{64}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Resultados}{64}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Considerações Finais}{64}{section.4.2}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Analise dos Resultados e Considerações Finais}}{63}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Resultados}{63}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Considerações Finais}{63}{section.4.2}%
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{65}{section*.57}%
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{64}{section*.57}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{68}{section*.58}%
+\contentsline {part}{\uppercase {Ap\^endices}}{67}{section*.58}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Apêncice}}{69}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Primeiro Apêncice}}{68}{appendix.A}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Perceba que o texto do título desse segundo apêndice é bem grande}}{70}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase {Perceba que o texto do título desse segundo apêndice é bem grande}}{69}{appendix.B}%

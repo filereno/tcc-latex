@@ -5,7 +5,7 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Rede Neural Convolucional\relax }}{11}{figure.caption.15}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Pixel em Visão Computacional\relax }}{12}{figure.caption.16}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Exemplo Simples de Treinamento de Rede Neural com Método de Trigêmeos\relax }}{15}{figure.caption.17}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de Comparação de Cetores 128-d\relax }}{16}{figure.caption.18}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de Comparação de Vetores 128-d\relax }}{16}{figure.caption.18}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Extração de um Vetor 128-d com Reconhecimento Facial\relax }}{17}{figure.caption.19}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Exemplo de Deslocamento Dtilizando Dálculos\relax }}{19}{figure.caption.20}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de Funcionamento do SITL\relax }}{23}{figure.caption.21}%
@@ -35,10 +35,10 @@
 \contentsline {figure}{\numberline {34}{\ignorespaces Raspberry Pi 3 B\relax }}{51}{figure.caption.45}%
 \contentsline {figure}{\numberline {35}{\ignorespaces Diagrama de Funcionamento do Sistema\relax }}{53}{figure.caption.46}%
 \contentsline {figure}{\numberline {36}{\ignorespaces Regiões de Interesse\relax }}{54}{figure.caption.47}%
-\contentsline {figure}{\numberline {37}{\ignorespaces teste3\relax }}{55}{figure.caption.48}%
-\contentsline {figure}{\numberline {38}{\ignorespaces teste2\relax }}{56}{figure.caption.49}%
-\contentsline {figure}{\numberline {39}{\ignorespaces teste\relax }}{57}{figure.caption.50}%
-\contentsline {figure}{\numberline {40}{\ignorespaces teste2\relax }}{58}{figure.caption.51}%
-\contentsline {figure}{\numberline {41}{\ignorespaces teste8\relax }}{60}{figure.caption.52}%
-\contentsline {figure}{\numberline {42}{\ignorespaces teste9\relax }}{61}{figure.caption.53}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Sistema de Coordenadas do OpenCV\relax }}{55}{figure.caption.48}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Conversão do Sistema de Coordenadas OpenCV para Coordenadas Cartesianas\relax }}{56}{figure.caption.49}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Sistema de Coordenadas Cartesianas em Visão Computacional\relax }}{57}{figure.caption.50}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Projeção do Sistema de Coordenadas OpenCV para Cartesianas\relax }}{58}{figure.caption.51}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Gráfico que Representa o Gradiente de Velocidade\relax }}{60}{figure.caption.52}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Gráfico que Representa o Gradiente de Velocidade para X e Y\relax }}{61}{figure.caption.53}%
 \contentsline {figure}{\numberline {43}{\ignorespaces Conexão MAVLink da Raspberry Pi com Pixhawk\relax }}{62}{figure.caption.54}%
