@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="160mm" height="90mm" viewBox="0 0 16000 9000" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke-width="28.222" stroke-linejoin="round" xml:space="preserve">
+ <path fill="rgb(255,255,255)" stroke="none" d="M 8000,8999 L 0,8999 0,0 15999,0 15999,8999 8000,8999 Z"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 9579,8172 L 7265,8172 7265,180 11893,180 11893,8172 9579,8172 Z"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7265,179 L 7265,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 8807,179 L 8807,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 10350,179 L 10350,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 11893,179 L 11893,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7115,8171 L 7265,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7115,8171 L 7265,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7115,5506 L 7265,5506"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7115,5506 L 7265,5506"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7115,2843 L 7265,2843"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7115,2843 L 7265,2843"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7115,179 L 7265,179"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7115,179 L 7265,179"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7265,8171 L 7265,179"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7265,8321 L 7265,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7265,8321 L 7265,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 8807,8321 L 8807,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 8807,8321 L 8807,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 10350,8321 L 10350,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 10350,8321 L 10350,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 11893,8321 L 11893,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 11893,8321 L 11893,8171"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 7265,8171 L 11893,8171"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 7265,2177 L 7265,845 11189,845 11189,2177 7265,2177 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 7265,4840 L 7265,3509 7332,3509 7332,4840 7265,4840 Z"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 7265,7504 L 7265,6172 7332,6172 7332,7504 7265,7504 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="374" y="6959"><tspan fill="rgb(0,0,0)" stroke="none">Computador das simulações (Método CNN)</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="321" y="4295"><tspan fill="rgb(0,0,0)" stroke="none">Computador das simulações (Método HOG)</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="2702" y="1631"><tspan fill="rgb(0,0,0)" stroke="none">Raspberry Pi (Método HOG)</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7172" y="8739"><tspan fill="rgb(0,0,0)" stroke="none">0</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="8345" y="8739"><tspan fill="rgb(0,0,0)" stroke="none">10000</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9888" y="8739"><tspan fill="rgb(0,0,0)" stroke="none">20000</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="11431" y="8739"><tspan fill="rgb(0,0,0)" stroke="none">30000</tspan></tspan></tspan></text>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 12900,4604 L 12794,4604 12794,4394 13005,4394 13005,4604 12900,4604 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Liberation Sans, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="13105" y="4618"><tspan fill="rgb(0,0,0)" stroke="none">Tempo decorrido</tspan></tspan></tspan></text>
+</svg>

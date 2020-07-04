@@ -1,0 +1,204 @@
+\chapter{Analise dos Resultados e Considerações Finais}\label{cap:apresAnaRes}
+
+\section{Resultados}
+
+Para demonstrar a capacidade de reconhecimento facial do protótipo, foi utilizada uma foto com dois personagens (Fabiano, Antonela). A rede neural foi treinada duas vezes; a primeira para reconhecer apenas o personagem Fabiano e a segunda para reconhecer os dois personagens. 
+A ilustração \ref{fig:eu2} mostra o reconhecimento de apenas o personagem Fabiano, e a ilustração \ref{fig:eu2} o reconhecimento dos dois personagens     
+ 
+Isso mostra a capacidade do sensoriamento populacional, pelo fato de ser capaz de distinguir entre uma pessoa que foi inserido no conjunto de dados e uma pessoa que não foi.  
+ 
+\begin{figure}[H]
+	\centering	
+	\caption{Teste de Reconhecimento Facial (2 Pessoas)}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{8cm}
+	\input{figs/svg/eu.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:eu}
+\end{figure} 
+ 
+\begin{figure}[H]
+	\centering	
+	\caption{Teste de Reconhecimento Facial (1 Pessoa)}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{8cm}
+	\input{figs/svg/eu2.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:eu2}
+\end{figure} 
+ 
+Para mostrar o funcionamento do sistema de controle que diz para o sistema a direção em que o VANT deve se deslocar, algumas ilustrações foram inseridas para interpretar os dados adquiridos no \textit{software } de simulação Gazebo.
+
+Analisando as imagens conseguimos obter as seguintes informações para interpretar o funcionamento:  
+
+\begin{itemize}
+	\item \textbf{Simulação de Nenhum Deslocamento:} Na ilustração \ref{fig:00} o VANT esta parado seguindo a lógica do sistema de sempre que o VANT estiver no centro da tela ele não tera reações de deslocamento.
+	
+	\item \textbf{Simulação de Deslocamento para o Norte:} Na ilustração \ref{fig:norte} o VANT esta na região de interesse Norte se deslocando nesse sentido à uma velocidade de $\displaystyle \eqsim3,75m/s$ em X e não a componente de velocidade em Y nessa região. 
+	
+	\item \textbf{Simulação de Deslocamento para o Sul:} Na ilustração \ref{fig:sul} o VANT esta na região de interesse Sul se deslocando nesse sentido à uma velocidade de $\displaystyle \eqsim-2,1m/s$ em X e não à componente de velocidade em Y nessa região. 
+	
+	\item \textbf{Simulação de Deslocamento para o Leste:} Na ilustração \ref{fig:leste} o VANT esta na região de interesse Leste se deslocando nesse sentido à uma velocidade de $\displaystyle \eqsim2,8m/s$ em Y e não à componente de velocidade em X nessa região.
+	
+	\item \textbf{Simulação de Deslocamento para o Nordeste:} Na ilustração \ref{fig:nordeste} o VANT esta na região de interesse Nordeste se deslocando nesse sentido à uma velocidade de $\displaystyle \eqsim2,7m/s$ em X e $\displaystyle \eqsim1,5m/s$ em Y.
+	
+	\item \textbf{Simulação de Deslocamento para o Noroeste:} Na ilustração \ref{fig:noroeste} o VANT esta na região de interesse Noroeste se deslocando nesse sentido à uma velocidade de $\displaystyle \eqsim2,8m/s$ em X e $\displaystyle \eqsim2,7m/s$ em Y.
+\end{itemize}
+
+Com isso podemos analisar que a teoria de deslocamento mostrada na ilustração \ref{fig:teste9} é no mínimo proficiente para ser utilizada em um sistema de controle e automação para VANT, utilizando visão computacional. 
+ 
+No Gazebo a velocidade no eixo Y fica negativo em relação a componente de velocidade calculada no sistema, mas isso é porque o sistema de coordenadas para VANT do Gazebo esta incorreto, porem isso não altera o funcionamento em geral.
+ 
+\begin{figure}[H]
+	\centering	
+	\caption{Simulação de Nenhum Deslocamento}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/00.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:00}
+\end{figure}
+ 
+\begin{figure}[H]
+	\centering	
+	\caption{Simulação de Deslocamento para o Norte}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/norte.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:norte}
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Simulação de Deslocamento para o Sul}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/sul.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:sul}
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Simulação de Deslocamento para o Leste}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/leste.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:leste}
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Simulação de Deslocamento para o Nordeste}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/nordeste.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:nordeste}
+\end{figure} 
+
+\begin{figure}[H]
+	\centering	
+	\caption{Simulação de Deslocamento para o Noroeste}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/noroeste.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:noroeste}
+\end{figure}
+
+Agora analisamos a aceleração do VANT em relação a teoria que fui utilizada na ilustração \ref{fig:teste8}, dizendo que o VANT possui maior velocidade nas bordas e menor velocidade no centro do sistema de referência.
+
+Através das ilustrações abaixo podemos analisar as seguintes informações extraídas do \textit{software} Gazebo:
+
+\begin{itemize}
+	\item \textbf{Primeira Simulação de Velocidade para o Norte:} Na ilustração \ref{fig:vel1} observando o gráfico podemos verificar que o VANT saiu de um estado aonde não possuía velocidade e acelerou até atingir $\displaystyle \eqsim1,3m/s$ em X e o personagem alvo do sistema de visão computacional esta bem próximo do centro da tela aonde as componentes de velocidade são baixas.
+	
+	\item \textbf{Segunda Simulação de Velocidade para o Norte:} Na ilustração \ref{fig:vel2} observando o gráfico o VANT estava em aproximadamente 1,3m/s e acelerou até atingir velocidade de $\displaystyle \eqsim2,0/s$. 
+	
+	\item \textbf{Terceira Simulação de Velocidade para o Norte:} Na ilustração \ref{fig:vel3} observando o gráfico o VANT ja esta a uma velocidade de $\displaystyle \eqsim3,7/s$ e o personagem alvo do sistema de visão computacional esta bem próximo a borda da tela aonde as componentes de velocidade são maiores. 
+	
+	\item \textbf{Simulação de Velocidade para o Sul:} Na ilustração \ref{fig:vel4} o gráfico tem uma inversão de sinal obtendo velocidade de $\displaystyle \eqsim-2,5/s$ em X, isso porque o personagem alvo esta na região de interesse Sul invertendo a componente de velocidade do eixo X.
+\end{itemize} 
+
+\begin{figure}[H]
+	\centering	
+	\caption{Primeira Simulação de Velocidade para o Norte}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/vel-1,3.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:vel1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Segunda Simulação de Velocidade para o Norte}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/vel-2.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:vel2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Terceira Simulação de Velocidade para o Norte}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/vel-3,7.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:vel3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Simulação de Velocidade para o Sul}
+	%\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/vel--2,5.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:vel4}
+\end{figure}
+ 
+\section{Considerações Finais}
+
+Com tudo isso se chegou a conclusão de que é possível controlar um VANT usando visão computacional, porem como a maioria dos trabalhos nessa área são de caráter experimental, se decidiu criar uma bateria de simulações utilizando softwares e implementar um algoritmo que une visão computacional (OpenCV para reconhecimento facial) com tecnologia de controle para VANT (Dronekit) e checar se as reações da simulação são suficientemente satisfatórias. Logo se determinou que o VANT ir na direção pré-determinada no algoritmo é o ponto de satisfação para uma conclusão positiva do protótipo.
+
+Apesar do sistema de simulação não ter sido totalmente satisfatório, é possível evoluir o produto aplicando mais testes, evoluindo o sistema de simulação, agregando mais recursos e utilizando equipamentos mais específicos para este fim.
+
+Em relação aos componentes usados a maioria eram do próprio autor e não foram adquiridos outros devido ao custo devidamente auto para uma pessoa física.  
+ 
+Em relação aos métodos usados na analise, a simulação por software comprovou ser ideal para os primeiros testes, porem se fez necessário possuir um computador com uma alta capacidade de processamento, e foi utilizado o computador que o autor ja possuía. 
+
+Alguns paradigma em relação ao desenvolvimento desse projeto:
+
+\begin{itemize}
+	\item Em relação ao VANT o principal paradigma a ser vencido é a autonomia que na atualidade fica em torno de no máximo 45 minutos de operação.
+	\item Em relação a tecnologia de visão computacional o paradigma a ser vencido é o de capacidade de processamento.
+\end{itemize}
+
+Alguns aspectos que podem ser melhorados em versões futuras para tornar o projeto
+mais eficiente e utilizável são:
+
+\begin{itemize}
+	\item Utilizar um equipamento com maior poder de processamento e especifico para o fim.
+	\item Maior cronograma de tempo para o desenvolvimento de um sistema de simulação mais completo e eficiente.
+	\item Estender as técnicas de visão computacional para melhoria do sistema de sensoriamento de pessoas.
+	\item Utilizar um sistema de controle do tipo PID ou lógica Fuzzi para controlar o VANT.
+	\item Adquirir os componentes físicos para testes reais.
+\end{itemize}

@@ -1,0 +1,130 @@
+\chapter{Objetivos e Justificativas}\label{cap:objJust}
+% ---
+A ideia surgiu devido ao interesse em integrar um veículo aéreo não tripulado, no caso um VANT do tipo quadricóptero, com algum dispositivo para realização de alguma tarefa, e após buscar trabalhos de pesquisa, protótipos experimentais, bibliografia sobre o assunto e sites especializados em tecnologias aplicadas em VANTs, como exemplo visão computacional, descobriu-se que é possível conectar, uma controladora de voo \cite{sete} [7] a um computador complementar (Raspberry Pi)\cite{oito}[8], e enviar comandos para o VANT, criando um sistema de controle e automação usando visão computacional \cite{tres}[3]. Em seguida também se descobriu que é possível implementar a ferramenta OpenCV na Raspberry Pi fazendo a integração entre tecnologias de visão computacional e tecnologia de um VANT.
+
+Como o foco principal do trabalho é o controle de um VANT utilizando visão computacional, primeiro se realizou uma pesquisa para descobrir se existe um computador complementar que pudesse comportar um software de visão computacional e que também tivesse capacidade computacional de compilar e rodar o algoritmo, e com processamento o suficiente para processar a tecnologia de visão computacional.
+
+O Raspberry Pi foi a opção escolhida devido a alguns fatores como; custo, tamanho, tempo.
+
+A pesquisa também abordou como comunicar o computador complementar com a controladora do VANT e se existia a possibilidade de enviar comandos para a controladora de voo. 
+
+Foi preciso buscar na internet muito material principalmente tutorias para aprender e dominar o funcionamento das ferramentas que seriam utilizadas no desenvolvimento, por exemplo o OpenCV, e as ferramentas de desenvolvimento para VANTs. Essa tecnologias são muito vastas e possuem muitas funcionalidades e módulos, foi preciso testar quais seriam as melhores maneiras de utiliza-las no projeto, quais módulos utilizar, logo foi gasto muito tempo simulando e testando esses módulos para adequar quais seriam utilizados e serviriam na implementação.  
+
+Uma boa parte do tempo de pesquisa  do trabalho foi buscar bibliografias sobre IA, Deep Learning, entender sobre redes neurais e visão computacional para o entendimento de como funcionam essas tecnologias.
+
+ 
+%-
+\subsection{Objetivo Geral}
+%-
+O objetivo geral deste trabalho é desenvolver o protótipo de um VANT controlado por um sistema embarcado com visão computacional, sistema que sera implementado em um computador complementar (Raspberry Pi) o qual se comunicara com a controladora de voo por protocolo de comunicação.
+
+A ideia é desenvolver um sistema de robótica que atue através de controle e automação em um VANT, ele tem o objetivo de controlar, movimentar o VANT usando visão computacional.   
+
+Sera implementado um algoritmo de visão computacional para reconhecimento facial que foi pre treinado utilizando CNN (convolucional neural network), ele identificara faces que constam no conjunto de dados treinado pela rede neural.
+
+Um novo sistema de coordenadas sera construído baseando-se no sistema de coordenadas do OpenCV, o resultado vai gerar um plano de coordenas do tipo cartesianas.
+
+As componentes X e Y adquiridas pelo sistema cartesiano serão enviadas para a controladora de voo fazendo com que o VANT se desloque de acordo com a movimentação percebida pelo sistema de visão computacional.  
+
+A validação sera através da abstração do hardware por um conjunto de ferramentas de software que simulam o funcionamento do VANT.
+%O objetivo geral deste trabalho é desenvolver o protótipo de um VANT controlado por um sistema embarcado com visão computacional para reconhecimento de padrões de comportamento de multidões, com reconhecimento facial, que possa ser empregado como uma ferramenta de segurança, podendo auxiliar em casos policiais, vigilância patrimonial, filmagens áreas, buscas em mata fechada, fiscalização de fronteira e aplicações civis nas quais seria inviável um ser humano trabalhar, realizando tarefas arriscadas e servindo como verdadeira ferramenta de trabalho.
+%Acredita-se que com o uso de imagens aéreas possa ser possível reconhecer e emitir alertas de possíveis suspeitos de crimes, e com isso buscar minimizar um pouco a falta de tecnologias que hoje são necessárias para ajudar no combate a violência. 
+%Um sistema de visão computacional integrado a um VANT que através do desenvolvimento de um algoritmo e o treinamento de rede neural, seja capaz de cumprir objetivos específicos, tendo como principal, o de identificar indivíduos através de reconhecimento facial, e tomar a ação de rastrear e seguir com movimentação aérea de um VANT.   
+
+%-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Normalmente não há problemas em usar caracteres acentuados em arquivos
+%bibliográficos (\texttt{*.bib}). Porém, como as regras da ABNT fazem uso quase
+%abusivo da conversão para letras maiúsculas, é preciso observar o modo como se
+%escreve os nomes dos autores. Na~\autoref{tabela-acentos} você encontra alguns
+%exemplos das conversões mais importantes. Preste atenção especial para `ç' e `í'
+%que devem estar envoltos em chaves. A regra geral é sempre usar a acentuação
+%neste modo quando houver conversão para letras maiúsculas.
+
+%\begin{table}4htbp]
+%\caption{Tabela de conversão de acentuação.}
+%\label{tabela-acentos}
+
+%\begin{center}
+%\begin{tabular}{ll}\hline\hline
+%acento & \textsf{bibtex}\\
+%à á ã & \verb+\`a+ \verb+\'a+ \verb+\~a+\\
+%í & \verb+{\'\i}+\\
+%ç & \verb+{\c c}+\\
+%\hline\hline
+%\end{tabular}
+%\end{center}
+%\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Objetivos Específicos}
+%-
+\begin{itemize}
+    \item Reconhecimento de faces inseridas no conjunto de dados pré-treinado;
+    \item Distinguir entre faces inseridas no conjunto de dados e as que não foram inseridas;
+    \item Desenvolver um sistema que possibilite guiar o VANT;
+    \item Demonstrar que é possível guiar o VANT em direções estipuladas;
+    \item Realizar testes e adquirir dados para determinar se é viável ou não utilizar visão computacional para definir um sistema de robótica para um VANT;
+\end{itemize}
+%-
+
+%\subsection{Resultados Esperados}
+%%-
+%\begin{itemize}
+%    \item Perfeito funcionamento da ferramenta OpenCV;
+%    \item Que o algoritmo de rede neural seja compilado e executado pela Raspberry Pi;
+%    \item Reconhecimento das pessoas inseridas no algoritmo de reconhecimento facial;
+%    \item Distinção entre pessoas inseridas no algoritmo de rede neural, e as que não foram inseridas;
+%    \item Perfeita comunicação entre a Raspberry Pi e a Pixhawk;
+%    \item Perfeita tolerância de falhas do sistema;
+%    \item Desempenho satisfatório da Raspberry Pi em enviar comandos de vôo para o drone;
+%    \item Comportamento de voo do drone de maneira esperada que ele desempenhe;
+%    \item Perfeito funcionamento do algoritmo que será desenvolvido para o funcionamento do sistema que controla e corrige em que direção o drone deve seguir;
+%    \item Perfeito funcionamento dos sistemas de (software e o hardware) em seguir o objeto ou pessoa que foi inserido(a) no algoritmo de reconhecimento facial.
+%\end{itemize}
+%-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Consulte a FAQ com perguntas frequentes e comuns no portal do \abnTeX:
+%\url{https://code.google.com/p/abntex2/wiki/FAQ}.
+
+%Inscreva-se no grupo de usuários \LaTeX:
+%\url{http://groups.google.com/group/latex-br}, tire suas dúvidas e ajude
+%outros usuários.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Visão Geral da Metodologia}
+
+A metodologia utilizada pode ser definida em 3 etapas que são exemplificas de maneira procedural e ilustrada na figura \ref{fig:diagmetpesq}.
+
+Elas foram definidas da seguinte forma:
+
+\begin{itemize}
+	\item Uma primeira etapa de pesquisa bibliográfica buscando definir quais materiais encontrados seriam utilizados como referencia para prosseguir, e através deles verificar se era possível chegar a um resultado satisfatório e se o protótipo teria uma aplicação pratica e justificável. 
+	
+	\item Depois das pesquisas a etapa que definiu quais bibliotecas, ferramentas, linguagem de programação, protocolos e qual seria a maneira de simulação e validação seria utilizada, assim como as instalações e configurações dos sistemas para posterior codificação dos algoritmos e testes de bibliotecas e códigos.
+	
+	\item A ultima foi para realizar simulações de funcionamento e comportamento para se chagar em resultados.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Metodologia utilizada}
+	\fontsize{9pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{16cm}
+	\input{figs/svg/diagmetpesq.pdf_tex}
+	\legend{Fonte: do autor.}
+	\label{fig:diagmetpesq}
+\end{figure}
+
+\section{Justificativa} 
+%-
+Devido ao aumento da criminalidade e dos altos índices de violência no cotidiano das pessoas, surgiu a cultura do medo e o sentimento de insegurança. Tais fatores demandaram algumas mudanças nos serviços de segurança patrimonial bem como, nas formas de monitoramento. Nesse sentido, tornou-se necessário expandir as formas de controle, seja por meio de câmeras de vigilância ou monitoramento eletrônico \cite{quatro}[4]. No entanto, os equipamentos atuais como as câmeras utilizadas na segurança já não são mais eficientes e possuem tecnologias ultrapassadas. 
+
+Na cidade do Rio de janeiro existe um sistema de câmeras de alta tecnologia com capacidade para realizar reconhecimento facial. Este sistema foi implantado para testes através de uma parceria entre a OI e a Huawei \cite{cinco}[5], sendo que as câmeras e a tecnologia de reconhecimento facial embarcados são de propriedade da Chinesa Huawei e possuem alto custo monetário, e alguns estados Brasileiros passam por uma crise financeira, porem precisam investir em segurança \cite{seis}[6].
+
+Este contexto de insegurança pública e falta de investimento nacional em tecnologias de segurança é que originou a motivação para a proposta deste trabalho, ou seja, a necessidade de investir em tecnologias de baixo ou médio custo, que possam ser aplicados para melhorar o desempenho do sistema de segurança no Brasil, visando a vigilância, através do sensoriamento utilizando câmeras e hardware de custo acessível e softwares livres.
+
+%-
+
+
