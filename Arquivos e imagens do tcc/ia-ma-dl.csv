@@ -1,0 +1,16 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Text Area 1
+1,Page,,,,,,,,,Page 1
+2,Model,AWS Architecture 2019,1,,,,,,,Model
+3,Circle,Geometric Shapes,1,,,,,,,
+4,Circle,Geometric Shapes,1,,,,,,,
+5,Circle,Geometric Shapes,1,,,,,,,
+6,Amazon SageMaker,AWS Architecture 2019,1,,,,,,,IA
+7,AWS Deep Learning AMIs,AWS Architecture 2019,1,,,,,,,Deep Learning
+8,Machine Learning,AWS Architecture 2019,1,,,,,,,Machine Learning
+9,Text,Standard,1,,,,,,,"Técnica que permita a um computador imitar o comportamento humano, 1950 a 1970."
+10,Text,Standard,1,,,,,,,"Subárea da IA que usa métodos estáticos para resolver problema,
+1980 a 2000."
+11,Text,Standard,1,,,,,,,"Subárea do Machine Learnig capaz de aprender com uso de redes neurais, 2010 ainda em evolução."
+12,Line,,1,,,9,6,None,Arrow,
+13,Line,,1,,,11,7,None,Arrow,
+14,Line,,1,,,10,8,None,Arrow,

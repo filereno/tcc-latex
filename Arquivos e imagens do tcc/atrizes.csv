@@ -1,0 +1,19 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Text Area 1
+1,Page,,,,,,,,,Page 1
+2,User Image,User Images,1,,,,,,,
+3,User Image,User Images,1,,,,,,,
+4,User Image,User Images,1,,,,,,,
+5,Text,Standard,1,,,,,,,Primeira imagem
+6,Text,Standard,1,,,,,,,Segunda imagem
+7,Text,Standard,1,,,,,,,Foto de Jéssica Chastain
+8,Text,Standard,1,,,,,,,128 medições geradas pela rede neural
+9,Text,Standard,1,,,,,,,128 medições geradas pela rede neural
+10,Text,Standard,1,,,,,,,128 medições geradas pela rede neural
+11,Terminator,Flowchart Shapes,1,,,,,,,Comparar os resultados
+12,Callout,UI Mockups,1,,,,,,,"Ajustar a rede neural levemente para que as medidas 
+Das imagens da atriz Scarlett Johansson estejam
+Mais próximas, e as medidas da Jéssica Chastain
+Estejam mais distantes."
+13,Line,,1,,,9,11,None,Arrow,
+14,Line,,1,,,10,11,None,Arrow,
+15,Line,,1,,,8,11,None,Arrow,

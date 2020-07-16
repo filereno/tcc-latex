@@ -1,0 +1,21 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Text Area 1
+1,Page,,,,,Page 1
+2,region,AWS Architecture 2017,1,,,
+3,User Image,User Images,1,2,,
+4,Callout,Geometric Shapes,1,2,,
+5,Callout,Geometric Shapes,1,2,,
+6,region,AWS Architecture 2017,1,,,
+7,Circle,Geometric Shapes,1,2,,
+8,User Image,User Images,1,6,,
+9,User Image,User Images,1,6,,
+10,User Image,User Images,1,6,,
+11,Text,Standard,1,6,,Dronekit
+12,Text,Standard,1,6,,Gazebo
+13,Text,Standard,1,6,,SITL
+14,Text,Standard,1,6,,Firmware Ardupilot
+15,Text,Standard,1,2,,Mundo real
+16,Text,Standard,1,2,,Controladora de voo
+17,Text,Standard,1,2,,Drone
+18,Text,Standard,1,2,,Raspberry PI
+19,Text,Standard,1,,,Simulação abstrata
+20,Text,Standard,1,,,Simulação real

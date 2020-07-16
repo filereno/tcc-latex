@@ -11,11 +11,37 @@
 [S.l.], 2019. Dispon{\'\i}vel em: \url{https://ardupilot.org/ardupilot/}.
   Acesso em: 2019.}
 
+\bibitem[ardupilot 2019]{quatorze}
+\abntrefinfo{ardupilot}{ARDUPILOT}{2019}
+{ARDUPILOT. \emph{Software}. 2019.
+Dispon{\'\i}vel em: \url{https://ardupilot.org/ABOUT}. Acesso em: 1 dez. 2019.}
+
 \bibitem[ardupilot.org 2020]{tres}
 \abntrefinfo{ardupilot.org}{ARDUPILOT.ORG}{2020}
 {ARDUPILOT.ORG. \emph{Communicating with Raspberry Pi via MAVLink}. 2020.
 Dispon{\'\i}vel em:
   \url{https://ardupilot.org/dev/docs/raspberry-pi-via-mavlink.html}.}
+
+\bibitem[Ardupilot.org 2020]{vintecinco}
+\abntrefinfo{Ardupilot.org}{ARDUPILOT.ORG}{2020a}
+{ARDUPILOT.ORG. \emph{MavProxy}. 2020.
+Dispon{\'\i}vel em: \url{https://ardupilot.org/mavproxy/}. Acesso em: 9 fev.
+  2020.}
+
+\bibitem[Ardupilot.org 2020]{vinteseis}
+\abntrefinfo{Ardupilot.org}{ARDUPILOT.ORG}{2020b}
+{ARDUPILOT.ORG. \emph{SITL Simulator (Software in the Loop)}. 2020.
+Dispon{\'\i}vel em:
+  \url{https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html}.
+  Acesso em: 9 fev. 2020.}
+
+\bibitem[Blog.Dlib.net 2017]{vintesete}
+\abntrefinfo{Blog.Dlib.net}{BLOG.DLIB.NET}{2017}
+{BLOG.DLIB.NET. \emph{High Quality Face Recognition with Deep Metric Learning}.
+  2017.
+Dispon{\'\i}vel em:
+  \url{http://blog.dlib.net/2017/02/high-quality-face-recognition-with-deep.html}.
+  Acesso em: 30 abr. 2020.}
 
 \bibitem[Brum 2018]{um}
 \abntrefinfo{Brum}{BRUM}{2018}
@@ -24,14 +50,22 @@ Parana, 2018. Dispon{\'\i}vel em:
   \url{https://www.gazetadopovo.com.br/ideias/brasil-nao-soluciona-nem-10-dos-seus-homicidios-d726kw8ykpwh6xm41zakgzoue/}.
   Acesso em: 17 set. 2019.}
 
-\bibitem[Burggräf Alejandro Ricardo Pérez~Martínez 2019]{momesf}
-\abntrefinfo{Burggräf Alejandro Ricardo Pérez~Martínez}{BURGGRäF ALEJANDRO
-  RICARDO PéREZ~MARTíNEZ}{2019}
-{BURGGRäF ALEJANDRO RICARDO PéREZ~MARTíNEZ, H. R. J.~W. P. uadrotors in
-  factory applications: design and implementation of the quadrotor’s p-pid
-  cascade control system.
+\bibitem[BurggrÄf et al. 2019]{momesf}
+\abntrefinfo{BurggrÄf et al.}{BURGGRÄF et al.}{2019}
+{BURGGRÄF, P. et al. Quadrotors in factory applications: design and
+  implementation of the quadrotor’s p-pid cascade control system.
 \emph{SN Applied Sciences}, Springer, v.~1, n.~722, 2019.
 Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s42452-019-0698-7}.}
+
+\bibitem[Carvalho et al. 2011]{vinteum}
+\abntrefinfo{Carvalho et al.}{CARVALHO et al.}{2011}
+{CARVALHO, A. C. P. L.~F. de et al. \emph{Inteligência Artificial - Uma
+  Abordagem de Aprendizado de Máquina}. 1. ed. [S.l.: s.n.], 2011. 1-3~p.
+  Acesso em: 4 dez. 2019.}
+
+\bibitem[Coppin 2013]{vinte}
+\abntrefinfo{Coppin}{COPPIN}{2013}
+{COPPIN, B. \emph{Inteligencia Artificial}. 1. ed. [S.l.: s.n.], 2013.}
 
 \bibitem[CYPRIANO 2014]{inproceedings}
 \abntrefinfo{CYPRIANO}{CYPRIANO}{2014}
@@ -39,14 +73,50 @@ Dispon{\'\i}vel em: \url{https://doi.org/10.1007/s42452-019-0698-7}.}
 [S.l.], 2014. Dispon{\'\i}vel em:
   \url{http://www.engenhariamecanica.ufes.br/sites/engenhariamecanica.ufes.br/files/field/anexo/2015.1\_-\_marcos\_cypriano\_roberto\_makio.pdf}.}
 
+\bibitem[deeplearningbook. 2019]{nove}
+\abntrefinfo{deeplearningbook.}{DEEPLEARNINGBOOK.}{2019}
+{DEEPLEARNINGBOOK. \emph{Deep Learning e a Tempestade Perfeita}. 2019.
+Dispon{\'\i}vel em:
+  \url{http://deeplearningbook.com.br/deep-learning-a-tempestade-perfeita/}.
+  Acesso em: 1 dez. 2019.}
+
 \bibitem[Dronecode 2020]{sete}
 \abntrefinfo{Dronecode}{DRONECODE}{2020}
 {DRONECODE. \emph{mRo Pixhawk Flight Controller (Pixhawk 1)}. 2020.
 Dispon{\'\i}vel em:
   \url{https://docs.px4.io/v1.9.0/en/flight\_controller/mro\_pixhawk.html}.}
 
+\bibitem[Exame 2019]{dezoito}
+\abntrefinfo{Exame}{EXAME}{2019}
+{EXAME. \emph{Jipeiros e operadores de drones se mobilizam para ajudar em
+  Brumadinho}. 2019.
+Dispon{\'\i}vel em:
+  \url{https://exame.com/brasil/jipeiros-e-operadores-de-drones-se-mobilizam-para-ajudar-em-brumadinho/}.
+  Acesso em: 1 dez. 2019.}
+
+\bibitem[G1 2019]{dezesseis}
+\abntrefinfo{G1}{G1}{2019}
+{G1. \emph{Câmeras de segurança ajudam cada vez mais a polícia na solução
+  de crimes no Sul do Rio}. 2019.
+Dispon{\'\i}vel em:
+  \url{https://g1.globo.com/rj/sul-do-rio-costa-verde/noticia/2018/11/23/cameras-de-seguranca-ajudam-cada-vez-mais-a-policia-na-solucao-de-crimes-no-sul-do-rio.ghtml}.
+  Acesso em: 1 dez. 2019.}
+
+\bibitem[Gazebosim 2020]{trintaum}
+\abntrefinfo{Gazebosim}{GAZEBOSIM}{2020}
+{GAZEBOSIM. \emph{Why Gazebo?} 2020.
+Dispon{\'\i}vel em: \url{http://gazebosim.org/}. Acesso em: 1 mai. 2020.}
+
+\bibitem[Geitgey 2016]{vinteoito}
+\abntrefinfo{Geitgey}{GEITGEY}{2016a}
+{GEITGEY, A. \emph{Machine Learning is Fun! Part 4: Modern Face Recognition
+  with Deep Learning}. 2016.
+Dispon{\'\i}vel em:
+  \url{https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78}.
+  Acesso em: 30 abr. 2020.}
+
 \bibitem[Geitgey 2016]{adamgeitgey}
-\abntrefinfo{Geitgey}{GEITGEY}{2016}
+\abntrefinfo{Geitgey}{GEITGEY}{2016b}
 {GEITGEY, A. Machine learning is fun! part 4: Modern face recognition with deep
   learning.
 Medium.com, 2016.
@@ -87,6 +157,16 @@ Dispon{\'\i}vel em:
   \url{https://www.lambda3.com.br/2019/09/redes-neurais-artificiais-as-maquinas-pensam/}.
   Acesso em: 2019.}
 
+\bibitem[mavlink 2019]{treze}
+\abntrefinfo{mavlink}{MAVLINK}{2019}
+{MAVLINK. \emph{MAVLink Developer Guide}. 2019.
+Dispon{\'\i}vel em: \url{https://mavlink.io/en/}. Acesso em: 1 dez. 2019.}
+
+\bibitem[McKinney 2018]{trinta}
+\abntrefinfo{McKinney}{MCKINNEY}{2018}
+{MCKINNEY, W. \emph{Python Para Análise de Dados: Tratamento de Dados com
+  Pandas, NumPy e IPythons}. 1. ed. [S.l.: s.n.], 2018. 616~p.}
+
 \bibitem[Meng et al. 2018]{forcecontrol}
 \abntrefinfo{Meng et al.}{MENG et al.}{2018}
 {MENG, X. et al. Contact force control of an aerial manipulator in pressing an
@@ -105,29 +185,32 @@ Dispon{\'\i}vel em:
 \emph{Journal of Applied Research and Technology}, v.~12, p. 803--814, 08
   2014.}
 
-\bibitem[Nvidia.com 2020]{nvidiajetson}
-\abntrefinfo{Nvidia.com}{NVIDIA.COM}{2020}
-{NVIDIA.COM. \emph{Nvidia Jetson Nano}. 2020.
+\bibitem[Opencv 2019]{doze}
+\abntrefinfo{Opencv}{OPENCV}{2019}
+{OPENCV. \emph{Face Recognition with OpenCV}. 2019.
 Dispon{\'\i}vel em:
-  \url{https://www.nvidia.com/pt-br/autonomous-machines/embedded-systems/jetson-nano/}.}
+  \url{https://docs.opencv.org/trunk/da/d60/tutorial\_face\_main.html}. Acesso
+  em: 1 dez. 2019.}
+
+\bibitem[OpenCV 2019]{quinze}
+\abntrefinfo{OpenCV}{OPENCV}{2019a}
+{OPENCV. \emph{Introduction to OpenCV-Python Tutorials}. 2019.
+Dispon{\'\i}vel em:
+  \url{https://docs.opencv.org/master/d0/de3/tutorial\_py\_intro.html}. Acesso
+  em: 1 dez. 2019.}
+
+\bibitem[OpenCV 2019]{dezessete}
+\abntrefinfo{OpenCV}{OPENCV}{2019b}
+{OPENCV. \emph{OpenCV Documentations}. 2019.
+Dispon{\'\i}vel em: \url{htpps://opencv.org}. Acesso em: 1 dez. 2019.}
 
 \bibitem[px4.io 2020]{px4}
 \abntrefinfo{px4.io}{PX4.IO}{2020}
 {PX4.IO. \emph{Px4 Documentation}.
 [S.l.], 2020. Dispon{\'\i}vel em: \url{https://px4.io/}. Acesso em: 2019.}
 
-\bibitem[Rampazzo 2005]{metodologia}
-\abntrefinfo{Rampazzo}{RAMPAZZO}{2005}
-{RAMPAZZO, L. \emph{Metodologia científica}. [S.l.]: Edições Loyola, 2005.}
-
-\bibitem[raspberrypi.org 2020]{oito}
-\abntrefinfo{raspberrypi.org}{RASPBERRYPI.ORG}{2020a}
-{RASPBERRYPI.ORG. \emph{Raspberry Pi 3 Model B}. 2020.
-Dispon{\'\i}vel em:
-  \url{https://www.raspberrypi.org/products/raspberry-pi-3-model-b/}.}
-
 \bibitem[raspberrypi.org 2020]{raspdoc}
-\abntrefinfo{raspberrypi.org}{RASPBERRYPI.ORG}{2020b}
+\abntrefinfo{raspberrypi.org}{RASPBERRYPI.ORG}{2020}
 {RASPBERRYPI.ORG. \emph{Raspberrypi documentation}. 2020.
 Dispon{\'\i}vel em: \url{https://www.raspberrypi.org/documentation/}.}
 
@@ -142,7 +225,7 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Santos}{SANTOS}{2018a}
 {SANTOS, A. M. S.~P. \emph{Políticas sociais em xeque: impactos da crise sobre
   as finanças municipais}.
-[S.l.], 2018. 35-46~p. Dispon{\'\i}vel em:
+Rio de Janeiro, 2018. 35-46~p. Dispon{\'\i}vel em:
   \url{https://royaltiesdopetroleo.ucam-campos.br/wp-content/uploads/2018/12/boletim-royalties-N61-dezem-2018-artigo-4.pdf}.}
 
 \bibitem[Santos 2018]{exRedeNeural}
@@ -150,6 +233,18 @@ Dispon{\'\i}vel em:
 {SANTOS, L.~A. \emph{Artificial intelligence and machine learning}. GitBook,
   2018. 65~p. Dispon{\'\i}vel em:
   \url{https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/linear\_algebra.html}.}
+
+\bibitem[sas 2019]{dez}
+\abntrefinfo{sas}{SAS}{2019}
+{SAS. \emph{Deep Learning O que é e qual sua importância?} 2019.
+Dispon{\'\i}vel em:
+  \url{https://www.sas.com/pt\_br/insights/analytics/machine-learning.html}.
+  Acesso em: 1 dez. 2019.}
+
+\bibitem[Silva et al. 2019]{vintedois}
+\abntrefinfo{Silva et al.}{SILVA et al.}{2019}
+{SILVA, F.~M. da et al. \emph{Inteligência Artificial}. 1. ed. [S.l.: s.n.],
+  2019. 11-118~p. Acesso em: 1 dez. 2019.}
 
 \bibitem[Silva 2019]{cinco}
 \abntrefinfo{Silva}{SILVA}{2019}
@@ -186,6 +281,19 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Turing}{TURING}{2009}
 {TURING, A.~M. Computer machinery and intelligence.
 \emph{Parsing the Turing Test}, Springer, DORDRECHT, p. 23--65, 2009.}
+
+\bibitem[Wikipedia 2020]{vintequatro}
+\abntrefinfo{Wikipedia}{WIKIPEDIA}{2020}
+{WIKIPEDIA. \emph{Motor de corrente contínua sem escovas}. 2020.
+Dispon{\'\i}vel em:
+  \url{https://pt.wikipedia.org/wiki/Motor\_de\_corrente\_continua\_sem\_escovas}.
+  Acesso em: 28 jan. 2020.}
+
+\bibitem[Zanotto, Ferreira e Matsumoto 2020]{vintenove}
+\abntrefinfo{Zanotto, Ferreira e Matsumoto}{ZANOTTO; FERREIRA; MATSUMOTO}{2020}
+{ZANOTTO, L.; FERREIRA, A.; MATSUMOTO, M. Arquitetura e programa\c{c}{\~a}o de
+  gpu nvidia.
+São Paulo, p.~1--7, 2020.}
 
 \bibitem[Zmoginski 2019]{dois}
 \abntrefinfo{Zmoginski}{ZMOGINSKI}{2019}

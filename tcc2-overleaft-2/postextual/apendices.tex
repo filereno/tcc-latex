@@ -36,7 +36,7 @@ import numpy as np
 import cv2
 
 
-# contrução dos argumentos passados
+# construção dos argumentos passados
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-e", "--encodings", default="encodings.pickle",
@@ -46,7 +46,7 @@ help="path to output video")
 ap.add_argument("-y", "--display", type=int, default=1,	
 help="whether or not to display output frame to screen")
 ap.add_argument("-d", "--detection-method", type=str, default="cnn", 
-help="face detection model to use: either `hog` or `cnn`")
+help="face detection model to use: either (hog0 or (cnn)")
 ap.add_argument("-b", "--buffer", type=int, default=64,	
 help="max buffer size")
 ap.add_argument('--connect')	
@@ -73,8 +73,8 @@ auxVelY=""
 VELMAX = 5
 
 
-# allow the camera sensor to warm up
-# aguarda a camera inicializar
+# allow the câmera sensor to warm up
+# aguarda a câmera inicializar
 print("[INFO] starting video stream...")
 vs = VideoStream(src=0).start()
 writer = None
@@ -197,7 +197,7 @@ while True:
 		cx_str = str(cx)
 		cy_str = str(cy)
 		
-		# desenha o retangulo, nome do rosto, centro do quadro
+		# desenha o retângulo, nome do rosto, centro do quadro
 		# draw the predicted face name on the image
 		cv2.rectangle(frame, (left, top), (right, bottom),
 		(0, 255, 0), 2)
@@ -223,7 +223,7 @@ while True:
 		PbX = int(centerScreenX+a)
 		PbY = int(centerScreenY+l)
 		
-		# desenha as regioes de interesse	
+		# desenha as regiões de interesse	
 		# draw the regions of interest
 		cv2.rectangle(frame, (PaX,PaY), (PbX,PbY), (211,211,211), 2)
 		cv2.line(frame,(startX,PaY),(PaX,PaY), (0,128,255),1) #laranja orange
@@ -241,7 +241,7 @@ while True:
 		COMPVY=Decimal(VELMAX/centerScreenX)
 		COMPV=Decimal((COMPVX+COMPVY)/2)
 		
-		# verifica em qual regiao de interesse a face esta,
+		# verifica em qual região de interesse a face esta,
 		# calcula as velocidades
 		# envia a informação para o VANT
 		# check in which region of interest the face is
@@ -254,7 +254,7 @@ while True:
 			auxVelY = 0
 			auxVelX = round(Decimal(auxX*COMPV),4)
 			print(auxVelX)
-			#send_local_ned_velocity(vehicle, auxX , 0, 0)
+			send_local_ned_velocity(vehicle, auxVelX , 0, 0)
 		elif cx in range(PaX,PbX) and cy in range(PbY,height):
 			print("SUL")
 			direction = "SUL"
@@ -262,6 +262,7 @@ while True:
 			auxVelY = 0
 			auxVelX = round(Decimal(auxX*COMPV),4)
 			print(auxVelX)
+			send_local_ned_velocity(vehicle, auxVelX , 0, 0)
 		elif cx in range(PbX,width) and cy in range(PaY,PbY):
 			print("LESTE")
 			direction = "LESTE"
@@ -269,6 +270,7 @@ while True:
 			auxY = int(cx-centerScreenX)
 			auxVelY = round(Decimal(auxY*COMPVY),4)	
 			print(auxVelY)
+			send_local_ned_velocity(vehicle, 0 , auxVelY, 0)
 		elif cx in range(startX,PaX) and cy in range(PaY,PbY):
 			print("OESTE")
 			direction = "OESTE"	
@@ -276,6 +278,7 @@ while True:
 			auxY = int(cx-centerScreenX)
 			auxVelY = round(Decimal(auxY*COMPVY),4)
 			print(auxVelY)
+			send_local_ned_velocity(vehicle, 0 , auxVelY, 0)
 		elif cx in range(PbX,width) and cy in range(startY,PaY):
 			print("NORDESTE")
 			direction = "NORDESTE"
@@ -284,6 +287,8 @@ while True:
 				auxX = int(centerScreenY-cy)
 				auxVelX = round(Decimal(auxX*COMPV),4)
 				auxVelY = round(Decimal(auxY*COMPV),4)
+				send_local_ned_velocity(vehicle, auxVelX , auxVelY, 0)
+				send_local_ned_velocity(vehicle, auxVelX , auxVelY, 0)
 		elif cx in range(startX,PaX) and cy in range(startY,PaY):
 			print("NOROESTE")
 			direction = "NOROESTE"
@@ -292,6 +297,8 @@ while True:
 				auxX = int(centerScreenY-cy)
 				auxVelX = round(Decimal(auxX*COMPV),4)
 				auxVelY = round(Decimal(auxY*COMPV),4)
+				send_local_ned_velocity(vehicle, auxVelX , auxVelY, 0)
+				send_local_ned_velocity(vehicle, auxVelX , auxVelY, 0)
 		elif cx in range(startX,PaX) and cy in range(PbY,height):
 			print("SUDOESTE")
 			direction = "SUDOESTE"
@@ -300,6 +307,8 @@ while True:
 				auxX = int(centerScreenY-cy)
 				auxVelX = round(Decimal(auxX*COMPV),4)
 				auxVelY = round(Decimal(auxY*COMPV),4)
+				send_local_ned_velocity(vehicle, auxVelX , auxVelY, 0)
+				send_local_ned_velocity(vehicle, auxVelX , auxVelY, 0)
 		elif cx in range(PbX,width) and cy in range(PbY,height):
 			print("SUDESTE")
 			direction = "SUDESTE"
@@ -308,6 +317,8 @@ while True:
 				auxX = int(centerScreenY-cy)
 				auxVelX = round(Decimal(auxX*COMPV),4)
 				auxVelY = round(Decimal(auxY*COMPV),4)
+				send_local_ned_velocity(vehicle, auxVelX , auxVelY, 0)
+				send_local_ned_velocity(vehicle, auxVelX , auxVelY, 0)
 		else:
 			direction = ""
 			auxX = 0
@@ -402,11 +413,11 @@ def connectMyCopter():
 	except socket.error:
 		print ('SEM SERVIDOR SITL EXISTENTE!')
 	except exceptions.OSError as e:
-		print ('SEM COMINICAÇÃO SERIAL EXISTENTE!')
+		print ('SEM COMUNICAÇÃO SERIAL EXISTENTE!')
 	except dronekit.APIException:
-		print ('TEMPO DE CONEXAO EXCEDIDO!')
+		print ('TEMPO DE CONEXÃO EXCEDIDO!')
 	except:
-		print ('ACONTEREAM OUTROS ERROS DE CONEXAO!')
+		print ('ACONTEREAM OUTROS ERROS DE CONEXÃO!')
 	
 	return vehicle
 
@@ -427,7 +438,7 @@ def arm_and_takeoff(vehicle, targetHeight):
 	while vehicle.armed==False:
 		print("Esperando o veiculo se armar")
 		time.sleep(1)
-	print("Cuidado as helices virtuais estao em funcionamento")
+	print("Cuidado as hélices virtuais estão em funcionamento")
 	
 	vehicle.simple_takeoff(targetHeight) ##meters
 	

@@ -1,24 +1,22 @@
 \chapter{Metodologia}\label{cap:metodologia}
-Segundo \cite{metodologia} metodologia vem do grego (\textit{methodos + logia}) ou "estudo do método", e método do grego (\textit{methodos}) (\textit{methà + odon}) quer dizer "o caminho para chegar", logo metodologia é o estudo de um conjunto de etapas dispostas em ordem para o estudo de uma determinada ciência e para alcançar um objetivo cientifico.
+%Segundo \cite{metodologia} metodologia vem do grego (\textit{methodos + logia}) ou "estudo do método", e método do grego (\textit{methodos}) (\textit{methà + odon}) quer dizer "o caminho para chegar", logo metodologia é o estudo de um conjunto de etapas dispostas em ordem para o estudo de uma determinada ciência e para alcançar um objetivo cientifico.
 
-Neste capitulo, e etapa do estudo serão explanadas as simulações que foram realizadas para chegar a uma conclusão sobre o funcionamento do protótipo.
+Neste capitulo serão explanados o desenvolvimento e as simulações que foram realizadas para chegar a uma conclusão sobre o funcionamento do protótipo.
 
-Foi determinado que os testes e simulação para validar o protótipo seria feito em módulos delimitados em funções especificas do protótipo, isso porque devido a algumas especificações como; tempo, custo verificou-se que não seria possível realizar um teste total do protótipo. Porem é devidamente valido e viável realizar testes modulares provando que a maior parte dos resultados esperados funciona. 
+Foi determinado que os testes e simulações para validar o protótipo seriam feitos em módulos delimitados em funções especificas do protótipo, isso porque devido a algumas limitações como tempo e custo verificou-se que não seria possível realizar um teste de ambiente real do protótipo. Porém, é devidamente valido e viável realizar testes modulares provando que a maior parte dos resultados esperados são satisfatórios. 
 
-O funcionamento total seria por exemplo um teste de campo utilizando um VANT real em um ambiente real enfrentando condições reais de temperatura, pressão, vento, luminosidade entre várias outras condições adversas que poderiam afetar o funcionamento. Porem depois de toda a pesquisa descobriu-se que testes de funcionamento que envolvam robótica ou mais especificamente um VANT, são realizados primeiramente com simulações utilizando softwares e ferramentas desenvolvidos para esse fim, logo optou-se por validar o protótipo com o uso destas ferramentas. 
+O funcionamento em ambiente real seria por exemplo um teste de campo utilizando um VANT real em um ambiente real enfrentando condições reais de temperatura, pressão, vento, luminosidade entre várias outras condições adversas que poderiam afetar o funcionamento. No entanto, depois de toda a pesquisa descobriu-se que testes de funcionamento que envolvam robótica, ou mais especificamente um VANT, são realizados primeiramente com simulações utilizando softwares e ferramentas desenvolvidas para esse fim, logo optou-se por validar o protótipo com o uso dessas ferramentas. 
 
-Devido a alguns objetivos que especificam a utilização de um computador complementar (Raspberry Pi) que sera acoplado ao VANT e sera responsável pela parte de visão computacional, foi realizada uma simulação do tipo \textit{benchmark} rodando o código fonte de visão computacional comparando os resultados com o do computador utilizado para rodar os simuladores. 
+Devido ao objetivo do projeto que especifica a utilização de um computador complementar responsável pelo processamento do algoritmo de visão computacional (Raspberry Pi) e que será acoplado ao VANT, foi realizada uma avaliação de desempenho \do tipo \textit{benchmarking} rodando o código fonte de visão computacional e comparando os resultados com o do computador utilizado para rodar os simuladores. 
 
-De maneira a auxiliar na compreensão de como funcionara o sistema a ilustração \ref{fig:simul} representa como a simulação real é projetada para o sistema de simulação abstrato, perceba que existe uma divisão entre cada ferramenta. Iniciando de cima para baixo nos temos:
+De maneira a auxiliar na compreensão de como funcionará o sistema, a ilustração \ref{fig:simul} representa como a simulação de ambiente real é projetada ou abstraída para o sistema de ambiente simulado. Perceba que existe uma divisão entre cada ferramenta, iniciando de cima para baixo e de acordo com as setas, como segue:
 
 \begin{itemize}
-	\item O computador complementar (Raspberry Pi) que comportou a ferramenta de programação para VANTs Dronekit é abstraída pelo próprio Dronekit API que funcionara juntamente com o software de visão computacional.
-	\item O ambiente físico, gravidade, vento, terreno e luminosidade no caso o local aonde o VANT seria pilotado, é abstraído pelo software Gazebo. 
+	\item O computador complementar (Raspberry Pi), que comportou a ferramenta de programação para VANTs (Dronekit) e o sistema de visão computacional, é abstraído pelo próprio Dronekit API.
+	\item O ambiente de simulação físico, gravidade, vento, terreno e luminosidade ou o local aonde o VANT seria pilotado, é abstraído pelo software Gazebo. 
 	\item O equipamento de voo quadricóptero é simulado pelo simulador de VANTs SITL que vem embutido no firmware Ardupilot.
-	\item A controladora de voo Pixhawk que executa o firmware Ardupilot é simulado pelo próprio, que ja possui embutido um sistema que possibilita testes e simulações através de software.  
-\end{itemize} 
-
-A arquitetura do sistema de simulação pode ser observado na ilustração \ref{fig:arc} ficando mais claro como os módulos dos simuladores se integram. 
+	\item A controladora de voo Pixhawk que executa o \textit{firmware} Ardupilot é simulado pelo próprio \textit{firmware}, que já possui embutido um sistema que possibilita testes e simulações através de software.  
+\end{itemize}  
 
 \begin{figure}[H]
 	\centering
@@ -31,6 +29,10 @@ A arquitetura do sistema de simulação pode ser observado na ilustração \ref{
 	\label{fig:simul}
 \end{figure}
 
+A arquitetura do sistema de simulação pode ser observado na ilustração \ref{fig:arc} ficando mais claro como os módulos dos simuladores se integram. O arquivo "functionsControlDron.py"  implementa as funções da API do Dronekit. Quando uma função de conexão é chamada pelo código fonte \textit{python3 recognize\_faces\_video.py --connect tcp:127.0.0.1:14550} ele abre um canal de comunicação (MAVLink) utilizando protocolo TCP na porta 14550 conectando com o MAVProxy o qual por sua vez se conecta ao Ardupilot (VANT) por protocolo MAVLink usando a porta 5763, e esse canal fica aberto até que seja solicitada uma desconexão. 
+
+Dentro do \textit{firmware} Ardupilot, o arquivo "sim\_vehicle.py" abre o simulador SITL com o comando \textit{(sim\_vehicle.py -f gazebo-iris --console)} de maneira que ele se integre com a API "ardupilot\_gazebo". A API de integração do Ardupilot com o Gazebo cria uma conexão entre o simulador SITL e o ambiente de simulação de VANT pré-criada no Gazebo, e quando um comando é enviado pelo código fonte ele vai diretamente para o VANT do simulador que por sua sua vez executa a tarefa. 
+
 \begin{figure}[H]
 	\centering
 	\caption{Arquitetura Básica do Sistema de Simulação}
@@ -42,34 +44,35 @@ A arquitetura do sistema de simulação pode ser observado na ilustração \ref{
 	\label{fig:arc}
 \end{figure}
 
-\section{Métodos}
+%\section{Métodos}
 
-Para uma melhor compreensão do funcionamento do sistema foram desenvolvidos diagramas, fluxogramas e gráficos que explicam modular mente cada processo. Simulações com software foram utilizadas pata testar o funcionamento integrado de alguns desses módulos. 
+Para uma melhor compreensão do funcionamento do sistema foram desenvolvidos diagramas, fluxogramas e gráficos que explicam modularmente cada processo. Simulações com software foram utilizadas para testar o funcionamento integrado de alguns desses módulos. 
 
-Uma simulação bechmark de hardware também foi realizado para comparação e validação do protótipo.
+Uma simulação \textit{bechmark} do hardware executando o algoritmo de visão computacional também foi realizada para comparação e validação do protótipo.
 
-Os módulos foram subdivididos, um deles sera o de visão computacional que validara o reconhecimento facial, esse modulo vai validar as funções de distinção entre um humano inserido no banco de busca e outros que não foram, e um denominado de controla e automação que de acordo com o tema do trabalho é o mais importante por determinar toda parte de controle do VANT.
+Os módulos foram subdivididos. Um deles é o de visão computacional que valida o reconhecimento facial. Esse modulo valida as funções de distinção entre um humano inserido no banco de busca e outros que não foram. Outro módulo é o denominado de controle e automação que é responsável pela parte de controle do VANT.
 %------------------------
 
 %------------------------
 \section{Protótipo}
-O protótipo consistem em um sistema que determinara se é possível utilizar visão computacional, ou mais especificamente o método de reconhecimento facial, para controlar um veiculo do tipo VANT, ou seja desenvolver um sistema de controle e automação para essa finalidade.
-Primeiramente seria utilizado partes físicas de um VANT do tipo quadricóptero acompanhando uma controladora de voo (Pixhawk) com o \textit{firmware} Ardupilot, e a parte de visão computacional estaria em um computador complementar (RaspBeryy Pi), os dois seriam interligados utilizando protocolo MAVLink. Porem se optou por utilizar um conjunto de ferramentas de simulação para realizar os testes funcionais.
+O protótipo consiste em um sistema que determinará se é possível utilizar visão computacional, ou mais especificamente, o método de reconhecimento facial para controlar um veículo do tipo VANT, ou seja, desenvolver um sistema de controle e automação para essa finalidade.
 
-Essas ferramentas de simulação, simulam todo o hardware que seria utilizado no caso de simulações reais físicas. 
+Primeiramente seria utilizado partes físicas de um VANT do tipo quadricóptero acompanhando uma controladora de voo (Pixhawk) com o \textit{firmware} Ardupilot, e a parte de visão computacional estaria em um computador complementar (RaspBeryy Pi), sendo que os dois seriam interligados utilizando protocolo MAVLink. Porém, como já foi mencionado, optou-se por utilizar um conjunto de ferramentas de simulação para realizar os testes funcionais. Essas ferramentas de simulação implementam todo o hardware que seria utilizado no caso de ambiente físico. 
 
 Como todas as ferramentas são implementas em linguagem python, a codificação do algoritmo também foi desenvolvida em python para uma melhor integração das ferramentas, módulos e bibliotecas.
 
-Foi determinado que o sistema se divide em duas partes; visão computacional responsável pela etapa de reconhecimento facial. E o sistema de controle e automação; responsável por toda parte que implementa o sistema de controla e automação do VANT.
+Foi determinado que o sistema se divide em duas partes: (1) visão computacional, responsável pela etapa de reconhecimento facial; e (2) o sistema de controle e automação, responsável por toda parte que implementa o sistema de controle e automação do VANT.
 
-No diagrama \ref{fig:pross} é possível observar mas detalhadamente as duas partes aonde cada circulo representa uma etapa da logica de processo do algoritmo, e a intercessão entre os círculos representam a ação que determina a mudança de estado entre processos.
-
-O inicio do sistema poderia ser definido de varias maneiras, porem foi determinado que ao atingir uma altitude especificada daria inicio ao sistema iniciando o módulo de reconhecimento facial, quando uma face for reconhecida o algoritmo detecta se ouve uma mudança de posição que represente um deslocamento justificável, caso seja verdadeiro o deslocamento, é identificado para qual região de interesse se deslocou, logo se o deslocamento for em direção a alguma das regiões (Norte, Sul Leste, Oeste), é enviado para o VANT a direção em que ele deve se movimentar, porem caso o deslocamento seja na diagonal, o sistema computa os valores das componentes de velocidade X e Y enviando para o VANT.   
- 
-\subsection{Fluxogramas dos Protótipos e Funcionamento do Sistema}
- 
- Como ja foi abordado antes a ilustração \ref{fig:pross} representa o sistema em uma visão macro e como um todo dividida em dois blocos (controle e visão computacional) e dentro deles quais etapas fazem parte, assim como as ações que acarretam em mudança de etapa. E para explanarmos mais detalhadamente o funcionamento do sistema, três diagramas UML representaram em visão midi como funciona cada parte, primeiro o digrama UML \ref{fig:diasist} mostra o sistema em um todo, o \ref{fig:diagvisao} as etapas de visão computacional e o \ref{fig:diagcont} a parte de controle.
-
+No diagrama \ref{fig:pross} é possível observar mais detalhadamente as duas partes aonde cada círculo representa uma etapa da lógica de processo do algoritmo, e a intersecção entre os círculos representa a ação do módulo de controle e automação.
+\begin{enumerate}
+	\item O inicio do sistema poderia ser definido de várias maneiras, porém foi determinado que ao atingir uma altitude especificada, daria inicio ao sistema iniciando o módulo de reconhecimento facial.
+	\item Uma face foi reconhecida, passa para o próximo módulo.
+	\item Se ouve uma mudança de posição que represente um deslocamento justificável.
+	\item Caso seja verdadeiro o deslocamento, é identificado para qual região de interesse se deslocou.
+	\item Se o deslocamento for em direção a alguma das regiões (Norte, Sul, Leste, Oeste), é enviado para o VANT a direção em que ele deve se movimentar.
+	\item Caso o deslocamento seja na diagonal, o sistema computa os valores das componentes de velocidade X e Y enviando para o VANT.  
+	\item Sinal que indica para o VANT que ele deve desativar o sistema de detecção (foi determinado que seria o pouso do VANT).
+\end{enumerate}
 
 \begin{figure}[H]
 	\centering	
@@ -82,13 +85,15 @@ O inicio do sistema poderia ser definido de varias maneiras, porem foi determina
 	\label{fig:pross}
 \end{figure}
 
+\subsection{Fluxogramas dos Protótipos e Funcionamento do Sistema}
+
+Como já foi abordado anteriormente, a ilustração \ref{fig:pross} representa o sistema em uma visão macro dividida em dois blocos, controle e visão computacional, e dentro deles quais etapas fazem parte assim como as ações que acarretam em mudança de etapa. Além disso, três diagramas UML apresentam o funcionamento do sistema em uma visão mais detalhada. Primeiro o digrama UML \ref{fig:diasist} mostra o sistema como um todo. O \ref{fig:diagvisao} as etapas de visão computacional.  E o \ref{fig:diagcont} a parte de controle.
+
 \subsubsection{Digramas UML da Codificação e Lógica do Software}
 
-No diagrama \ref{fig:diasist} cada elemento UML mostra a qual parte do sistema ele se adequá através da legenda dividida em cores, salmão para visão computacional e amarelo para controle. Cada elemento contem a definição da lógica que ele executa dentro do software.
+No diagrama \ref{fig:diasist}, cada elemento UML mostra a qual parte do sistema ele se adéqua através da legenda dividida em cores, sendo salmão para visão computacional, e amarelo para controle. Cada elemento contém a definição da lógica que ele executa dentro do software.
 
-A ilustração \ref{fig:diagvisao} defini as partes e funções lógicas das etapas que conferem o algoritmo de reconhecimento facial do protótipo.  
-
-E na ilustração \ref{fig:diagcont} a definição das partes dentro do algoritmo que representam o sistema de controle do VANT. 
+A ilustração \ref{fig:diagvisao} defini as partes e funções lógicas das etapas que conferem o algoritmo de reconhecimento facial do protótipo. E na ilustração \ref{fig:diagcont} a definição das partes dentro do algoritmo que representam o sistema de controle do VANT. 
 
 \begin{figure}[H]
 	\centering	
@@ -125,11 +130,11 @@ E na ilustração \ref{fig:diagcont} a definição das partes dentro do algoritm
 %---------------------------------
 \subsection{Teoria do Sistema de Controle de Robótica para o VANT}
 
-Foi necessariíssimo desenvolver um novo sistema de coordenadas baseando-se em um sistema cartesiano. Para isso foram realizados alguns cálculos em cima do sistema de coordenas do OpenCV, para obter um protótipo de sistema do tipo cartesiano que gera-se valores para os eixos X e Y de forma balanceada 
+Foi necessário desenvolver um novo sistema de coordenadas baseando-se em um sistema cartesiano. Para isso foram realizados alguns cálculos em cima do sistema de coordenas do OpenCV, gerando um protótipo de sistema do tipo cartesiano que origina valores para os eixos X e Y de forma balanceada 
 
 \subsubsection{Conversão do Sistema de Coordenadas OpenCV para Cartesiano}
 
-Uma das primeiras etapas da implementação foi modificar o sistema de coordenadas de pixels no qual o OpenCV se baseia, para tornar conveniente sua utilização no sistema que detecta em qual direção o VANT tem que se movimentar. A ilustração \ref{fig:quad1} representa como o OpenCV trabalha com coordenadas de pixels, perceba que o ponto de origem das coordenadas verticais e Horizontais se situam na parte superior esquerda, logo não é possível identificar o sentido direcional em que o ponto na cor vermelha no centro da face esta se movendo. Para fins de orientação se estipulou que as linhas de pixels na horizontal pertencem a X e os na vertical a Y, e como é possível identificar com uma ferramenta do OpenCV o centro do retângulo desenhado em torno da face através de Axy e Bxy, então se encontrou as coordenadas X e Y do ponto vermelho central.
+Uma das primeiras etapas da implementação foi modificar o sistema de coordenadas de pixels no qual o OpenCV se baseia para tornar conveniente sua utilização no sistema que detecta em qual direção o VANT tem que se movimentar. A ilustração \ref{fig:quad1} representa como o OpenCV trabalha com coordenadas de pixels.  Perceba que o ponto de origem das coordenadas verticais e horizontais se situam na parte superior esquerda, logo não é possível identificar o sentido direcional em que o ponto na cor vermelha no centro da face esta se movendo. Para fins de orientação, se estipulou que as linhas de pixels na horizontal pertencem a X e os na vertical a Y, e como é possível identificar com uma ferramenta do OpenCV o centro do retângulo desenhado em torno da face através de Axy e Bxy, então se encontrou as coordenadas X e Y do ponto vermelho central.
 
 \begin{figure}[H]
 	\centering
@@ -139,7 +144,7 @@ Uma das primeiras etapas da implementação foi modificar o sistema de coordenad
 	\label{fig:quad1}
 \end{figure}
 
-Para que o sistema funciona-se as coordenadas X=0 e Y=0 foram transportadas para um ponto central da tela, portanto foram realizados cálculos para determinar dois eixos um na horizontal e outro na vertical e sua intersecção ou ponto médio é o epicentro do novo sistema de coordenadas. Na ilustração \ref{fig:quad2} as duas retas na cor marrom representam o novo sistema, assim foi possível equacionar um novo ponto central para o retângulo que é  desenhado em torno da face, esse novo ponto é dado como B' e ele recebe os valores calculados para fx' e fy'.   
+Para que o sistema funciona-se as coordenadas X=0 e Y=0 foram transportadas para um ponto central da tela, portanto foram realizados cálculos para determinar dois eixos, um na horizontal e outro na vertical, e sua intersecção ou ponto médio é o epicentro do novo sistema de coordenadas. Na ilustração \ref{fig:quad2} as duas retas na cor marrom representam o novo sistema, assim foi possível equacionar um novo ponto central para o retângulo que é  desenhado em torno da face, esse novo ponto é dado como B' e ele recebe os valores calculados para fx' e fy'.   
 
 \begin{figure}[H]
 	\centering
@@ -149,9 +154,9 @@ Para que o sistema funciona-se as coordenadas X=0 e Y=0 foram transportadas para
 	\label{fig:quad2}
 \end{figure}
 
-O objetivo de obter um sistema de coordenadas que pudesse ser utilizado para orientar o direcionamento do VANT foi alcançado e ele pode ser observado na ilustração \ref{fig:teste}, esse sistema de coordenadas é denominado de cartesiano e possui quatro quadrantes distintos e bem definidos, é o mesmo utilizado para localização geográfica na superfície terrestre. Da mesmo forma que aeronaves conseguem se orientar na superfície terrestre usando coordenadas cartesianas, também é possível guiar um VANT para chegar ao objetivo do protótipo.
+O objetivo de obter um sistema de coordenadas que pudesse ser utilizado para orientar o direcionamento do VANT foi alcançado e ele pode ser observado na ilustração \ref{fig:teste}. Esse sistema de coordenadas é denominado de cartesiano e possui quatro quadrantes distintos e bem definidos, sendo o mesmo sistema utilizado para localização geográfica na superfície terrestre. Da mesmo forma que aeronaves conseguem se orientar na superfície terrestre usando coordenadas cartesianas, também é possível guiar um VANT para chegar ao objetivo do protótipo.
 
-Com o novo sistema de coordenadas foi possivel obter valores para X e Y com uma maior precisão (0.005m/s a 5m/s), assim como os quatro quadrantes conseguem indicar para qual direção a aeronave tem que se deslocar. Esses valores de velocidade posteriormente serão enviados para a controladora de voo do VANT. 
+Com o novo sistema de coordenadas foi possível obter valores para X e Y com uma maior precisão (0.005m/s a 5m/s), assim como os quatro quadrantes conseguem indicar para qual direção a aeronave tem que se deslocar. Esses valores de velocidade posteriormente serão enviados para a controladora de voo do VANT. 
 
 A interpretação das informações da ilustração \ref{fig:quad2} pode ser feita através das seguintes sintaxes matemáticas; 
 
@@ -171,7 +176,7 @@ A interpretação das informações da ilustração \ref{fig:quad2} pode ser fei
 	\label{fig:teste}
 \end{figure}
 
-Para concluir essa parte a ilustração \ref{fig:conv} representa a projeção em 3D do sistema de coordenadas original que o OpenCV utiliza e como fica apos a transformação. O OpenCV possui o eixo Z (profundidade), ele é utilizado para calcular a posição em um sistema 3D ou adquirir a velocidade de deslocamento, porem essa etapa não sera abordada mas pode ser um bom tema para trabalhos futuros ou aperfeiçoamento do sistema.
+Para concluir essa parte, a ilustração \ref{fig:conv} representa a projeção em 3D do sistema de coordenadas original que o OpenCV utiliza e como fica após a transformação. O OpenCV possui o eixo Z (profundidade) que é utilizado para calcular a posição em um sistema 3D ou adquirir a velocidade de deslocamento. Porém, essa etapa não será abordada mas pode ser um bom tema para trabalhos futuros ou aperfeiçoamento do sistema.
 
 \begin{figure}[H]
 	\centering
@@ -183,7 +188,7 @@ Para concluir essa parte a ilustração \ref{fig:conv} representa a projeção e
 
 \subsubsection{Regiões de Interesse}
 
-Essa etapa foi fundamental para a implementação e funcionamento do protótipo, a ideia é simples foram delimitadas regiões de interesse utilizando o OpenCV, a ilustração \ref{fig:regint} mostra todas as cinco áreas. No centro da tela se situa a região de não interesse e como o nome sugere dentro dessa região ou retângulo não existe reação do sistema de estreamento, porem caso a pessoa se mova e saia de dentro o sistema detecta em qual direção esta se deslocando. A simplicidade vem do fato de o objetivo ou a lógica principal ser sempre manter o alvo (retângulo verde criado pelo OpenCV em torno da face humana) no dentro da região de não interesse.  
+Essa etapa foi fundamental para a implementação e funcionamento do protótipo. A ideia é simples: foram delimitadas regiões de interesse utilizando o OpenCV, e a ilustração \ref{fig:regint} mostra todas as cinco áreas. No centro da tela se situa a região de não interesse, e como o nome sugere, dentro dessa região ou retângulo não existe reação do sistema de rastreamento, porém caso a pessoa se mova e saia de centro, o sistema detecta em qual direção esta se deslocando. A simplicidade vem do fato de o objetivo ou a lógica principal ser sempre manter o alvo (retângulo verde criado pelo OpenCV em torno da face humana) no centro da região de não interesse.  
 
 \begin{figure}[H]
 	\centering
@@ -199,25 +204,34 @@ Essa etapa foi fundamental para a implementação e funcionamento do protótipo,
 %  \label{fig:nome dado a figura}
 %   \legend{Fonte: do autor}
 %\end{figure}
-As dimensões das regiões de interesse são dinâmicas ou seja elas variam de tamanha conforme a dimensão do retângulo de detecção facial do OpenCV. Essa técnica foi determinada para tratar a distância em que a detecção facial é feita, assim se o alvo da detecção esta em uma distância maior as regiões são menores e mais perto maiores, dessa forma as reações do VANT se adequaram com a distância.
+As dimensões das regiões de interesse são dinâmicas ou seja elas variam de tamanho conforme a dimensão do retângulo de detecção facial do OpenCV se altera. Essa técnica foi determinada para tratar a distância em que a detecção facial é feita. Assim, se o alvo da detecção está à uma distância maior, as regiões são menores, e quanto mais perto, maiores. Dessa forma as reações do VANT se adaptam com a distância.
 
 A teoria de dimensionamento dinâmico pode ser explanada da seguinte forma, observando as ilustrações \ref{fig:quad1} e \ref{fig:quad2}, primeiro se achou a diferença entre o centro do retângulo da face B até as bordas do retângulo Ax e Ay, depois foi dimensionado a partir do centro da tela a região de não interesse central somando ou subtraindo o resultado a fx e fy. A partir dai foi possível dimensionar as regiões de interesse Norte, Sul, Leste, Oeste, Nordeste, Noroeste, Sudeste e Sudoeste.
 
-Porem a ideia das regiões de intersere não trata todas as possibilidades, como uma movimentação na diagonal, e dessa forma foi necessário desenvolver outras etapas.
+Porém, a ideia das regiões de intersere não trata todas as possibilidades, como uma movimentação na diagonal, e dessa forma foi necessário desenvolver outras etapas.
 
 \subsubsection{Coeficiente de Aceleração}
 
-Foi determinado, calculado um valor para o coeficiente de aceleração do VANT, observando a ilustração \ref{fig:quad2} foi pré-determinado um valor de velocidade máxima de 5m/s, esse valor foi dividido pela média da soma de fx e fy, então se multiplicou esse valor pela posição central da caixa delimitadora (retângulo) da face (fx', fy'). 
+Foi determinado e calculado um valor para o coeficiente de aceleração do VANT. Observando a ilustração \ref{fig:quad2}, foi pré-determinado um valor de velocidade máxima de 5m/s. Esse valor foi dividido pela média da soma de fx e fy, então se multiplicou esse valor pela posição central da caixa delimitadora (retângulo) da face (fx', fy'). 
 
 \subsubsection{Movimentação do VANT}
 
-Para demonstrar como o VANT interage e interpreta os dados que recebe do sistemas de visão computacional e atua para se orientar, foram criados dois modelos de gráfico do tipo vetor gradiente, aonde o tom de cor mais forte representa o valor máximo e consequentemente o tom mais claro o mínimo valor. Foi estipulado que o valor máximo seria de $\displaystyle \eqsim 5/ms$, observando que segundo o site Ardupilot.org-docs\footnote{\url{https://ardupilot.org/copter/docs/auto-mode.html}} um VANT do tipo quadricóptero atinge de 10m/s $\displaystyle \eqsim13m/s$ no máximo, antes de se tornar incapaz de manter a altitude e a velocidade horizontal. 
+Para demonstrar como o VANT interage e interpreta os dados que recebe do sistema de visão computacional, e como ele atua para se orientar, foram criados dois modelos de gráfico do tipo vetor gradiente aonde o tom de cor mais forte representa o valor máximo, e consequentemente o tom mais claro o mínimo valor. Foi estipulado que o valor máximo seria de $\displaystyle \eqsim 5/ms$, observando que segundo o site Ardupilot.org-docs\footnote{\url{https://ardupilot.org/copter/docs/auto-mode.html}} um VANT do tipo quadricóptero atinge de 10m/s $\displaystyle \eqsim13m/s$ no máximo, antes de se tornar incapaz de manter a altitude e a velocidade horizontal. 
 
-O primeiro gráfico ilustrado pela figura \ref{fig:teste8} tem como objetivo interpretar como o sistema de visão computacional atua junto com o Dronekit. Se o gráfico \ref{fig:teste8} for sobreposto pela tela do OpenCV a parte aonde o gradiente é mais fraco fica no centro, ou seja, local aonde o software de visão computacional definiu como região de não interesse (não existe velocidade ou é insignificante), ja nas bordas a coloração é mais forte, isso significa que quando a pessoa que esta sendo monitorada pelo software estiver se aproximando  das bordas da interface de captura da câmera, a velocidade aumenta gradualmente, tendo como objetivo sempre manter o alvo no centro da tela, logo conforme o alvo estiver se aproximando do centro a velocidade gradualmente vai diminuindo até parar assim que chegar ao centro e estiver na região de não interesse.
+O primeiro gráfico ilustrado pela figura \ref{fig:teste8} tem como objetivo interpretar como o sistema de visão computacional atua junto com o Dronekit. Se o gráfico \ref{fig:teste8} for sobreposto pela tela do OpenCV, a parte aonde o gradiente é mais fraco fica no centro, ou seja, local aonde o software de visão computacional definiu como região de não interesse (não existe velocidade ou é insignificante). 
+Já nas bordas a coloração é mais forte, isso significa que quando a pessoa que está sendo monitorada pelo software estiver se aproximando  das bordas da interface de captura da câmera, a velocidade aumenta gradualmente, tendo como objetivo sempre manter o alvo no centro da tela, logo, conforme o alvo estiver se aproximando do centro, a velocidade gradualmente vai diminuindo até parar assim que chegar ao centro e estiver na região de não interesse.
 
-As escalas nos eixos X e Y contem os possíveis valores de velocidade em m/s que podem ser enviados para o VANT, como ja foi abordada no referencial teórico é utilizado o sistema de orientação por coordenadas NED e por regra nesse sistema de coordenadas o X fica no eixo das ordenadas e Y no eixo das abcissas.
+As escalas nos eixos X e Y contem os possíveis valores de velocidade em m/s que podem ser enviados para o VANT. Como já foi abordada no referencial teórico, é utilizado o sistema de orientação por coordenadas NED, e por regra, nesse sistema de coordenadas o X fica no eixo das ordenadas e Y no eixo das abcissas.
 
-No gráfico \ref{fig:teste9} foram adicionadas duas cores para distinguir as velocidades em X e Y, os VANTs representam graficamente algumas posições dentro do sistema de coordenas com seus respectivos valores de velocidade nos vetores X e Y assim como qual direção eles tomaram ao receber os valores de velocidade. A cor verde representa o gradiente de velocidade no eixo X e a cor vermelha no eixo Y e igualmente como no gráfico \ref{fig:teste8} nas bordas tem sua maior intensidade de velocidade e no centro não existe ou é insignificante as forças de velocidade. Nos eixos diagonais a X e Y pontos (A,B,C,D) as cores se sobrepõem, isso significa que os valores de velocidade serão iguais ou próximos para X e Y nesse ponto.
+No gráfico \ref{fig:teste9} foram adicionadas duas cores para distinguir as velocidades em X e Y. Os VANTs representam graficamente algumas posições dentro do sistema de coordenas com seus respectivos valores de velocidade nos vetores X e Y assim como qual direção eles tomaram, ao receber os valores de velocidade. A cor verde representa o gradiente de velocidade no eixo X e a cor vermelha no eixo Y e igualmente como no gráfico \ref{fig:teste8} nas bordas tem sua maior intensidade de velocidade e no centro não existe ou é insignificante as forças de velocidade. Nos eixos diagonais X e Y pontos (A,B,C,D) as cores se sobrepõem, isso significa que os valores de velocidade serão iguais ou próximos para X e Y nesse ponto.
+
+\begin{figure}[H]
+	\centering
+	\caption{Gráfico que Representa o Gradiente de Velocidade}
+	\input{figs/mathcha/com-amarelo.tex}
+	\legend{Fonte: do autor}
+	\label{fig:teste8}
+\end{figure}
 
 Analisando todos os pontos no gráfico \ref{fig:teste9} aonde estão os VANTs:
 
@@ -228,15 +242,6 @@ Analisando todos os pontos no gráfico \ref{fig:teste9} aonde estão os VANTs:
 	\item VANT 4: Nesse ponto x=1.5ms e y=3.8m/s, e de acordo com a regra \ref{q1} pertence ao quadrante I, tem direção Nordeste tendendo a se aproximar mais do eixo Y por ter uma mair velocidade na componente Y.
 	\item VANT 5: Nesse ponto x=-3.6ms e y=3.75m/s, e de acordo com a regra \ref{q4} pertence ao quadrante IV, tem direção Sudeste e nesse caso tem diferença de valores nas componentes X e Y insignificante não tendendo a se direcionar a nenhum dos eixos.
 \end{itemize}
- 
-
-\begin{figure}[H]
-	\centering
-	\caption{Gráfico que Representa o Gradiente de Velocidade}
-	\input{figs/mathcha/com-amarelo.tex}
-	\legend{Fonte: do autor}
-	\label{fig:teste8}
-\end{figure}
 
 \begin{figure}[H]
 	\centering
@@ -248,14 +253,14 @@ Analisando todos os pontos no gráfico \ref{fig:teste9} aonde estão os VANTs:
 
 \section{Treinamento da rede Neural}
 
-Para o sistema de visão computacional foi treinada uma rede neural do tipo CNN utilizando tecnologias da NVIDIA (CUDA, CUDNN) e as bibliotecas DLIB com \textit{face-recognition} para as chamadas de detecção facial ja implementadas nelas.
+Para o sistema de visão computacional, foi treinada uma rede neural do tipo CNN utilizando tecnologias da NVIDIA (CUDA, CUDNN) e as bibliotecas DLIB com \textit{face-recognition} para as chamadas de detecção facial já implementadas nelas.
 
 O treinamento gera um arquivo que cria um vetor contendo os dados 128-D para cada face inserida no banco de dados do método de busca, assim como foi abordado no capitulo \ref{sec:recface} tendo como exemplo a ilustração \ref{fig:ext128d}.
 
 \section{Controles do VANT}
 
-Para controlar o VANT foi utilizado o kit de ferramentas para controle e desenvolvimento de VANTs Dronekit juntamente do \textit{firmware} Ardupilot, nele esta contido o software SITL que é utilizado para simular o funcionamento de VANTs. Foi utilizada uma API\footnote{\url{https://ardupilot.org/dev/docs/using-gazebo-simulator-with-sitl.html}} desenvolvida para integrar o SITL do Ardupilot com o software de simulação Gazebo.
-A partir dai foi possível usar as chamadas de funções do Dronekit no código fonte para enviar comandos de movimento para o VANT, também é possível interceptar mensagens de telemetria do VANT como velocidade, altura e direção. E ao integrarmos essa ferramenta com a parte desenvolvida em visão computacional obtivemos o sistema de controle de VANT.
+Para controlar o VANT foi utilizado o kit de ferramentas para controle e desenvolvimento de VANTs Dronekit juntamente do \textit{firmware} Ardupilot. Nele está contido o software SITL que é utilizado para simular o funcionamento de VANTs. Foi utilizada uma API\footnote{\url{https://ardupilot.org/dev/docs/using-gazebo-simulator-with-sitl.html}} desenvolvida para integrar o SITL do Ardupilot com o software de simulação Gazebo.
+A partir desse ponto foi possível usar as chamadas de funções do Dronekit no código fonte para enviar comandos de movimento para o VANT, também é possível interceptar mensagens de telemetria do VANT como velocidade, altura e direção. E ao integrarmos essa ferramenta com a parte desenvolvida em visão computacional obtivemos o sistema de controle de VANT.
 
 %\section{Simulações com Software}
 
@@ -266,7 +271,7 @@ Os componentes físicos são o computador utilizado nas simulações, computador
 \subsection{Computador Utilizado nas Simulações}
 \label{subsec:compsim}
 
-Devido ser necessário executar simultaneamente varias ferramentas de simulação que na sua maioria se utilizam de interfaces gráficas que necessitam de renderização em tempo real, e com um sistema de visão computacional que necessita de uma GPU e boa quantidade de memoria RAM para conseguir executar sua tarefa de reconhecimento facial, foi preciso um computador com hardware de tecnologia de vanguarda.
+Devido ser necessário executar simultaneamente várias ferramentas de simulação que na sua maioria se utilizam de interfaces gráficas que necessitam de renderização em tempo real, e com um sistema de visão computacional que necessita de uma GPU e boa quantidade de memoria RAM para conseguir executar sua tarefa de reconhecimento facial, foi preciso um computador com hardware de tecnologia de vanguarda.
 
 \begin{itemize}
 	\item Especificações do Computador:
@@ -323,7 +328,7 @@ Devido ser necessário executar simultaneamente varias ferramentas de simulaçã
 \subsection{Computador Complementar}
 \label{subsec:compcomp}
 
-Devido ao fato da pesquisa propor um vant que acople um computador que comportaria o software de visão computacional, foi estipulado que este seria um Raspberry Pi, pelo seu reduzido tamanho e peso, Foi feita uma implementação do sistema de reconhecimento facial que foi utilizado na simulação, com o Raspberry Pi para provar seu funcionamento em uma possível simulação real. 
+Devido ao fato da pesquisa propor um VANT que acople um computador que comportaria o software de visão computacional, foi estipulado que este seria um Raspberry Pi, pelo seu reduzido tamanho e peso. Foi feita uma implementação do sistema de reconhecimento facial que foi utilizado na simulação, utilizando o Raspberry Pi para provar seu funcionamento em uma simulação de ambiente real. A figura \ref{fig:gpiorasp} mostra detalhadamente uma Raspberry Pi 3B.
 
 \begin{figure}[H]
 	\centering	
@@ -374,14 +379,63 @@ A maioria das ferramentas são desenvolvidas para sistemas UNIX e que se baseiam
 
 
 \section{Computador Complementar vs Computador Utilizado nas Simulações (Benchmarking)}
+\label{subsec:bench}
 
 Uma simulação \textit{benchmarking} para aferir o desempenho do algoritmo de visão computacional do protótipo foi implementada, comparando os resultados entre o computador utilizado nas simulações \ref{subsec:compsim} e o computador complementar (Raspberry Pi) \ref{subsec:compcomp}.
 
 Para o computador das simulações foi utilizada a técnica de treinamento CNN\footnote{Rede Neural Convolucional Profunda} e para o computador complementar foi utilizada a técnica HOG\footnote{Histograma de Gradiente Orientado\url{https://www.learnopencv.com/histogram-of-oriented-gradients/}}, isso porque a Raspberry Pi não tem capacidade computacional para treinar uma rede do tipo CNN.
 
-Se sabe que uma HOG tem desempenho inferior ao de uma CNN então realizou-se essa comparação extraindo FPS\footnote{Quadros por segundo} e numero de detecções positivas utilizando um video de aproximadamente um minuto.    
+Se sabe que uma HOG tem desempenho inferior ao de uma CNN então realizou-se essa comparação extraindo FPS\footnote{Quadros por segundo} e numero de detecções positivas utilizando um video de aproximadamente 5 minuto.    
 
 Enquanto a instalação do OpenCV e treinamento da rede neural no computador das simulações durou algo em torno de meia hora, na Raspberry Pi foram necessitarias 3 horas para instalação do OpenCV e 20 minutos para treinar a HOG.
+
+Analisando a ilustração \ref{fig:td} do gráfico de tempo decorrido, foi possível analisar que todas as simulações não conseguiram executar o video de 5 minutos em tempo hábil. As duas simulações feitas no computador das simulações excedeu muito pouco o tempo do video. Porém a simulação executada na Raspberry Pi durou aproximadamente 25 mil segundos ou 420 minutos o que chega à 7 horas.    
+
+No gráfico \ref{fig:fd} (número de detecções de faces no video), obtivemos o mesmo resultado para as simulações executadas no computador complementar. A Raspberry Pi detectou cerca de 60 faces a mais, porém isso significa que ela obteve um número extra de detecções de falsos positivos, ou seja, detectou que outros objetos no video eram a face que foi treinada para buscar. 
+
+No gráfico FPS \ref{fig:fps} (número de quadros por segundo), a Raspberry Pi obteve um número de FPS muito inferior, aproximadamente 0,74 quadros por segundo.
+
+Então chegamos a conclusão de que não é possível utilizar uma Raspberry Pi B3 para executar o software do protótipo, ela não teria a capacidade de cumprir a tarefa do sistema por não ter processamento o suficiente. 
+
+Então analisando algumas soluções:
+
+\begin{itemize}
+	\item Uma solução seria utilizar uma Raspberry Pi juntamento com um dispositivo usb de rede neural como por exemplo o (Intel® NCS) 2\footnote{\url{https://www.intel.com.br/content/www/br/pt/analytics/artificial-intelligence/overview.html}} 
+	\item Outra e talvez a melhor seria utilizar um computador complementar especifico para esse fim, como por exemplo o Nvidia Jtson\footnote{\url{https://www.nvidia.com/pt-br/autonomous-machines/embedded-systems/jetson-nano/}} que possui as tecnologias da Nvidia e seus CUDA cores, ou então a opção que hoje tem o melhor desempenho o Google Coral Dev Borad\footnote{\url{https://coral.ai/products/dev-board}}.
+\end{itemize}  
+
+\begin{figure}[H]
+	\centering	
+	\caption{Gráfico do Tempo Decorrido}
+	\fontsize{8pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/tpdec.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:td}
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Gráfico Faces Detectadas}
+	\fontsize{8pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/fcdet.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:fd}
+\end{figure}
+
+\begin{figure}[H]
+	\centering	
+	\caption{Gráfico FPS}
+	\fontsize{8pt}{12pt}\selectfont
+	%\color{white}
+	\def\svgwidth{15cm}
+	\input{figs/svg/fps.pdf_tex}
+	\legend{Fonte: do autor}
+	\label{fig:fps}
+\end{figure}
 
 %\draw (467.32,239.58) node [xslant=-0.33] {
 %	\def\svgwidth{0.8cm}

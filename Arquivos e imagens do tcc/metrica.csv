@@ -1,0 +1,43 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Text Area 1
+1,Page,,,,,,,,,Page 1
+2,User Image,User Images,1,,,,,,,
+3,User Image,User Images,1,,,,,,,
+4,Process,Flowchart Shapes,1,,,,,,,Modelo A
+5,Process,Flowchart Shapes,1,,,,,,,Modelo B
+6,Data (I/O),Flowchart Shapes,1,,,,,,,"0.931
+0.443
+0.331
+.
+.
+.
+0.942
+0.158
+0.039"
+7,Data (I/O),Flowchart Shapes,1,,,,,,,"0.922
+0.343
+0.312
+.
+.
+.
+0.892
+0.142
+0.024"
+8,Decision,Flowchart Shapes,1,,,,,,,"0,4<limite"
+9,Data (I/O),Flowchart Shapes,1,,,,,,,"0,4"
+10,Process,Flowchart Shapes,1,,,,,,,Processando a distância. Métrica numérica
+11,Note,UML,1,,,,,,,É a Pessoa
+12,Note,UML,1,,,,,,,"Não é a mesma
+pessoa"
+13,Start,UML,1,,,,,,,
+14,Line,,1,,,5,6,None,Arrow,
+15,Line,,1,,,4,7,None,Arrow,
+16,Line,,1,,,7,10,None,Arrow,
+17,Line,,1,,,6,10,None,Arrow,
+18,Line,,1,,,10,9,None,Arrow,
+19,Line,,1,,,9,8,None,Arrow,
+20,Line,,1,,,3,5,None,Arrow,
+21,Line,,1,,,2,4,None,Arrow,
+22,Line,,1,,,13,3,None,Arrow,
+23,Line,,1,,,13,2,None,Arrow,
+24,Line,,1,,,8,11,None,Arrow,Sim
+25,Line,,1,,,8,12,None,Arrow,Não

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.29)  2 JUL 2020 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.29)  16 JUL 2020 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1502,29 +1502,29 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 22.
 
 Writing index file main.idx 
 (./main.aux (./pretextual/capa.aux) (./pretextual/assinaturas.aux)
-(./capitulos/introducao.aux) (./capitulos/fundTeo.aux)
-(./capitulos/metodologia.aux) (./capitulos/apresAnaRes.aux)
-(./postextual/apendices.aux))
+(./pretextual/resumos.aux) (./capitulos/introducao.aux)
+(./capitulos/fundTeo.aux) (./capitulos/metodologia.aux)
+(./capitulos/apresAnaRes.aux) (./postextual/apendices.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 210.
-LaTeX Font Info:    ... okay on input line 210.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
 \AtBeginShipoutBox=\box101
-Package hyperref Info: Link coloring ON on input line 210.
+Package hyperref Info: Link coloring ON on input line 211.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1540,15 +1540,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 210.
-LaTeX Info: Redefining \ref on input line 210.
-LaTeX Info: Redefining \pageref on input line 210.
-LaTeX Info: Redefining \nameref on input line 210.
+LaTeX Info: Redefining \nameref on input line 211.
+LaTeX Info: Redefining \ref on input line 211.
+LaTeX Info: Redefining \pageref on input line 211.
+LaTeX Info: Redefining \nameref on input line 211.
 \myptabbox=\box102
 \myptabboxwidth=\skip278
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 210.
+(lastpage)             ! on input line 211.
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count402
@@ -1576,14 +1576,14 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 210.
+LaTeX Info: Redefining \microtypecontext on input line 211.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 210.
+LaTeX Info: Redefining \showhyphens on input line 211.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1604,50 +1604,50 @@ Dictionary: translator-basic-dictionary, Language: portuguese
 (/usr/local/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-LaTeX Info: Redefining \celsius on input line 210.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 210
+LaTeX Info: Redefining \celsius on input line 211.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 211
 .
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 210.
-Package gensymb Info: Using \Omega for \ohm on input line 210.
+LaTeX Info: Redefining \ohm on input line 211.
+Package gensymb Info: Using \Omega for \ohm on input line 211.
 
 Package gensymb Warning: Not defining \micro.
 
 \c@lstlisting=\count408
-Package scrhack Info: undefining \float@addtolists on input line 210.
+Package scrhack Info: undefining \float@addtolists on input line 211.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-10.
+11.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-10.
+11.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-210.
+211.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-210.
+211.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 210.
+(Font)              <12> on input line 211.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 210.
+(Font)              <8> on input line 211.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 210.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 210
+(Font)              <6> on input line 211.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 211
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1656,7 +1656,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 210
+LaTeX Font Info:    Trying to load font information for U+msb on input line 211
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1666,20 +1666,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 21
-0.
+1.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 
-210.
+211.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/yhmath/OMXyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-210.
+211.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1689,7 +1689,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-210.
+211.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1732,7 +1732,7 @@ figuras_png_jpg/logoftec1.png>])pdfTeX warning (ext4): destination with the sam
 e identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225 
+l.226 
        [1
 
 
@@ -1745,42 +1745,53 @@ l.225
 
 
 
-]) (./main.lof [3
+])
+\openout2 = `pretextual/resumos.aux'.
+
+ (./pretextual/resumos.tex
+[3
 
 
-]) [4] [5
+
+] [4
+
+]) (./main.lof [5
 
 
-] [6]
-[7
+]) [6] [7
 
 
-] (./main.toc [8
+] [8] [9
+
+
+] (./main.toc [10
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 80.
+(Font)              <14.4> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 80.
+(Font)              <10> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 80.
- [9]) [10]
+(Font)              <7> on input line 79.
+) [11] [12]
 \openout2 = `capitulos/introducao.aux'.
 
- (./capitulos/introducao.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 20.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+
+(./capitulos/introducao.texpdfTeX warning (ext4): destination with the same ide
+ntifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 
-      [1
+l.21 N
+      o site da Ardupilot \cite{tres} j√° existe um projeto em desenvolvimen...
+[1
 
 
 
-] (./capitulos/objJust.tex
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 21.
+ (./capitulos/objJust.tex
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 1.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -1789,46 +1800,45 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.52 	\item D
+l.42 	\item D
              esenvolver um sistema de controle e automa√ß√£o para VANT basea...
-[2]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.82 
-      [3] (./figs/svg/diagmetpesq.pdf_tex
-<figs/svg/diagmetpesq.pdf, id=408, page=1, 1394.88634pt x 754.31813pt>
+[2] (./figs/svg/diagmetpesq.pdf_tex
+<figs/svg/diagmetpesq.pdf, id=421, page=1, 1394.88634pt x 754.31813pt>
 File: figs/svg/diagmetpesq.pdf Graphic file (type pdf)
 <use figs/svg/diagmetpesq.pdf, page 1>
 Package pdftex.def Info: figs/svg/diagmetpesq.pdf , page1 used on input line 56
 .
 (pdftex.def)             Requested size: 426.79134pt x 230.79758pt.
-)pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has
+)pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 
-       [4]))pdfTeX warning (ext4): destination with the same identifier (name{p
-age.5}) has been already used, duplicate ignored
+l.90 
+      [3]pdfTeX warning (ext4): destination with the same identifier (name{page
+.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.324 \include{capitulos/introducao}
-                                     [5 <./figs/svg/diagmetpesq.pdf>]
+l.100 
+       [4 <./figs/svg/diagmetpesq.pdf>]))pdfTeX warning (ext4): destination wit
+h the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.325 \include{capitulos/introducao}
+                                     [5]
 \openout2 = `capitulos/fundTeo.aux'.
 
-
-(./capitulos/fundTeo.texpdfTeX warning (ext4): destination with the same identi
-fier (name{page.6}) has been already used, duplicate ignored
+ (./capitulos/fundTeo.texpdfTeX warning (ext4): destination with the same ident
+ifier (name{page.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.24     \item
+l.26     \item
                Reconhecimento de palavras; [6
 
 
 
 ]
 (./figs/svg/neuralNetworksvg.pdf_tex
-<figs/svg/neuralNetworksvg.pdf, id=435, page=1, 903.375pt x 785.18344pt>
+<figs/svg/neuralNetworksvg.pdf, id=472, page=1, 903.375pt x 785.18344pt>
 File: figs/svg/neuralNetworksvg.pdf Graphic file (type pdf)
 <use figs/svg/neuralNetworksvg.pdf, page 1>
 Package pdftex.def Info: figs/svg/neuralNetworksvg.pdf , page1 used on input li
@@ -1838,9 +1848,9 @@ ne 56.
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 
+l.59 
       [7] (./figs/svg/ia-ma-dl.pdf_tex
-<figs/svg/ia-ma-dl.pdf, id=444, page=1, 963.6pt x 722.7pt>
+<figs/svg/ia-ma-dl.pdf, id=485, page=1, 963.6pt x 722.7pt>
 File: figs/svg/ia-ma-dl.pdf Graphic file (type pdf)
 <use figs/svg/ia-ma-dl.pdf, page 1>
 Package pdftex.def Info: figs/svg/ia-ma-dl.pdf , page1 used on input line 56.
@@ -1849,9 +1859,9 @@ Package pdftex.def Info: figs/svg/ia-ma-dl.pdf , page1 used on input line 56.
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 
+l.78 
       [8 <./figs/svg/neuralNetworksvg.pdf>] (./figs/svg/redeneural.pdf_tex
-<figs/svg/redeneural.pdf, id=455, page=1, 993.7125pt x 481.8pt>
+<figs/svg/redeneural.pdf, id=497, page=1, 993.7125pt x 481.8pt>
 File: figs/svg/redeneural.pdf Graphic file (type pdf)
 <use figs/svg/redeneural.pdf, page 1>
 Package pdftex.def Info: figs/svg/redeneural.pdf , page1 used on input line 56.
@@ -1861,50 +1871,62 @@ Package pdftex.def Info: figs/svg/redeneural.pdf , page1 used on input line 56.
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 
-      [9 <./figs/svg/ia-ma-dl.pdf>]pdfTeX warning (ext4): destination with the 
-same identifier (name{page.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.105 \end{itemize}
-                    [10 <./figs/svg/redeneural.pdf>]
-(./figs/svg/convolution.pdf_tex
-<figs/svg/convolution.pdf, id=500, page=1, 841.36588pt x 349.71906pt>
+l.97 
+      [9 <./figs/svg/ia-ma-dl.pdf>] (./figs/svg/convolution.pdf_tex
+<figs/svg/convolution.pdf, id=536, page=1, 841.36588pt x 349.71906pt>
 File: figs/svg/convolution.pdf Graphic file (type pdf)
 <use figs/svg/convolution.pdf, page 1>
 Package pdftex.def Info: figs/svg/convolution.pdf , page1 used on input line 56
 .
 (pdftex.def)             Requested size: 455.24408pt x 189.22433pt.
-) (./figs/svg/pixel.pdf_tex
-<figs/svg/pixel.pdf, id=506, page=1, 394.03278pt x 402.6299pt>
+)
+(./figs/svg/pixel.pdf_tex
+<figs/svg/pixel.pdf, id=542, page=1, 394.03278pt x 402.6299pt>
 File: figs/svg/pixel.pdf Graphic file (type pdf)
 <use figs/svg/pixel.pdf, page 1>
 Package pdftex.def Info: figs/svg/pixel.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 284.52756pt x 290.73497pt.
-) [11 <./figs/svg/convolution.pdf>] [12 <./figs/svg/pixel.pdf>] [13] [14]
-(./figs/svg/atrizes.pdf_tex
-<figs/svg/atrizes.pdf, id=569, page=1, 882.82324pt x 814.54312pt>
+)pdfTeX warning (ext4): destination with the same identifier (name{page.10}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136 \end{figure}
+                   [10 <./figs/svg/redeneural.pdf> <./figs/svg/convolution.pdf
+
+pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
+svg/convolution.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+>]pdfTeX warning (ext4): destination with the same identifier (name{page.11}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.145 
+       [11 <./figs/svg/pixel.pdf>]pdfTeX warning (ext4): destination with the s
+ame identifier (name{page.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.217 
+       [12] [13] (./figs/svg/atrizes.pdf_tex
+<figs/svg/atrizes.pdf, id=622, page=1, 882.82324pt x 814.54312pt>
 File: figs/svg/atrizes.pdf Graphic file (type pdf)
 <use figs/svg/atrizes.pdf, page 1>
 Package pdftex.def Info: figs/svg/atrizes.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 393.78519pt.
-) [15 <./figs/svg/atrizes.pdf>]
-(./figs/svg/metrica.pdf_tex
-<figs/svg/metrica.pdf, id=610, page=1, 890.99875pt x 935.18134pt>
+) [14] (./figs/svg/metrica.pdf_tex
+<figs/svg/metrica.pdf, id=641, page=1, 890.99875pt x 935.18134pt>
 File: figs/svg/metrica.pdf Graphic file (type pdf)
 <use figs/svg/metrica.pdf, page 1>
 Package pdftex.def Info: figs/svg/metrica.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 369.88582pt x 388.23572pt.
-) [16 <./figs/svg/metrica.pdf>]
-(./figs/svg/modelo.pdf_tex
-<figs/svg/modelo.pdf, id=637, page=1, 600.5411pt x 1040.40942pt>
+) [15 <./figs/svg/atrizes.pdf>] (./figs/svg/modelo.pdf_tex
+<figs/svg/modelo.pdf, id=676, page=1, 600.5411pt x 1040.40942pt>
 File: figs/svg/modelo.pdf Graphic file (type pdf)
 <use figs/svg/modelo.pdf, page 1>
 Package pdftex.def Info: figs/svg/modelo.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 312.9803pt x 542.22255pt.
-) [17 <./figs/svg/modelo.pdf>] [18] [19]
+) [16 <./figs/svg/metrica.pdf>] [17 <./figs/svg/modelo.pdf>] [18] [19]
 (./figs/svg/pixhawk-raspberry.pdf_tex
-<figs/svg/pixhawk-raspberry.pdf, id=679, page=1, 590.48204pt x 624.66902pt>
+<figs/svg/pixhawk-raspberry.pdf, id=752, page=1, 590.48204pt x 624.66902pt>
 File: figs/svg/pixhawk-raspberry.pdf Graphic file (type pdf)
 <use figs/svg/pixhawk-raspberry.pdf, page 1>
 Package pdftex.def Info: figs/svg/pixhawk-raspberry.pdf , page1 used on input l
@@ -1913,13 +1935,13 @@ ine 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 57.
 ) [20] [21 <./figs/svg/pixhawk-raspberry.pdf>] (./figs/svg/sitl.pdf_tex
-<figs/svg/sitl.pdf, id=708, page=1, 1437.87187pt x 791.95876pt>
+<figs/svg/sitl.pdf, id=783, page=1, 1437.87187pt x 791.95876pt>
 File: figs/svg/sitl.pdf Graphic file (type pdf)
 <use figs/svg/sitl.pdf, page 1>
 Package pdftex.def Info: figs/svg/sitl.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 235.06384pt.
 ) [22] (./figs/svg/ardupilotsitl.pdf_tex
-<figs/svg/ardupilotsitl.pdf, id=714, page=1, 551.0892pt x 446.13036pt>
+<figs/svg/ardupilotsitl.pdf, id=792, page=1, 551.0892pt x 446.13036pt>
 File: figs/svg/ardupilotsitl.pdf Graphic file (type pdf)
 <use figs/svg/ardupilotsitl.pdf, page 1>
 Package pdftex.def Info: figs/svg/ardupilotsitl.pdf , page1 used on input line 
@@ -1927,27 +1949,27 @@ Package pdftex.def Info: figs/svg/ardupilotsitl.pdf , page1 used on input line
 (pdftex.def)             Requested size: 426.79134pt x 345.516pt.
 ) [23 <./figs/svg/sitl.pdf>] [24 <./figs/svg/ardupilotsitl.pdf>]
 (./figs/svg/dronesvgink.pdf_tex
-<figs/svg/dronesvgink.pdf, id=733, page=1, 1720.92938pt x 753.5653pt>
+<figs/svg/dronesvgink.pdf, id=819, page=1, 1720.92938pt x 753.5653pt>
 File: figs/svg/dronesvgink.pdf Graphic file (type pdf)
 <use figs/svg/dronesvgink.pdf, page 1>
 Package pdftex.def Info: figs/svg/dronesvgink.pdf , page1 used on input line 56
 .
 (pdftex.def)             Requested size: 426.79134pt x 186.88455pt.
 ) (./figs/svg/frame.pdf_tex
-<figs/svg/frame.pdf, id=736, page=1, 940.51369pt x 588.1975pt>
+<figs/svg/frame.pdf, id=824, page=1, 940.51369pt x 588.1975pt>
 File: figs/svg/frame.pdf Graphic file (type pdf)
 <use figs/svg/frame.pdf, page 1>
 Package pdftex.def Info: figs/svg/frame.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 369.88582pt x 231.32576pt.
 ) [25 <./figs/svg/dronesvgink.pdf>] (./figs/svg/pixhaw.pdf_tex
-<figs/svg/pixhaw.pdf, id=749, page=1, 936.49875pt x 758.835pt>
+<figs/svg/pixhaw.pdf, id=839, page=1, 936.49875pt x 758.835pt>
 File: figs/svg/pixhaw.pdf Graphic file (type pdf)
 <use figs/svg/pixhaw.pdf, page 1>
 Package pdftex.def Info: figs/svg/pixhaw.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 312.9803pt x 253.61209pt.
 ) [26 <./figs/svg/frame.pdf>]
 (./figs/svg/Diagrama-eletronico-pixhawk.pdf_tex
-<figs/svg/Diagrama-eletronico-pixhawk.pdf, id=763, page=1, 607.51968pt x 519.44
+<figs/svg/Diagrama-eletronico-pixhawk.pdf, id=853, page=1, 607.51968pt x 519.44
 063pt>
 File: figs/svg/Diagrama-eletronico-pixhawk.pdf Graphic file (type pdf)
 <use figs/svg/Diagrama-eletronico-pixhawk.pdf, page 1>
@@ -1960,14 +1982,14 @@ pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
 svg/Diagrama-eletronico-pixhawk.pdf): PDF inclusion: multiple pdfs with page gr
 oup included in a single page
 >] (./figs/svg/brushless_motor.pdf_tex
-<figs/svg/brushless_motor.pdf, id=782, page=1, 568.1225pt x 337.26pt>
+<figs/svg/brushless_motor.pdf, id=874, page=1, 568.1225pt x 337.26pt>
 File: figs/svg/brushless_motor.pdf Graphic file (type pdf)
 <use figs/svg/brushless_motor.pdf, page 1>
 Package pdftex.def Info: figs/svg/brushless_motor.pdf , page1 used on input lin
 e 56.
 (pdftex.def)             Requested size: 369.88582pt x 219.58691pt.
 ) [28] (./figs/svg/motorexp.pdf_tex
-<figs/svg/motorexp.pdf, id=792, page=1, 795.9737pt x 516.93124pt>
+<figs/svg/motorexp.pdf, id=883, page=1, 795.9737pt x 516.93124pt>
 File: figs/svg/motorexp.pdf Graphic file (type pdf)
 <use figs/svg/motorexp.pdf, page 1>
 Package pdftex.def Info: figs/svg/motorexp.pdf , page1 used on input line 56.
@@ -1979,13 +2001,13 @@ pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
 svg/motorexp.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
 >] (./figs/svg/esc.pdf_tex
-<figs/svg/esc.pdf, id=808, page=1, 759.83875pt x 359.3425pt>
+<figs/svg/esc.pdf, id=900, page=1, 759.83875pt x 359.3425pt>
 File: figs/svg/esc.pdf Graphic file (type pdf)
 <use figs/svg/esc.pdf, page 1>
 Package pdftex.def Info: figs/svg/esc.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 369.88582pt x 174.9279pt.
 ) (./figs/svg/drivemotorsvg3.pdf_tex
-<figs/svg/drivemotorsvg3.pdf, id=813, page=1, 929.64821pt x 481.8pt>
+<figs/svg/drivemotorsvg3.pdf, id=905, page=1, 929.64821pt x 481.8pt>
 File: figs/svg/drivemotorsvg3.pdf Graphic file (type pdf)
 <use figs/svg/drivemotorsvg3.pdf, page 1>
 Package pdftex.def Info: figs/svg/drivemotorsvg3.pdf , page1 used on input line
@@ -1993,7 +2015,7 @@ Package pdftex.def Info: figs/svg/drivemotorsvg3.pdf , page1 used on input line
 (pdftex.def)             Requested size: 426.79134pt x 221.18958pt.
 )
 (./figs/svg/gps.pdf_tex
-<figs/svg/gps.pdf, id=819, page=1, 207.77625pt x 89.43413pt>
+<figs/svg/gps.pdf, id=911, page=1, 207.77625pt x 89.43413pt>
 File: figs/svg/gps.pdf Graphic file (type pdf)
 <use figs/svg/gps.pdf, page 1>
 Package pdftex.def Info: figs/svg/gps.pdf , page1 used on input line 56.
@@ -2004,20 +2026,20 @@ pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
 svg/drivemotorsvg3.pdf): PDF inclusion: multiple pdfs with page group included 
 in a single page
 >] (./figs/svg/helices.pdf_tex
-<figs/svg/helices.pdf, id=835, page=1, 226.9278pt x 210.3057pt>
+<figs/svg/helices.pdf, id=928, page=1, 226.9278pt x 210.3057pt>
 File: figs/svg/helices.pdf Graphic file (type pdf)
 <use figs/svg/helices.pdf, page 1>
 Package pdftex.def Info: figs/svg/helices.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 284.52756pt x 263.70938pt.
 ) [31 <./figs/svg/gps.pdf>]
 (./figs/svg/bateria.pdf_tex
-<figs/svg/bateria.pdf, id=849, page=1, 1641.88406pt x 761.09344pt>
+<figs/svg/bateria.pdf, id=943, page=1, 1641.88406pt x 761.09344pt>
 File: figs/svg/bateria.pdf Graphic file (type pdf)
 <use figs/svg/bateria.pdf, page 1>
 Package pdftex.def Info: figs/svg/bateria.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 284.52756pt x 131.89265pt.
 ) (./figs/svg/esquema-de-ligacao-de-um-drone.pdf_tex
-<figs/svg/esquema-de-ligacao-de-um-drone.pdf, id=855, page=1, 554.82875pt x 788
+<figs/svg/esquema-de-ligacao-de-um-drone.pdf, id=949, page=1, 554.82875pt x 788
 .16982pt>
 File: figs/svg/esquema-de-ligacao-de-um-drone.pdf Graphic file (type pdf)
 <use figs/svg/esquema-de-ligacao-de-um-drone.pdf, page 1>
@@ -2031,12 +2053,12 @@ svg/bateria.pdf): PDF inclusion: multiple pdfs with page group included in a si
 ngle page
 >] [33 <./figs/svg/esquema-de-ligacao-de-um-drone.pdf>]
 (./figs/svg/helice.pdf_tex
-<figs/svg/helice.pdf, id=930, page=1, 528.58661pt x 412.27989pt>
+<figs/svg/helice.pdf, id=1023, page=1, 528.58661pt x 412.27989pt>
 File: figs/svg/helice.pdf Graphic file (type pdf)
 <use figs/svg/helice.pdf, page 1>
 Package pdftex.def Info: figs/svg/helice.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 369.88582pt x 288.50587pt.
-<figs/svg/helice.pdf, id=931, page=2, 528.58661pt x 412.27989pt>
+<figs/svg/helice.pdf, id=1024, page=2, 528.58661pt x 412.27989pt>
 File: figs/svg/helice.pdf Graphic file (type pdf)
 <use figs/svg/helice.pdf, page 2>
 Package pdftex.def Info: figs/svg/helice.pdf , page2 used on input line 66.
@@ -2047,20 +2069,20 @@ pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
 svg/helice.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >] (./figs/svg/esfcortante.pdf_tex
-<figs/svg/esfcortante.pdf, id=955, page=1, 450.10005pt x 425.23038pt>
+<figs/svg/esfcortante.pdf, id=1047, page=1, 450.10005pt x 425.23038pt>
 File: figs/svg/esfcortante.pdf Graphic file (type pdf)
 <use figs/svg/esfcortante.pdf, page 1>
 Package pdftex.def Info: figs/svg/esfcortante.pdf , page1 used on input line 56
 .
 (pdftex.def)             Requested size: 284.52756pt x 268.80493pt.
 ) (./figs/svg/momfletor.pdf_tex
-<figs/svg/momfletor.pdf, id=956, page=1, 522.06107pt x 515.9338pt>
+<figs/svg/momfletor.pdf, id=1048, page=1, 522.06107pt x 515.9338pt>
 File: figs/svg/momfletor.pdf Graphic file (type pdf)
 <use figs/svg/momfletor.pdf, page 1>
 Package pdftex.def Info: figs/svg/momfletor.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 284.52756pt x 281.19803pt.
 ) [35 <./figs/svg/esfcortante.pdf>] (./figs/svg/rolldrone.pdf_tex
-<figs/svg/rolldrone.pdf, id=979, page=1, 491.15146pt x 521.3963pt>
+<figs/svg/rolldrone.pdf, id=1071, page=1, 491.15146pt x 521.3963pt>
 File: figs/svg/rolldrone.pdf Graphic file (type pdf)
 <use figs/svg/rolldrone.pdf, page 1>
 Package pdftex.def Info: figs/svg/rolldrone.pdf , page1 used on input line 56.
@@ -2078,64 +2100,64 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 57.
 
 ) [36 <./figs/svg/momfletor.pdf>] (./figs/svg/F450.pdf_tex
-<figs/svg/F450.pdf, id=1002, page=1, 540.60239pt x 403.77306pt>
+<figs/svg/F450.pdf, id=1096, page=1, 540.60239pt x 403.77306pt>
 File: figs/svg/F450.pdf Graphic file (type pdf)
 <use figs/svg/F450.pdf, page 1>
 Package pdftex.def Info: figs/svg/F450.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 318.76773pt.
 ) [37 <./figs/svg/rolldrone.pdf>] [38 <./figs/svg/F450.pdf>] (./figs/svg/dirdro
 ne.pdf_tex
-<figs/svg/dirdrone.pdf, id=1035, page=1, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1128, page=1, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 1>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1036, page=2, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1129, page=2, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 2>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page2 used on input line 58.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1037, page=3, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1130, page=3, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 3>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page3 used on input line 60.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1038, page=4, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1131, page=4, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 4>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page4 used on input line 62.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1039, page=5, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1132, page=5, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 5>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page5 used on input line 64.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1040, page=6, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1133, page=6, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 6>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page6 used on input line 66.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1041, page=7, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1134, page=7, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 7>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page7 used on input line 68.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1042, page=8, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1135, page=8, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 8>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page8 used on input line 70.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1043, page=9, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1136, page=9, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 9>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page9 used on input line 72.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1044, page=10, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1137, page=10, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 10>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page10 used on input line 74.
 (pdftex.def)             Requested size: 426.79134pt x 359.48741pt.
-<figs/svg/dirdrone.pdf, id=1045, page=11, 496.6232pt x 418.28395pt>
+<figs/svg/dirdrone.pdf, id=1138, page=11, 496.6232pt x 418.28395pt>
 File: figs/svg/dirdrone.pdf Graphic file (type pdf)
 <use figs/svg/dirdrone.pdf, page 11>
 Package pdftex.def Info: figs/svg/dirdrone.pdf , page11 used on input line 76.
@@ -2191,21 +2213,21 @@ pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
 svg/dirdrone.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
 >] (./figs/svg/sentido.pdf_tex
-<figs/svg/sentido.pdf, id=1071, page=1, 536.95743pt x 602.24963pt>
+<figs/svg/sentido.pdf, id=1164, page=1, 536.95743pt x 602.24963pt>
 File: figs/svg/sentido.pdf Graphic file (type pdf)
 <use figs/svg/sentido.pdf, page 1>
 Package pdftex.def Info: figs/svg/sentido.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 478.70346pt.
 ) [40 <./figs/svg/sentido.pdf>]
 (./figs/svg/planocart.pdf_tex
-<figs/svg/planocart.pdf, id=1090, page=1, 356.87163pt x 325.66348pt>
+<figs/svg/planocart.pdf, id=1182, page=1, 356.87163pt x 325.66348pt>
 File: figs/svg/planocart.pdf Graphic file (type pdf)
 <use figs/svg/planocart.pdf, page 1>
 Package pdftex.def Info: figs/svg/planocart.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 389.49724pt.
 ) [41 <./figs/svg/planocart.pdf>]
 (./figs/mathcha/ned.tex (./figs/svg/drone3.pdf_tex
-<figs/svg/drone3.pdf, id=1102, page=1, 379.5101pt x 378.5254pt>
+<figs/svg/drone3.pdf, id=1194, page=1, 379.5101pt x 378.5254pt>
 File: figs/svg/drone3.pdf Graphic file (type pdf)
 <use figs/svg/drone3.pdf, page 1>
 Package pdftex.def Info: figs/svg/drone3.pdf , page1 used on input line 56.
@@ -2231,11 +2253,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Warning: Font shape `T1/helvet/b/n' undefined
 (Font)              using `T1/helvet/m/n' instead on input line 157.
 
-
-Overfull \hbox (1.333pt too wide) in paragraph at lines 188--189
- [][] 
- []
-
 ) [42]) [43 <./figs/svg/drone3.pdf>]
 \openout2 = `capitulos/metodologia.aux'.
 
@@ -2245,48 +2262,48 @@ Overfull \hbox (1.333pt too wide) in paragraph at lines 188--189
 
 ]
 (./figs/svg/simualacao.pdf_tex
-<figs/svg/simualacao.pdf, id=1145, page=1, 889.83191pt x 708.84827pt>
+<figs/svg/simualacao.pdf, id=1234, page=1, 889.83191pt x 708.84827pt>
 File: figs/svg/simualacao.pdf Graphic file (type pdf)
 <use figs/svg/simualacao.pdf, page 1>
 Package pdftex.def Info: figs/svg/simualacao.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 426.79134pt x 339.98372pt.
 ) (./figs/svg/arcsist.pdf_tex
-<figs/svg/arcsist.pdf, id=1146, page=1, 635.13286pt x 555.34981pt>
+<figs/svg/arcsist.pdf, id=1236, page=1, 635.13286pt x 555.34981pt>
 File: figs/svg/arcsist.pdf Graphic file (type pdf)
 <use figs/svg/arcsist.pdf, page 1>
 Package pdftex.def Info: figs/svg/arcsist.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 373.17558pt.
 ) [45 <./figs/svg/simualacao.pdf>] [46 <./figs/svg/arcsist.pdf>] (./figs/svg/di
 agrama1.pdf_tex
-<figs/svg/diagrama1.pdf, id=1248, page=1, 701.77931pt x 829.24557pt>
+<figs/svg/diagrama1.pdf, id=1333, page=1, 701.77931pt x 829.24557pt>
 File: figs/svg/diagrama1.pdf Graphic file (type pdf)
 <use figs/svg/diagrama1.pdf, page 1>
 Package pdftex.def Info: figs/svg/diagrama1.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 504.32066pt.
 )
 [47] [48 <./figs/svg/diagrama1.pdf>] (./figs/svg/diagvisao.pdf_tex
-<figs/svg/diagvisao.pdf, id=1262, page=1, 680.95279pt x 993.91577pt>
+<figs/svg/diagvisao.pdf, id=1359, page=1, 680.95279pt x 993.91577pt>
 File: figs/svg/diagvisao.pdf Graphic file (type pdf)
 <use figs/svg/diagvisao.pdf, page 1>
 Package pdftex.def Info: figs/svg/diagvisao.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 369.88582pt x 539.89137pt.
-)
+) [49]
 (./figs/svg/diagrecfac.pdf_tex
-<figs/svg/diagrecfac.pdf, id=1263, page=1, 448.65744pt x 827.77003pt>
+<figs/svg/diagrecfac.pdf, id=1365, page=1, 448.65744pt x 827.77003pt>
 File: figs/svg/diagrecfac.pdf Graphic file (type pdf)
 <use figs/svg/diagrecfac.pdf, page 1>
 Package pdftex.def Info: figs/svg/diagrecfac.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 284.52756pt x 524.94608pt.
-) [49 <./figs/svg/diagvisao.pdf>]
+) [50 <./figs/svg/diagvisao.pdf>]
 (./figs/svg/diagcont.pdf_tex
-<figs/svg/diagcont.pdf, id=1274, page=1, 346.94931pt x 883.433pt>
+<figs/svg/diagcont.pdf, id=1376, page=1, 346.94931pt x 883.433pt>
 File: figs/svg/diagcont.pdf Graphic file (type pdf)
 <use figs/svg/diagcont.pdf, page 1>
 Package pdftex.def Info: figs/svg/diagcont.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 227.62204pt x 579.6032pt.
-) [50 <./figs/svg/diagrecfac.pdf>] [51 <./figs/svg/diagcont.pdf>] (./figs/mathc
+) [51 <./figs/svg/diagrecfac.pdf>] [52 <./figs/svg/diagcont.pdf>] (./figs/mathc
 ha/quadrado1.tex
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 58
 .
@@ -2302,29 +2319,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 60.
-) [52]
+) [53]
 (./figs/mathcha/quadrado3.tex
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <12> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 62.
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 62.
-) [53] [54] (./figs/mathcha/quadrado2.tex)
-[55] (./figs/mathcha/conv.tex) [56] (./figs/mathcha/regiaoint.tex
+) [54] [55] (./figs/mathcha/quadrado2.tex)
+[56] (./figs/mathcha/conv.tex) [57] (./figs/mathcha/regiaoint.tex
 
 LaTeX Font Warning: Font shape `T1/helvet/bx/n' undefined
 (Font)              using `T1/helvet/m/n' instead on input line 117.
 
-) [57] [58] (./figs/mathcha/com-amarelo.tex
+) [58] (./figs/mathcha/com-amarelo.tex
 Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-
-Overfull \hbox (15.18787pt too wide) in paragraph at lines 155--156
- [][] 
- []
-
-) [59] (./figs/mathcha/com-vermelho-verde.tex (./figs/svg/drone3.pdf_tex
+) [59] [60] (./figs/mathcha/com-vermelho-verde.tex (./figs/svg/drone3.pdf_tex
 File: figs/svg/drone3.pdf Graphic file (type pdf)
 <use figs/svg/drone3.pdf, page 1>
 Package pdftex.def Info: figs/svg/drone3.pdf , page1 used on input line 56.
@@ -2359,143 +2371,207 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 177.
 )
-Overfull \hbox (15.18787pt too wide) in paragraph at lines 213--245
+Overfull \hbox (15.18787pt too wide) in paragraph at lines 213--250
  [][] 
  []
 
-[60] [61] [62] (./figs/svg/pingpioraspberry.pdf_tex
-<figs/svg/pingpioraspberry.pdf, id=1431, page=1, 832.76881pt x 770.95529pt>
+[61] [62] [63] (./figs/svg/pingpioraspberry.pdf_tex
+<figs/svg/pingpioraspberry.pdf, id=1533, page=1, 832.76881pt x 770.95529pt>
 File: figs/svg/pingpioraspberry.pdf Graphic file (type pdf)
 <use figs/svg/pingpioraspberry.pdf, page 1>
 Package pdftex.def Info: figs/svg/pingpioraspberry.pdf , page1 used on input li
 ne 56.
 (pdftex.def)             Requested size: 426.79134pt x 395.11125pt.
-) [63] [64 <./figs/svg/pingpioraspberry.pdf>] (./figs/svg/cam.pdf_tex
-<figs/svg/cam.pdf, id=1457, page=1, 2190.1825pt x 2087.8pt>
+) [64] [65 <./figs/svg/pingpioraspberry.pdf>] (./figs/svg/cam.pdf_tex
+<figs/svg/cam.pdf, id=1559, page=1, 2190.1825pt x 2087.8pt>
 File: figs/svg/cam.pdf Graphic file (type pdf)
 <use figs/svg/cam.pdf, page 1>
 Package pdftex.def Info: figs/svg/cam.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 284.52756pt x 271.20053pt.
-) [65 <./figs/svg/cam.pdf>]) [66]
+) [66 <./figs/svg/cam.pdf>] [67]
+(./figs/svg/tpdec.pdf_tex
+<figs/svg/tpdec.pdf, id=1592, page=1, 927.38916pt x 521.62437pt>
+File: figs/svg/tpdec.pdf Graphic file (type pdf)
+<use figs/svg/tpdec.pdf, page 1>
+Package pdftex.def Info: figs/svg/tpdec.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 426.79134pt x 240.05359pt.
+<figs/svg/tpdec.pdf, id=1593, page=2, 927.38916pt x 521.62437pt>
+File: figs/svg/tpdec.pdf Graphic file (type pdf)
+<use figs/svg/tpdec.pdf, page 2>
+Package pdftex.def Info: figs/svg/tpdec.pdf , page2 used on input line 67.
+(pdftex.def)             Requested size: 426.79134pt x 240.05359pt.
+) (./figs/svg/fcdet.pdf_tex
+<figs/svg/fcdet.pdf, id=1594, page=1, 924.48695pt x 519.9741pt>
+File: figs/svg/fcdet.pdf Graphic file (type pdf)
+<use figs/svg/fcdet.pdf, page 1>
+Package pdftex.def Info: figs/svg/fcdet.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 426.79134pt x 240.04788pt.
+<figs/svg/fcdet.pdf, id=1595, page=2, 924.48695pt x 519.9741pt>
+File: figs/svg/fcdet.pdf Graphic file (type pdf)
+<use figs/svg/fcdet.pdf, page 2>
+Package pdftex.def Info: figs/svg/fcdet.pdf , page2 used on input line 67.
+(pdftex.def)             Requested size: 426.79134pt x 240.04788pt.
+) [68 <./figs/svg/tpdec.pdf> <./figs/svg/tpdec.pdf
+
+pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
+svg/tpdec.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+>] (./figs/svg/fps.pdf_tex
+<figs/svg/fps.pdf, id=1605, page=1, 924.62921pt x 520.08794pt>
+File: figs/svg/fps.pdf Graphic file (type pdf)
+<use figs/svg/fps.pdf, page 1>
+Package pdftex.def Info: figs/svg/fps.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 426.79134pt x 240.06075pt.
+<figs/svg/fps.pdf, id=1606, page=2, 924.62921pt x 520.08794pt>
+File: figs/svg/fps.pdf Graphic file (type pdf)
+<use figs/svg/fps.pdf, page 2>
+Package pdftex.def Info: figs/svg/fps.pdf , page2 used on input line 70.
+(pdftex.def)             Requested size: 426.79134pt x 240.06075pt.
+)) [69 <./figs/svg/fcdet.pdf> <./figs/svg/fcdet.pdf
+
+pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
+svg/fcdet.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+> <./figs/svg/fps.pdf
+
+pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
+svg/fps.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+> <./figs/svg/fps.pdf
+
+pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
+svg/fps.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
 \openout2 = `capitulos/apresAnaRes.aux'.
 
-
-(./capitulos/apresAnaRes.tex (./figs/svg/eu.pdf_tex
-<figs/svg/eu.pdf, id=1482, page=1, 458.7574pt x 602.93831pt>
+ (./capitulos/apresAnaRes.tex (./figs/svg/eu.pdf_tex
+<figs/svg/eu.pdf, id=1616, page=1, 458.7574pt x 602.93831pt>
 File: figs/svg/eu.pdf Graphic file (type pdf)
 <use figs/svg/eu.pdf, page 1>
 Package pdftex.def Info: figs/svg/eu.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 227.62204pt x 299.1592pt.
 ) (./figs/svg/eu2.pdf_tex
-<figs/svg/eu2.pdf, id=1483, page=1, 458.7574pt x 602.93831pt>
+<figs/svg/eu2.pdf, id=1617, page=1, 458.7574pt x 602.93831pt>
 File: figs/svg/eu2.pdf Graphic file (type pdf)
 <use figs/svg/eu2.pdf, page 1>
 Package pdftex.def Info: figs/svg/eu2.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 227.62204pt x 299.1592pt.
-)
-[67
+) [70
 
 
 
- <./figs/svg/eu.pdf>] [68 <./figs/svg/eu2.pdf>] (./figs/svg/00.pdf_tex
-<figs/svg/00.pdf, id=1509, page=1, 1117.17375pt x 657.58173pt>
+ <./figs/svg/eu.pdf>] [71 <./figs/svg/eu2.pdf>] (./figs/svg/00.pdf_tex
+<figs/svg/00.pdf, id=1642, page=1, 1117.17375pt x 657.58173pt>
 File: figs/svg/00.pdf Graphic file (type pdf)
 <use figs/svg/00.pdf, page 1>
 Package pdftex.def Info: figs/svg/00.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 251.20811pt.
 )
 (./figs/svg/norte.pdf_tex
-<figs/svg/norte.pdf, id=1510, page=1, 1154.06157pt x 657.95813pt>
+<figs/svg/norte.pdf, id=1643, page=1, 1154.06157pt x 657.95813pt>
 File: figs/svg/norte.pdf Graphic file (type pdf)
 <use figs/svg/norte.pdf, page 1>
 Package pdftex.def Info: figs/svg/norte.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 243.32022pt.
-) [69 <./figs/svg/00.pdf>] (./figs/svg/sul.pdf_tex
-<figs/svg/sul.pdf, id=1524, page=1, 1121.69063pt x 658.71094pt>
+) [72 <./figs/svg/00.pdf>] (./figs/svg/sul.pdf_tex
+<figs/svg/sul.pdf, id=1658, page=1, 1121.69063pt x 658.71094pt>
 File: figs/svg/sul.pdf Graphic file (type pdf)
 <use figs/svg/sul.pdf, page 1>
 Package pdftex.def Info: figs/svg/sul.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 250.62433pt.
 )
 (./figs/svg/leste.pdf_tex
-<figs/svg/leste.pdf, id=1525, page=1, 1145.78062pt x 657.2053pt>
+<figs/svg/leste.pdf, id=1659, page=1, 1145.78062pt x 657.2053pt>
 File: figs/svg/leste.pdf Graphic file (type pdf)
 <use figs/svg/leste.pdf, page 1>
 Package pdftex.def Info: figs/svg/leste.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 244.80676pt.
-) [70 <./figs/svg/norte.pdf> <./figs/svg/sul.pdf
+) [73 <./figs/svg/norte.pdf> <./figs/svg/sul.pdf
 
 pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
 svg/sul.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >] (./figs/svg/nordeste.pdf_tex
-<figs/svg/nordeste.pdf, id=1547, page=1, 1123.94907pt x 658.71094pt>
+<figs/svg/nordeste.pdf, id=1681, page=1, 1123.94907pt x 658.71094pt>
 File: figs/svg/nordeste.pdf Graphic file (type pdf)
 <use figs/svg/nordeste.pdf, page 1>
 Package pdftex.def Info: figs/svg/nordeste.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 250.12178pt.
 ) (./figs/svg/noroeste.pdf_tex
-<figs/svg/noroeste.pdf, id=1548, page=1, 1135.24126pt x 660.96938pt>
+<figs/svg/noroeste.pdf, id=1682, page=1, 1135.24126pt x 660.96938pt>
 File: figs/svg/noroeste.pdf Graphic file (type pdf)
 <use figs/svg/noroeste.pdf, page 1>
 Package pdftex.def Info: figs/svg/noroeste.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 248.4882pt.
-) [71 <./figs/svg/leste.pdf> <./figs/svg/nordeste.pdf
+) [74 <./figs/svg/leste.pdf> <./figs/svg/nordeste.pdf
 
 pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
 svg/nordeste.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
->] [72 <./figs/svg/noroeste.pdf>] (./figs/svg/vel-1,3.pdf_tex
-<figs/svg/vel-1,3.pdf, id=1588, page=1, 1755.55875pt x 1008.76875pt>
+>] [75 <./figs/svg/noroeste.pdf>] (./figs/svg/vel-1,3.pdf_tex
+<figs/svg/vel-1,3.pdf, id=1722, page=1, 1755.55875pt x 1008.76875pt>
 File: figs/svg/vel-1,3.pdf Graphic file (type pdf)
 <use figs/svg/vel-1,3.pdf, page 1>
 Package pdftex.def Info: figs/svg/vel-1,3.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 245.23413pt.
 )
 (./figs/svg/vel-2.pdf_tex
-<figs/svg/vel-2.pdf, id=1589, page=1, 1716.4125pt x 1006.76118pt>
+<figs/svg/vel-2.pdf, id=1723, page=1, 1716.4125pt x 1006.76118pt>
 File: figs/svg/vel-2.pdf Graphic file (type pdf)
 <use figs/svg/vel-2.pdf, page 1>
 Package pdftex.def Info: figs/svg/vel-2.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 250.32246pt.
 ) (./figs/svg/vel-3,7.pdf_tex
-<figs/svg/vel-3,7.pdf, id=1590, page=1, 1720.4275pt x 1010.7763pt>
+<figs/svg/vel-3,7.pdf, id=1724, page=1, 1720.4275pt x 1010.7763pt>
 File: figs/svg/vel-3,7.pdf Graphic file (type pdf)
 <use figs/svg/vel-3,7.pdf, page 1>
 Package pdftex.def Info: figs/svg/vel-3,7.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 250.73471pt.
-) [73 <./figs/svg/vel-1,3.pdf> <./figs/svg/vel-2.pdf
+) [76 <./figs/svg/vel-1,3.pdf> <./figs/svg/vel-2.pdf
 
 pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
 svg/vel-2.pdf): PDF inclusion: multiple pdfs with page group included in a sing
 le page
 >] (./figs/svg/vel--2,5.pdf_tex
-<figs/svg/vel--2,5.pdf, id=1602, page=1, 1685.29637pt x 1003.74994pt>
+<figs/svg/vel--2,5.pdf, id=1736, page=1, 1685.29637pt x 1003.74994pt>
 File: figs/svg/vel--2,5.pdf Graphic file (type pdf)
 <use figs/svg/vel--2,5.pdf, page 1>
 Package pdftex.def Info: figs/svg/vel--2,5.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 426.79134pt x 254.18385pt.
-) [74 <./figs/svg/vel-3,7.pdf> <./figs/svg/vel--2,5.pdf
+) [77 <./figs/svg/vel-3,7.pdf> <./figs/svg/vel--2,5.pdf
 
 pdfTeX warning: /usr/local/texlive/2020/bin/x86_64-linux/pdflatex (file ./figs/
 svg/vel--2,5.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
->]) [75] (./main.bbl (./main.brf)
+>] [78]) [79] (./main.bbl (./main.brf)
 \tf@brf=\write6
 \openout6 = `main.brf'.
 
 
 bibitemlist
+[80
 
-Overfull \hbox (1.88855pt too wide) in paragraph at lines 55--55
+
+]
+Underfull \hbox (badness 1082) in paragraph at lines 104--104
+[]\T1/lmr/m/n/12 (+20) G1. \T1/lmr/m/it/12 (+20) C‚-me-ras de se-gu-ranÁa aju-d
+am cada vez mais a po-lÌ- 
+ []
+
+
+Overfull \hbox (1.88855pt too wide) in paragraph at lines 117--117
 \T1/lmr/m/n/12 (-20) machine-[]learning-[]is-[]fun-[]part-[]4-[]modern-[]face-[
 ]recognition-[]with-[]deep-[]learning-[]c3c^^[c121d78>[]$[][]. 
  []
 
-[76
 
+Overfull \hbox (1.88855pt too wide) in paragraph at lines 125--125
+\T1/lmr/m/n/12 (-20) machine-[]learning-[]is-[]fun-[]part-[]4-[]modern-[]face-[
+]recognition-[]with-[]deep-[]learning-[]c3c^^[c121d78>[]$[][]. 
+ []
 
-] [77]) [78]
+[81] [82]) [83]
 \openout2 = `postextual/apendices.aux'.
 
  (./postextual/apendices.tex
@@ -2503,7 +2579,7 @@ Overfull \hbox (1.88855pt too wide) in paragraph at lines 55--55
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 12.
 
-[79
+[84
 
 
 
@@ -2520,25 +2596,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-49.
+ [85
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `texttrademark ' is missing
-(microtype)             in font `TS1/lmtt/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
- [80
+] [86] [87]
+[88] [89] [90] [91] [92] [93
 
-] [81] [82]
-[83] [84] [85] [86] [87] [88
-
-] [89]) [90] 
+] [94]) [95] 
 AED: lastpage setting LastPage
 \tf@lof=\write7
 \openout7 = `main.lof'.
@@ -2546,16 +2609,16 @@ AED: lastpage setting LastPage
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
 (./main.aux (./pretextual/capa.aux) (./pretextual/assinaturas.aux)
-(./capitulos/introducao.aux) (./capitulos/fundTeo.aux)
-(./capitulos/metodologia.aux) (./capitulos/apresAnaRes.aux)
-(./postextual/apendices.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 362.
+(./pretextual/resumos.aux) (./capitulos/introducao.aux)
+(./capitulos/fundTeo.aux) (./capitulos/metodologia.aux)
+(./capitulos/apresAnaRes.aux) (./postextual/apendices.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: FD38F246695180ABA70E54A0BB56D729;2073.
+(rerunfilecheck)             Checksum: 89A5407B2A8B91B2CFC0040F817E665C;3338.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2564,18 +2627,36 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 362.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 363.
  ) 
 Here is how much of TeX's memory you used:
- 38311 strings out of 480608
- 732686 string characters out of 5903615
- 1401681 words of memory out of 5000000
- 52246 multiletter control sequences out of 15000+600000
- 704869 words of font info for 259 fonts, out of 8000000 for 9000
+ 38558 strings out of 480608
+ 736339 string characters out of 5903615
+ 1409107 words of memory out of 5000000
+ 52421 multiletter control sequences out of 15000+600000
+ 705080 words of font info for 262 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,17n,81p,1281b,2683s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not ex
+ 64i,17n,81p,1342b,2681s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.21} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.20} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.19} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
+t, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
 t, replaced by a fixed one
@@ -2619,12 +2700,12 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/t
-exlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2020/te
-xmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2020/texm
-f-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2020/texmf-dist/fon
-ts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvi
-ps/base/8r.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/te
+xlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texl
+ive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2020/t
+exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist/
+fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips
+/lm/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/loca
 l/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/
@@ -2653,10 +2734,10 @@ pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pf
 b></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/
 local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/te
 xlive/2020/texmf-dist/fonts/type1/public/yhmath/yhcmex.pfb>
-Output written on main.pdf (101 pages, 30000780 bytes).
+Output written on main.pdf (108 pages, 30038978 bytes).
 PDF statistics:
- 2722 PDF objects out of 2984 (max. 8388607)
- 2248 compressed objects within 23 object streams
- 749 named destinations out of 1000 (max. 500000)
- 62106 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2926 PDF objects out of 2984 (max. 8388607)
+ 2437 compressed objects within 25 object streams
+ 801 named destinations out of 1000 (max. 500000)
+ 61632 words of extra memory for PDF output out of 61914 (max. 10000000)
 

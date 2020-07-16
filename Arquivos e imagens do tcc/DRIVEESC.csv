@@ -1,0 +1,50 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Line Source,Line Destination,Source Arrow,Destination Arrow,Text Area 1
+1,Page,,,,,,,,,Page 1
+2,Inductor,Circuit Diagrams,1,,,,,,,B
+3,Inductor,Circuit Diagrams,1,,,,,,,A
+4,Inductor,Circuit Diagrams,1,,,,,,,C
+5,On/Off Switch,Circuit Diagrams,1,,,,,,,
+6,On/Off Switch,Circuit Diagrams,1,,,,,,,
+7,On/Off Switch,Circuit Diagrams,1,,,,,,,
+8,On/Off Switch,Circuit Diagrams,1,,,,,,,
+9,On/Off Switch,Circuit Diagrams,1,,,,,,,
+10,On/Off Switch,Circuit Diagrams,1,,,,,,,
+11,Rectangle,Geometric Shapes,1,,,,,,,FET DRIVE CIRCUITRY
+12,Rectangle,Geometric Shapes,1,,,,,,,ROTOR POSITION CIRCUITRY
+13,Rectangle,Geometric Shapes,1,,,,,,,BEC
+14,Rectangle,Geometric Shapes,1,,,,,,,
+15,Rectangle,Geometric Shapes,1,,,,,,,MICROCONTROLLER
+16,Text,Standard,1,,,,,,,BRUSHLES MOTOR
+17,Text,Standard,1,,,,,,,Q1
+18,Text,Standard,1,,,,,,,Q6
+19,Text,Standard,1,,,,,,,Q2
+20,Text,Standard,1,,,,,,,Q5
+21,Text,Standard,1,,,,,,,Q4
+22,Text,Standard,1,,,,,,,Q3
+23,Protective Earth,Circuit Diagrams,1,,,,,,,
+24,Inverter Contact,Circuit Diagrams,1,,,,,,,
+25,Text,Standard,1,,,,,,,THROTLLE
+26,Line,,1,,,4,3,None,None,
+27,Line,,1,,,2,4,None,None,
+28,Line,,1,,,10,23,None,None,
+29,Line,,1,,,9,28,None,None,
+30,Line,,1,,,8,28,None,None,
+31,Line,,1,,,7,,None,None,
+32,Line,,1,,,6,31,None,None,
+33,Line,,1,,,5,31,None,None,
+34,Line,,1,,,11,17,None,Arrow,
+35,Line,,1,,,11,19,None,Arrow,
+36,Line,,1,,,11,22,None,Arrow,
+37,Line,,1,,,11,21,None,Arrow,
+38,Line,,1,,,11,20,None,Arrow,
+39,Line,,1,,,11,18,None,Arrow,
+40,Line,,1,,,3,37,None,None,
+41,Line,,1,,,4,38,None,None,
+42,Line,,1,,,2,39,None,None,
+43,Line,,1,,,12,15,None,None,
+44,Line,,1,,,11,15,None,None,
+45,Line,,1,,,13,15,None,None,
+46,Line,,1,,,13,14,None,None,
+47,Line,,1,,,12,37,None,None,
+48,Line,,1,,,12,38,None,None,
+49,Line,,1,,,12,39,None,None,

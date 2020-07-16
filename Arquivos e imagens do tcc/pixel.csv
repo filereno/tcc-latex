@@ -1,0 +1,8 @@
+Id,Name,Shape Library,Page ID,Contained By,Group,Text Area 1,Text Area 2,Text Area 3,Text Area 4,Text Area 5,Text Area 6,Text Area 7,Text Area 8,Text Area 9,Text Area 10,Text Area 11,Text Area 12,Text Area 13,Text Area 14,Text Area 15,Text Area 16
+1,Page,,,,,Page 1,,,,,,,,,,,,,,,
+2,Table,Tables,1,,,4,6,1,0,,,2,,,1,,,,3,,
+3,Table,Tables,1,,,9,7,3,26,,,15,,,8,,,,2,,
+4,Table,Tables,1,,,13,19,25,4,22,16,0,3,7,0,8,1,3,6,53,10
+5,Double Arrow East-West,Geometric Shapes,1,,,Altura,,,,,,,,,,,,,,,
+6,Double Arrow East-West,Geometric Shapes,1,,,Largura,,,,,,,,,,,,,,,
+7,Double Arrow East-West,Geometric Shapes,1,,,Canal de cores,,,,,,,,,,,,,,,
